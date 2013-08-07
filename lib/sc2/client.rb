@@ -40,5 +40,9 @@ module SC2
     def locale_param
       locale.nil? ? '' : "?locale=#{locale}"
     end
+
+    def ladder_url(id)
+      "http://" + host + LADDER_PATH + id
+    end
   end
 end
