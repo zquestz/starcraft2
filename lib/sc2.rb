@@ -1,1 +1,1 @@
-require File.join('sc2', 'client.rb')
+require File.join('sc2', 'loader.rb')
