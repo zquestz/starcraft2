@@ -1,6 +1,7 @@
 module SC2
   class Client
     ACHIEVEMENTS_PATH = "/api/sc2/data/achievements"
+    REWARDS_PATH = "/api/sc2/data/rewards"
 
     attr_accessor :locale, :host
 
@@ -14,6 +15,10 @@ module SC2
       Achievement.build_achievements(achievements_data)
     end
 
+    def rewards
+      Reward.build_rewards(rewards_data)
+    end
+
     private
 
     def achievements_data
@@ -21,8 +26,19 @@ module SC2
     end
 
     def achievements_url
-      current_locale = locale.nil? ? '' : "?locale=#{locale}"
-      "http://" + host + ACHIEVEMENTS_PATH + current_locale
+      "http://" + host + ACHIEVEMENTS_PATH + locale_param
+    end
+
+    def rewards_data
+      HTTParty.get(rewards_url).body
+    end
+
+    def rewards_url
+      "http://" + host + REWARDS_PATH + locale_param
+    end
+
+    def locale_param
+      locale.nil? ? '' : "?locale=#{locale}"
     end
   end
 end

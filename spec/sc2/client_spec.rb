@@ -11,35 +11,65 @@ describe SC2::Client do
     it 'should store the achievements url' do
       SC2::Client::ACHIEVEMENTS_PATH.should == '/api/sc2/data/achievements'
     end
-  end
 
-  it 'should store the locale' do
-    @options = { :locale => 'en_US' }
-    client.locale.should == 'en_US'
-  end
-
-  it 'should store the host' do
-    @options = { :host => 'someserver.com'}
-    client.host.should == 'someserver.com'
-  end
-
-  it 'should return an array of achievements' do
-    VCR.use_cassette('achievements') do
-      client.achievements.class.should == Array
+    it 'should store the rewards url' do
+      SC2::Client::REWARDS_PATH.should == '/api/sc2/data/rewards'
     end
   end
 
-  it 'should return items of type SC2::Achievement' do
-    VCR.use_cassette('achievements') do
-      client.achievements.first.class.should == SC2::Achievement
+  describe ".initialize" do
+    it 'should store the locale' do
+      @options = { :locale => 'en_US' }
+      client.locale.should == 'en_US'
+    end
+
+    it 'should store the host' do
+      @options = { :host => 'someserver.com'}
+      client.host.should == 'someserver.com'
     end
   end
 
-  it "should return achievements in the correct locale" do
-    @options.merge!({:locale => "pt_BR"})
+  describe ".achievements" do
+    it 'should return an array of achievements' do
+      VCR.use_cassette('achievements') do
+        client.achievements.class.should == Array
+      end
+    end
 
-    VCR.use_cassette('achievements') do
-      client.achievements.first.title.should == "TCT Destruidor"
+    it 'should return items of type SC2::Achievement' do
+      VCR.use_cassette('achievements') do
+        client.achievements.first.class.should == SC2::Achievement
+      end
+    end
+
+    it "should return achievements in the correct locale" do
+      @options.merge!({:locale => "pt_BR"})
+
+      VCR.use_cassette('achievements') do
+        client.achievements.first.title.should == "TCT Destruidor"
+      end
+    end
+  end
+
+  describe ".rewards" do
+    it 'should return an array of rewards' do
+      VCR.use_cassette('rewards') do
+        client.rewards.class.should == Array
+      end
+    end
+
+    it 'should return items of type SC2::Reward' do
+      VCR.use_cassette('rewards') do
+        client.rewards.first.class.should == SC2::Reward
+      end
+    end
+
+    it "should return rewards in the correct locale" do
+      @options.merge!({:locale => "pt_BR"})
+
+      VCR.use_cassette('rewards') do
+        client.rewards.first.title.should == "Kachinsky"
+      end
     end
   end
 end
