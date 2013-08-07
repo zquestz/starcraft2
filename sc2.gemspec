@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
+  gem.add_dependency 'httparty'
   gem.authors       = ["Josh Ellithorpe"]
   gem.email         = ["quest@mac.com"]
   gem.description   = %q{A small SC2 api wrapper}

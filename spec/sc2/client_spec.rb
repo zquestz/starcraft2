@@ -13,10 +13,14 @@ describe SC2::Client do
   end
 
   it "should return an array of achievements" do
-    client.achievements.class.should == Array
+    VCR.use_cassette('achievements') do
+      client.achievements.class.should == Array
+    end
   end
 
   it "should return items of type SC2::Achievement" do
-    client.achievements.first.class.should == SC2::Achievement
+    VCR.use_cassette('achievements') do
+      client.achievements.first.class.should == SC2::Achievement
+    end
   end
 end

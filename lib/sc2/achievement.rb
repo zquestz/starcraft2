@@ -7,5 +7,14 @@ module SC2
         self.send(:"#{k}=", v)
       end
     end
+
+    def self.build_achievements(raw_data)
+      data = JSON.parse(raw_data)
+      data["achievements"].map do |achievement|
+        achievement['achievement_id'] = achievement.delete('achievementId')
+        achievement['category_id'] = achievement.delete('categoryId')
+        new(achievement)
+      end
+    end
   end
 end

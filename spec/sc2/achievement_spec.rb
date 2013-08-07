@@ -6,6 +6,7 @@ describe SC2::Achievement do
 
     before do
       VCR.use_cassette('achievements') do
+        @raw_achievement_data = HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body
       end
     end
 
