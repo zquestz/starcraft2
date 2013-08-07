@@ -1,10 +1,13 @@
 module SC2
   class Client
-    ACHIEVEMENTS_URL = "http://us.battle.net/api/sc2/data/achievements"
-    attr_accessor :locale
+    ACHIEVEMENTS_PATH = "/api/sc2/data/achievements"
+
+    attr_accessor :locale, :host
 
     def initialize(options)
-      @locale = options[:locale]
+      options.each do |k,v|
+        self.send(:"#{k}=", v)
+      end
     end
 
     def achievements
@@ -14,7 +17,11 @@ module SC2
     private
 
     def achievements_data
-      HTTParty.get(ACHIEVEMENTS_URL).body
+      HTTParty.get(achievements_url).body
+    end
+
+    def achievements_url
+      "http://" + host + ACHIEVEMENTS_PATH
     end
   end
 end
