@@ -1,13 +1,13 @@
-## SC2
+## starcraft2
 
-A small sc2 API wrapper. For full documentation, visit https://github.com/Blizzard/api-sc2-docs.
+A small StarCraft 2 API wrapper. For full documentation, visit https://github.com/Blizzard/api-sc2-docs.
 
 ## Installation
 
 Add to your `Gemfile`:
 
 ```ruby
-gem "sc2"
+gem "starcraft2"
 ```
 
 Then `bundle install`.
