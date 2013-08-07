@@ -10,8 +10,7 @@ module SC2
 
     def self.build_rewards(raw_data)
       data = JSON.parse(raw_data)
-      puts data.keys
-      data["portraits"].map do |reward|
+      data['portraits'].map do |reward|
         reward['achievement_id'] = reward.delete('achievementId')
         new(reward)
       end

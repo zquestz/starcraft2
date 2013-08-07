@@ -1,1 +1,1 @@
-rvm use 1.9.3@sc2 --create
+rvm use 1.9.3@starcraft2 --create

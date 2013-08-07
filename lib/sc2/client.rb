@@ -21,7 +21,7 @@ module SC2
     end
 
     def achievements_url
-      "http://" + host + ACHIEVEMENTS_PATH
+      'http://' + host + ACHIEVEMENTS_PATH
     end
   end
 end
