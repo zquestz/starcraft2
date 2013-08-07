@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe SC2::Reward do
-  describe '#build_rewards' do
+  describe '.build_rewards' do
     let(:rewards) { SC2::Reward.build_rewards(@raw_reward_data)}
 
     before do
@@ -32,7 +32,7 @@ describe SC2::Reward do
 
     it 'should store the id' do
       @options = {:id => 3}
-      reward.id.should == 3 
+      reward.id.should == 3
     end
 
     it 'should store the icon data' do
