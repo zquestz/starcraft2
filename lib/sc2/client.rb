@@ -21,7 +21,8 @@ module SC2
     end
 
     def achievements_url
-      'http://' + host + ACHIEVEMENTS_PATH
+      current_locale = locale.nil? ? '' : "?locale=#{locale}"
+      "http://" + host + ACHIEVEMENTS_PATH + current_locale
     end
   end
 end

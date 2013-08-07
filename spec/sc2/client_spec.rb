@@ -34,4 +34,12 @@ describe SC2::Client do
       client.achievements.first.class.should == SC2::Achievement
     end
   end
+
+  it "should return achievements in the correct locale" do
+    @options.merge!({:locale => "pt_BR"})
+
+    VCR.use_cassette('achievements') do
+      client.achievements.first.title.should == "TCT Destruidor"
+    end
+  end
 end

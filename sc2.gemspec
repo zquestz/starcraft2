@@ -2,7 +2,7 @@
 Gem::Specification.new do |gem|
   gem.add_dependency 'httparty'
 
-  gem.authors       = ["Josh Ellithorpe"]
+  gem.authors       = ["Josh Ellithorpe", "James Fickel", "Jan Hein Hoogstad"]
   gem.email         = ["quest@mac.com"]
   gem.description   = %q{A small SC2 api wrapper}
   gem.summary       = %q{A small SC2 api wrapper}
@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec', '~> 2.6.0'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'vcr'
-  gem.add_development_dependency 'webmock', '1.12'
+  gem.add_development_dependency 'webmock', '1.11'
 end
