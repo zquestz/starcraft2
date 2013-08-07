@@ -1,0 +1,1 @@
+require File.join('sc2', 'client.rb')
