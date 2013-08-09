@@ -4,11 +4,12 @@ describe SC2::Ladder do
   describe '.initialize' do
 
     let(:id) { 148200 }
-    let(:ladder) { SC2::Ladder.new(id)}
+    let(:host) { 'us.battle.net'}
+    let(:ladder) { SC2::Ladder.new(@raw_ladder_data)}
 
     before do
       VCR.use_cassette('ladder') do
-        @raw_ladder_data = HTTParty.get('http://us.battle.net/api/sc2/ladder/' + id).body
+        @raw_ladder_data = HTTParty.get("http://us.battle.net/api/sc2/ladder/#{id}").body
       end
     end
 

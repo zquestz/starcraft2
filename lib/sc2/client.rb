@@ -19,6 +19,10 @@ module SC2
       Reward.build_rewards(rewards_data)
     end
 
+    def ladder(id)
+      fetch_ladder(host, id)
+    end
+
     private
 
     def achievements_data
@@ -41,8 +45,12 @@ module SC2
       locale.nil? ? '' : "?locale=#{locale}"
     end
 
-    def ladder_url(id)
-      "http://" + host + LADDER_PATH + id
+    def fetch_ladder(host, id)
+      Ladder.new(ladder_data(host,id))
+    end
+
+    def ladder_data(host, id)
+      HTTParty.get("http://" + host + LADDER_PATH + id.to_s).body
     end
   end
 end
