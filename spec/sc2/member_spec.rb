@@ -6,12 +6,6 @@ describe SC2::Member do
     # let(:character) { SC2::Character.new(@options)}
 
     before do
-      VCR.use_cassette('ladder') do
-        @raw_ladder_data = HTTParty.get('http://us.battle.net/api/sc2/ladder/' + id).body
-      end
-    end
-
-    before do
       @options = {}
     end
 
@@ -26,7 +20,7 @@ describe SC2::Member do
 
     it 'should store the points' do
       @options = { points: 1234 }
-      member.join_timestamp.should == 1234
+      member.points.should == 1234
     end
 
     it "should store the wins" do
@@ -51,7 +45,7 @@ describe SC2::Member do
 
     it "should store the favorite race" do
       @options = {:favorite_race => "Protoss"}
-      reward.achievement_id.should == "Protoss"
+      member.favorite_race.should == "Protoss"
     end
   end
 end

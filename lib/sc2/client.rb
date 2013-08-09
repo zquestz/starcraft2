@@ -46,7 +46,7 @@ module SC2
     end
 
     def fetch_ladder(host, id)
-      Ladder.new(ladder_data(host,id))
+      Ladder.build(ladder_data(host,id))
     end
 
     def ladder_data(host, id)

@@ -1,7 +1,7 @@
 module SC2
   class Ladder
     LADDER_PATH = "/api/sc2/ladder/"
-    def initialize(raw_data)
+    def self.build(raw_data)
       data = JSON.parse(raw_data)
       data['ladderMembers'].map do |member|
         member['join_timestamp'] = member.delete('joinTimestamp')
