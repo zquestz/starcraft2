@@ -1,4 +1,4 @@
-module SC2
+module Starcraft2
   class Character
     attr_accessor :id, :realm, :display_name, :clan_name, :clan_tag, :profile_path
 

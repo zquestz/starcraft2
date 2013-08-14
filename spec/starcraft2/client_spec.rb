@@ -1,7 +1,7 @@
 require "spec_helper"
 
-describe SC2::Client do
-  let(:client) { SC2::Client.new(@options)}
+describe Starcraft2::Client do
+  let(:client) { Starcraft2::Client.new(@options)}
 
   before do
     @options = {:host => 'us.battle.net'}
@@ -9,11 +9,11 @@ describe SC2::Client do
 
   context 'url constants' do
     it 'should store the achievements url' do
-      SC2::Client::ACHIEVEMENTS_PATH.should == '/api/sc2/data/achievements'
+      Starcraft2::Client::ACHIEVEMENTS_PATH.should == '/api/sc2/data/achievements'
     end
 
     it 'should store the rewards url' do
-      SC2::Client::REWARDS_PATH.should == '/api/sc2/data/rewards'
+      Starcraft2::Client::REWARDS_PATH.should == '/api/sc2/data/rewards'
     end
   end
 
@@ -36,9 +36,9 @@ describe SC2::Client do
       end
     end
 
-    it 'should return items of type SC2::Achievement' do
+    it 'should return items of type Starcraft2::Achievement' do
       VCR.use_cassette('achievements') do
-        client.achievements.first.class.should == SC2::Achievement
+        client.achievements.first.class.should == Starcraft2::Achievement
       end
     end
 
@@ -58,9 +58,9 @@ describe SC2::Client do
       end
     end
 
-    it 'should return items of type SC2::Reward' do
+    it 'should return items of type Starcraft2::Reward' do
       VCR.use_cassette('rewards') do
-        client.rewards.first.class.should == SC2::Reward
+        client.rewards.first.class.should == Starcraft2::Reward
       end
     end
 
@@ -74,7 +74,6 @@ describe SC2::Client do
   end
 
   describe '.grandmaster_ladder' do
-
     let(:ladder) do
       VCR.use_cassette('grandmaster') do
         client.grandmaster_ladder
@@ -84,13 +83,13 @@ describe SC2::Client do
     it 'should return an array of members' do
       ladder.class.should == Array
       ladder.each do |member|
-        member.class.should == SC2::Member
+        member.class.should == Starcraft2::Member
       end
     end
 
     it 'should build characters within the members' do
       ladder.each do |member|
-        member.character.class.should == SC2::Character
+        member.character.class.should == Starcraft2::Character
       end
     end
 
@@ -105,39 +104,4 @@ describe SC2::Client do
       ladder.first.favorite_race_p1.should == "PROTOSS"
     end
   end
-
-  # describe '.previous_grandmaster_ladder' do
-
-  #   let(:ladder) do
-  #     VCR.use_cassette('previous_grandmaster') do
-  #       client.previous_grandmaster_ladder
-  #     end
-  #   end
-
-  #   it 'should return an array of members' do
-  #     ladder.class.should == Array
-  #     ladder.each do |member|
-  #       member.class.should == SC2::Member
-  #     end
-  #   end
-
-  #   it 'should build characters within the members' do
-  #     pending
-
-  #     ladder.each do |member|
-  #       member.character.class.should == SC2::Character
-  #     end
-  #   end
-
-  #   it 'should return the first grandmaster' do
-  #     # ladder.first.character.should == ""
-  #     ladder.first.points.should == ""
-  #     ladder.first.wins.should == ""
-  #     ladder.first.losses.should == ""
-  #     ladder.first.join_timestamp.should == ""
-  #     ladder.first.highest_rank.should == ""
-  #     ladder.first.previous_rank.should == ""
-  #     ladder.first.favorite_race_p1.should == ""
-  #   end
-  # end
 end

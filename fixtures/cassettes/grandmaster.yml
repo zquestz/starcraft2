@@ -1,0 +1,1135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://us.battle.net/api/sc2/ladder/grandmaster
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Aug 2013 03:50:27 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Language:
+      - en-US
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"ladderMembers\" : [ {\n    \"character\" : {\n      \"id\"
+        : 2778732,\n      \"realm\" : 1,\n      \"displayName\" : \"lIlIlIlIlIlI\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2778732/1/lIlIlIlIlIlI/\"\n    },\n    \"joinTimestamp\" : 1373859935,\n
+        \   \"points\" : 2352.0,\n    \"wins\" : 249,\n    \"losses\" : 101,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 11,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 902213,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"Suppy\",\n      \"clanName\" : \"Evil Geniuses\",\n      \"clanTag\" :
+        \"EG\",\n      \"profilePath\" : \"/profile/902213/1/Suppy/\"\n    },\n    \"joinTimestamp\"
+        : 1371798640,\n    \"points\" : 2207.0,\n    \"wins\" : 229,\n    \"losses\"
+        : 145,\n    \"highestRank\" : 1,\n    \"previousRank\" : 2,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 288081,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Minigun\",\n      \"clanName\" : \"ROOT Gaming\",\n
+        \     \"clanTag\" : \"ROOT\",\n      \"profilePath\" : \"/profile/288081/1/Minigun/\"\n
+        \   },\n    \"joinTimestamp\" : 1373700705,\n    \"points\" : 2189.0,\n    \"wins\"
+        : 242,\n    \"losses\" : 158,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 5,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4070222,\n      \"realm\" : 1,\n      \"displayName\" : \"Jig\",\n
+        \     \"clanName\" : \"Team Killing Spree\",\n      \"clanTag\" : \"TKS\",\n
+        \     \"profilePath\" : \"/profile/4070222/1/Jig/\"\n    },\n    \"joinTimestamp\"
+        : 1374076671,\n    \"points\" : 2155.0,\n    \"wins\" : 163,\n    \"losses\"
+        : 100,\n    \"highestRank\" : 3,\n    \"previousRank\" : 15,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 3949344,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"IIIIlllIIIIl\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/3949344/1/IIIIlllIIIIl/\"\n
+        \   },\n    \"joinTimestamp\" : 1375708710,\n    \"points\" : 2144.0,\n    \"wins\"
+        : 129,\n    \"losses\" : 83,\n    \"highestRank\" : 5,\n    \"previousRank\"
+        : 42,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 312838,\n      \"realm\" : 1,\n      \"displayName\" : \"GoswseR\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/312838/1/GoswseR/\"\n    },\n    \"joinTimestamp\" : 1375887610,\n
+        \   \"points\" : 2136.0,\n    \"wins\" : 154,\n    \"losses\" : 102,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n
+        \   \"character\" : {\n      \"id\" : 1200256,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"ROCCAT\",\n      \"clanName\" : \"Quantic Gaming\",\n      \"clanTag\"
+        : \"Qntc\",\n      \"profilePath\" : \"/profile/1200256/1/ROCCAT/\"\n    },\n
+        \   \"joinTimestamp\" : 1372615323,\n    \"points\" : 2130.0,\n    \"wins\"
+        : 251,\n    \"losses\" : 158,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 19,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4220329,\n      \"realm\" : 1,\n      \"displayName\" : \"ZeroReakcji\",\n
+        \     \"clanName\" : \"BeneWarsie\",\n      \"clanTag\" : \"1200ms\",\n      \"profilePath\"
+        : \"/profile/4220329/1/ZeroReakcji/\"\n    },\n    \"joinTimestamp\" : 1373509633,\n
+        \   \"points\" : 2126.0,\n    \"wins\" : 168,\n    \"losses\" : 85,\n    \"highestRank\"
+        : 3,\n    \"previousRank\" : 9,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4734152,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"lIIIlIIlllIl\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/4734152/1/lIIIlIIlllIl/\"\n    },\n
+        \   \"joinTimestamp\" : 1374826913,\n    \"points\" : 2098.0,\n    \"wins\"
+        : 130,\n    \"losses\" : 57,\n    \"highestRank\" : 4,\n    \"previousRank\"
+        : 16,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3058160,\n      \"realm\" : 1,\n      \"displayName\" : \"Dragon\",\n
+        \     \"clanName\" : \"Clarity Gaming\",\n      \"clanTag\" : \"CG\",\n      \"profilePath\"
+        : \"/profile/3058160/1/Dragon/\"\n    },\n    \"joinTimestamp\" : 1375034415,\n
+        \   \"points\" : 2095.0,\n    \"wins\" : 299,\n    \"losses\" : 221,\n    \"highestRank\"
+        : 5,\n    \"previousRank\" : 6,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 3387981,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"KoNtiNuE\",\n      \"clanName\" : \"Latest and Greatest
+        Gaming\",\n      \"clanTag\" : \"lLaGl\",\n      \"profilePath\" : \"/profile/3387981/1/KoNtiNuE/\"\n
+        \   },\n    \"joinTimestamp\" : 1371452828,\n    \"points\" : 2090.0,\n    \"wins\"
+        : 301,\n    \"losses\" : 221,\n    \"highestRank\" : 6,\n    \"previousRank\"
+        : 17,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2575821,\n      \"realm\" : 1,\n      \"displayName\" : \"HuKRC\",\n
+        \     \"clanName\" : \"Evil Geniuses\",\n      \"clanTag\" : \"EG\",\n      \"profilePath\"
+        : \"/profile/2575821/1/HuKRC/\"\n    },\n    \"joinTimestamp\" : 1371927774,\n
+        \   \"points\" : 2074.0,\n    \"wins\" : 166,\n    \"losses\" : 103,\n    \"highestRank\"
+        : 2,\n    \"previousRank\" : 11,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2553612,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"puCK\",\n      \"clanName\" : \"ROOT Gaming\",\n
+        \     \"clanTag\" : \"ROOT\",\n      \"profilePath\" : \"/profile/2553612/1/puCK/\"\n
+        \   },\n    \"joinTimestamp\" : 1371484600,\n    \"points\" : 2072.0,\n    \"wins\"
+        : 252,\n    \"losses\" : 158,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 8,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 789884,\n      \"realm\" : 1,\n      \"displayName\" : \"SeleCT\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/789884/1/SeleCT/\"\n    },\n    \"joinTimestamp\" : 1371494855,\n
+        \   \"points\" : 2068.0,\n    \"wins\" : 457,\n    \"losses\" : 316,\n    \"highestRank\"
+        : 2,\n    \"previousRank\" : 9,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2024036,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"State\",\n      \"clanName\" : \"ROOT Gaming\",\n
+        \     \"clanTag\" : \"ROOT\",\n      \"profilePath\" : \"/profile/2024036/1/State/\"\n
+        \   },\n    \"joinTimestamp\" : 1373743738,\n    \"points\" : 2065.0,\n    \"wins\"
+        : 149,\n    \"losses\" : 83,\n    \"highestRank\" : 11,\n    \"previousRank\"
+        : 33,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4174984,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4174984/1/llllllllllll/\"\n    },\n    \"joinTimestamp\" : 1371465799,\n
+        \   \"points\" : 2065.0,\n    \"wins\" : 106,\n    \"losses\" : 71,\n    \"highestRank\"
+        : 14,\n    \"previousRank\" : 66,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 1341513,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"rebOrn\",\n      \"clanName\" : \"Team SCA\",\n
+        \     \"clanTag\" : \"SCA\",\n      \"profilePath\" : \"/profile/1341513/1/rebOrn/\"\n
+        \   },\n    \"joinTimestamp\" : 1371452766,\n    \"points\" : 2061.0,\n    \"wins\"
+        : 211,\n    \"losses\" : 162,\n    \"highestRank\" : 14,\n    \"previousRank\"
+        : 32,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4733954,\n      \"realm\" : 1,\n      \"displayName\" : \"Pyx\",\n
+        \     \"clanName\" : \"Our Gaming Legacy\",\n      \"clanTag\" : \"oGL\",\n
+        \     \"profilePath\" : \"/profile/4733954/1/Pyx/\"\n    },\n    \"joinTimestamp\"
+        : 1371472061,\n    \"points\" : 2059.0,\n    \"wins\" : 107,\n    \"losses\"
+        : 58,\n    \"highestRank\" : 2,\n    \"previousRank\" : 21,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 1614769,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Sonic\",\n      \"clanName\" : \"Core Professional
+        Gaming Team\",\n      \"clanTag\" : \"Core\",\n      \"profilePath\" : \"/profile/1614769/1/Sonic/\"\n
+        \   },\n    \"joinTimestamp\" : 1371493594,\n    \"points\" : 2056.0,\n    \"wins\"
+        : 182,\n    \"losses\" : 140,\n    \"highestRank\" : 14,\n    \"previousRank\"
+        : 20,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1102980,\n      \"realm\" : 1,\n      \"displayName\" : \"ppgBubbles\",\n
+        \     \"clanName\" : \"Quantic Gaming\",\n      \"clanTag\" : \"Qntc\",\n
+        \     \"profilePath\" : \"/profile/1102980/1/ppgBubbles/\"\n    },\n    \"joinTimestamp\"
+        : 1371454350,\n    \"points\" : 2053.0,\n    \"wins\" : 294,\n    \"losses\"
+        : 233,\n    \"highestRank\" : 15,\n    \"previousRank\" : 62,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 694288,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"cSaroVati\",\n      \"clanName\" : \"Clarity
+        Gaming\",\n      \"clanTag\" : \"CG\",\n      \"profilePath\" : \"/profile/694288/1/cSaroVati/\"\n
+        \   },\n    \"joinTimestamp\" : 1375672444,\n    \"points\" : 2047.0,\n    \"wins\"
+        : 200,\n    \"losses\" : 132,\n    \"highestRank\" : 11,\n    \"previousRank\"
+        : 16,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 992628,\n      \"realm\" : 1,\n      \"displayName\" : \"JonSnow\",\n
+        \     \"clanName\" : \"Core Professional Gaming Team\",\n      \"clanTag\"
+        : \"Core\",\n      \"profilePath\" : \"/profile/992628/1/JonSnow/\"\n    },\n
+        \   \"joinTimestamp\" : 1372099431,\n    \"points\" : 2046.0,\n    \"wins\"
+        : 311,\n    \"losses\" : 242,\n    \"highestRank\" : 21,\n    \"previousRank\"
+        : 59,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1158342,\n      \"realm\" : 1,\n      \"displayName\" : \"RuFF\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/1158342/1/RuFF/\"\n    },\n    \"joinTimestamp\" : 1375667646,\n
+        \   \"points\" : 2045.0,\n    \"wins\" : 136,\n    \"losses\" : 97,\n    \"highestRank\"
+        : 23,\n    \"previousRank\" : 48,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2182304,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"hahaha\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/2182304/1/hahaha/\"\n    },\n
+        \   \"joinTimestamp\" : 1375232576,\n    \"points\" : 2043.0,\n    \"wins\"
+        : 155,\n    \"losses\" : 108,\n    \"highestRank\" : 19,\n    \"previousRank\"
+        : 52,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2997983,\n      \"realm\" : 1,\n      \"displayName\" : \"Petraeus\",\n
+        \     \"clanName\" : \"Frenetic Array\",\n      \"clanTag\" : \"fray\",\n
+        \     \"profilePath\" : \"/profile/2997983/1/Petraeus/\"\n    },\n    \"joinTimestamp\"
+        : 1371454922,\n    \"points\" : 2039.0,\n    \"wins\" : 511,\n    \"losses\"
+        : 352,\n    \"highestRank\" : 13,\n    \"previousRank\" : 27,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 3285610,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"LGIMMvp\",\n      \"clanName\" : \"Incredible
+        Miracle LG\",\n      \"clanTag\" : \"TeamIM\",\n      \"profilePath\" : \"/profile/3285610/1/LGIMMvp/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453044,\n    \"points\" : 2037.0,\n    \"wins\"
+        : 94,\n    \"losses\" : 54,\n    \"highestRank\" : 9,\n    \"previousRank\"
+        : 29,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2743223,\n      \"realm\" : 1,\n      \"displayName\" : \"hellokitty\",\n
+        \     \"clanName\" : \"Fnatic\",\n      \"clanTag\" : \"Fnatc\",\n      \"profilePath\"
+        : \"/profile/2743223/1/hellokitty/\"\n    },\n    \"joinTimestamp\" : 1372613402,\n
+        \   \"points\" : 2037.0,\n    \"wins\" : 199,\n    \"losses\" : 138,\n    \"highestRank\"
+        : 5,\n    \"previousRank\" : 14,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 3923162,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Kane\",\n      \"clanName\" : \"ROOT Gaming\",\n
+        \     \"clanTag\" : \"ROOT\",\n      \"profilePath\" : \"/profile/3923162/1/Kane/\"\n
+        \   },\n    \"joinTimestamp\" : 1376193855,\n    \"points\" : 2033.0,\n    \"wins\"
+        : 223,\n    \"losses\" : 136,\n    \"highestRank\" : 4,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\"
+        : 4163302,\n      \"realm\" : 1,\n      \"displayName\" : \"pal\",\n      \"clanName\"
+        : \"MaxFloPlaY\",\n      \"clanTag\" : \"MaxFlo\",\n      \"profilePath\"
+        : \"/profile/4163302/1/pal/\"\n    },\n    \"joinTimestamp\" : 1371464092,\n
+        \   \"points\" : 2031.0,\n    \"wins\" : 92,\n    \"losses\" : 54,\n    \"highestRank\"
+        : 24,\n    \"previousRank\" : 47,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 693099,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"IlIlIIllIlIl\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/693099/1/IlIlIIllIlIl/\"\n    },\n
+        \   \"joinTimestamp\" : 1375084919,\n    \"points\" : 2024.0,\n    \"wins\"
+        : 128,\n    \"losses\" : 52,\n    \"highestRank\" : 27,\n    \"previousRank\"
+        : 47,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2777213,\n      \"realm\" : 1,\n      \"displayName\" : \"Lightning\",\n
+        \     \"clanName\" : \"Team SCA\",\n      \"clanTag\" : \"SCA\",\n      \"profilePath\"
+        : \"/profile/2777213/1/Lightning/\"\n    },\n    \"joinTimestamp\" : 1371453266,\n
+        \   \"points\" : 2006.0,\n    \"wins\" : 238,\n    \"losses\" : 175,\n    \"highestRank\"
+        : 21,\n    \"previousRank\" : 26,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2060165,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Astrea\",\n      \"clanName\" : \"Team SCA\",\n
+        \     \"clanTag\" : \"SCA\",\n      \"profilePath\" : \"/profile/2060165/1/Astrea/\"\n
+        \   },\n    \"joinTimestamp\" : 1373875791,\n    \"points\" : 2006.0,\n    \"wins\"
+        : 231,\n    \"losses\" : 145,\n    \"highestRank\" : 10,\n    \"previousRank\"
+        : 21,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2871224,\n      \"realm\" : 1,\n      \"displayName\" : \"sWs\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2871224/1/sWs/\"\n    },\n    \"joinTimestamp\" : 1373063066,\n
+        \   \"points\" : 2005.0,\n    \"wins\" : 348,\n    \"losses\" : 267,\n    \"highestRank\"
+        : 27,\n    \"previousRank\" : 37,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 4246338,\n      \"realm\" :
+        1,\n      \"displayName\" : \"ABomB\",\n      \"clanName\" : \"mYinsanityEU\",\n
+        \     \"clanTag\" : \"mYins\",\n      \"profilePath\" : \"/profile/4246338/1/ABomB/\"\n
+        \   },\n    \"joinTimestamp\" : 1374892537,\n    \"points\" : 2003.0,\n    \"wins\"
+        : 132,\n    \"losses\" : 84,\n    \"highestRank\" : 18,\n    \"previousRank\"
+        : 38,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2884793,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2884793/1/llllllllll/\"\n    },\n    \"joinTimestamp\" : 1375600690,\n
+        \   \"points\" : 1999.0,\n    \"wins\" : 94,\n    \"losses\" : 28,\n    \"highestRank\"
+        : 17,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 429170,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"Drunkenboi\",\n      \"clanName\" : \"Youngmoney\",\n      \"clanTag\"
+        : \"YMCMB\",\n      \"profilePath\" : \"/profile/429170/1/Drunkenboi/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453090,\n    \"points\" : 1997.0,\n    \"wins\"
+        : 156,\n    \"losses\" : 112,\n    \"highestRank\" : 12,\n    \"previousRank\"
+        : 14,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4854996,\n      \"realm\" : 1,\n      \"displayName\" : \"KaWiKaAkirA\",\n
+        \     \"clanName\" : \"SC2Strategy\",\n      \"clanTag\" : \"SCS\",\n      \"profilePath\"
+        : \"/profile/4854996/1/KaWiKaAkirA/\"\n    },\n    \"joinTimestamp\" : 1374807634,\n
+        \   \"points\" : 1992.0,\n    \"wins\" : 113,\n    \"losses\" : 61,\n    \"highestRank\"
+        : 28,\n    \"previousRank\" : 129,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 950222,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"Rob\",\n      \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/950222/1/Rob/\"\n    },\n    \"joinTimestamp\" : 1371455191,\n
+        \   \"points\" : 1992.0,\n    \"wins\" : 507,\n    \"losses\" : 433,\n    \"highestRank\"
+        : 29,\n    \"previousRank\" : 70,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 4734629,\n      \"realm\" :
+        1,\n      \"displayName\" : \"NanoClouD\",\n      \"clanName\" : \"Core Professional
+        Gaming Team\",\n      \"clanTag\" : \"Core\",\n      \"profilePath\" : \"/profile/4734629/1/NanoClouD/\"\n
+        \   },\n    \"joinTimestamp\" : 1372946221,\n    \"points\" : 1991.0,\n    \"wins\"
+        : 178,\n    \"losses\" : 118,\n    \"highestRank\" : 20,\n    \"previousRank\"
+        : 56,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1852082,\n      \"realm\" : 1,\n      \"displayName\" : \"MaSsan\",\n
+        \     \"clanName\" : \"Quantic Gaming\",\n      \"clanTag\" : \"Qntc\",\n
+        \     \"profilePath\" : \"/profile/1852082/1/MaSsan/\"\n    },\n    \"joinTimestamp\"
+        : 1371453140,\n    \"points\" : 1990.0,\n    \"wins\" : 434,\n    \"losses\"
+        : 369,\n    \"highestRank\" : 30,\n    \"previousRank\" : 54,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 3051386,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Siphonn\",\n      \"clanName\" : \"Clarity
+        Gaming\",\n      \"clanTag\" : \"CG\",\n      \"profilePath\" : \"/profile/3051386/1/Siphonn/\"\n
+        \   },\n    \"joinTimestamp\" : 1374077037,\n    \"points\" : 1990.0,\n    \"wins\"
+        : 383,\n    \"losses\" : 328,\n    \"highestRank\" : 17,\n    \"previousRank\"
+        : 22,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 373444,\n      \"realm\" : 1,\n      \"displayName\" : \"iNcontroL\",\n
+        \     \"clanName\" : \"Evil Geniuses\",\n      \"clanTag\" : \"EG\",\n      \"profilePath\"
+        : \"/profile/373444/1/iNcontroL/\"\n    },\n    \"joinTimestamp\" : 1372467973,\n
+        \   \"points\" : 1989.0,\n    \"wins\" : 299,\n    \"losses\" : 263,\n    \"highestRank\"
+        : 18,\n    \"previousRank\" : 54,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2045775,\n      \"realm\" :
+        1,\n      \"displayName\" : \"OneTrickPony\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/2045775/1/OneTrickPony/\"\n
+        \   },\n    \"joinTimestamp\" : 1371508409,\n    \"points\" : 1977.0,\n    \"wins\"
+        : 112,\n    \"losses\" : 89,\n    \"highestRank\" : 27,\n    \"previousRank\"
+        : 45,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1047968,\n      \"realm\" : 1,\n      \"displayName\" : \"VTWhiplash\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/1047968/1/VTWhiplash/\"\n    },\n    \"joinTimestamp\" : 1373138524,\n
+        \   \"points\" : 1977.0,\n    \"wins\" : 110,\n    \"losses\" : 62,\n    \"highestRank\"
+        : 20,\n    \"previousRank\" : 28,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 3268843,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Kreos\",\n      \"clanName\" : \"Team Gravity\",\n
+        \     \"clanTag\" : \"Grav\",\n      \"profilePath\" : \"/profile/3268843/1/Kreos/\"\n
+        \   },\n    \"joinTimestamp\" : 1372785911,\n    \"points\" : 1972.0,\n    \"wins\"
+        : 477,\n    \"losses\" : 421,\n    \"highestRank\" : 29,\n    \"previousRank\"
+        : 105,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2840641,\n      \"realm\" : 1,\n      \"displayName\" : \"DeMusliMRC\",\n
+        \     \"clanName\" : \"Evil Geniuses\",\n      \"clanTag\" : \"EG\",\n      \"profilePath\"
+        : \"/profile/2840641/1/DeMusliMRC/\"\n    },\n    \"joinTimestamp\" : 1371495692,\n
+        \   \"points\" : 1964.0,\n    \"wins\" : 271,\n    \"losses\" : 159,\n    \"highestRank\"
+        : 8,\n    \"previousRank\" : 41,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2234495,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Darkness\",\n      \"clanName\" : \"Official Team
+        NrG\",\n      \"clanTag\" : \"lNrGl\",\n      \"profilePath\" : \"/profile/2234495/1/Darkness/\"\n
+        \   },\n    \"joinTimestamp\" : 1373228483,\n    \"points\" : 1958.0,\n    \"wins\"
+        : 187,\n    \"losses\" : 145,\n    \"highestRank\" : 47,\n    \"previousRank\"
+        : 105,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 3980201,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"JimRising\",\n      \"clanName\" : \"Kaos Latin Gamers\",\n      \"clanTag\"
+        : \"KLG\",\n      \"profilePath\" : \"/profile/3980201/1/JimRising/\"\n    },\n
+        \   \"joinTimestamp\" : 1371454679,\n    \"points\" : 1958.0,\n    \"wins\"
+        : 131,\n    \"losses\" : 108,\n    \"highestRank\" : 31,\n    \"previousRank\"
+        : 50,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3924187,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3924187/1/llllllllllll/\"\n    },\n    \"joinTimestamp\" : 1375681486,\n
+        \   \"points\" : 1956.0,\n    \"wins\" : 151,\n    \"losses\" : 119,\n    \"highestRank\"
+        : 38,\n    \"previousRank\" : 68,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 281892,\n      \"realm\" : 2,\n
+        \     \"displayName\" : \"CoRRupT\",\n      \"clanName\" : \"International
+        Xtreme Oza's\",\n      \"clanTag\" : \"IxO\",\n      \"profilePath\" : \"/profile/281892/2/CoRRupT/\"\n
+        \   },\n    \"joinTimestamp\" : 1374723410,\n    \"points\" : 1955.0,\n    \"wins\"
+        : 141,\n    \"losses\" : 92,\n    \"highestRank\" : 35,\n    \"previousRank\"
+        : 53,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3310952,\n      \"realm\" : 1,\n      \"displayName\" : \"intense\",\n
+        \     \"clanName\" : \"Love your girlfriend\",\n      \"clanTag\" : \"LYGF\",\n
+        \     \"profilePath\" : \"/profile/3310952/1/intense/\"\n    },\n    \"joinTimestamp\"
+        : 1371489802,\n    \"points\" : 1951.0,\n    \"wins\" : 266,\n    \"losses\"
+        : 234,\n    \"highestRank\" : 22,\n    \"previousRank\" : 61,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 3514871,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"FIGHTO\",\n      \"clanName\" : \"Game 3\",\n
+        \     \"clanTag\" : \"g3x\",\n      \"profilePath\" : \"/profile/3514871/1/FIGHTO/\"\n
+        \   },\n    \"joinTimestamp\" : 1371452556,\n    \"points\" : 1947.0,\n    \"wins\"
+        : 142,\n    \"losses\" : 116,\n    \"highestRank\" : 44,\n    \"previousRank\"
+        : 68,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 564358,\n      \"realm\" : 1,\n      \"displayName\" : \"Jimmy\",\n
+        \     \"clanName\" : \"Chronic Facture\",\n      \"clanTag\" : \"xCF\",\n
+        \     \"profilePath\" : \"/profile/564358/1/Jimmy/\"\n    },\n    \"joinTimestamp\"
+        : 1375470002,\n    \"points\" : 1943.0,\n    \"wins\" : 234,\n    \"losses\"
+        : 190,\n    \"highestRank\" : 27,\n    \"previousRank\" : 88,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 4849789,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"IllIIllIIllI\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/4849789/1/IllIIllIIllI/\"\n
+        \   },\n    \"joinTimestamp\" : 1375053440,\n    \"points\" : 1941.0,\n    \"wins\"
+        : 138,\n    \"losses\" : 75,\n    \"highestRank\" : 20,\n    \"previousRank\"
+        : 46,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2308717,\n      \"realm\" : 1,\n      \"displayName\" : \"Skipper\",\n
+        \     \"clanName\" : \"sMi\",\n      \"clanTag\" : \"sMi\",\n      \"profilePath\"
+        : \"/profile/2308717/1/Skipper/\"\n    },\n    \"joinTimestamp\" : 1371496442,\n
+        \   \"points\" : 1937.0,\n    \"wins\" : 264,\n    \"losses\" : 221,\n    \"highestRank\"
+        : 32,\n    \"previousRank\" : 53,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 391090,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"Bails\",\n      \"clanName\" : \"Clarity Gaming\",\n      \"clanTag\"
+        : \"CG\",\n      \"profilePath\" : \"/profile/391090/1/Bails/\"\n    },\n
+        \   \"joinTimestamp\" : 1371452679,\n    \"points\" : 1919.0,\n    \"wins\"
+        : 142,\n    \"losses\" : 114,\n    \"highestRank\" : 38,\n    \"previousRank\"
+        : 78,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4705446,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4705446/1/llllllllllll/\"\n    },\n    \"joinTimestamp\" : 1371488629,\n
+        \   \"points\" : 1918.0,\n    \"wins\" : 82,\n    \"losses\" : 59,\n    \"highestRank\"
+        : 32,\n    \"previousRank\" : 65,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 693604,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"IdrA\",\n      \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/693604/1/IdrA/\"\n    },\n    \"joinTimestamp\" : 1376084057,\n
+        \   \"points\" : 1913.0,\n    \"wins\" : 228,\n    \"losses\" : 189,\n    \"highestRank\"
+        : 5,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n
+        \   \"character\" : {\n      \"id\" : 2777129,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"ByRada\",\n      \"clanName\" : \"Isurus Gaming HyperX\",\n      \"clanTag\"
+        : \"ISGHX\",\n      \"profilePath\" : \"/profile/2777129/1/ByRada/\"\n    },\n
+        \   \"joinTimestamp\" : 1373060869,\n    \"points\" : 1911.0,\n    \"wins\"
+        : 160,\n    \"losses\" : 128,\n    \"highestRank\" : 38,\n    \"previousRank\"
+        : 78,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2615978,\n      \"realm\" : 1,\n      \"displayName\" : \"CarrotTop\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2615978/1/CarrotTop/\"\n    },\n    \"joinTimestamp\" : 1371453155,\n
+        \   \"points\" : 1910.0,\n    \"wins\" : 126,\n    \"losses\" : 97,\n    \"highestRank\"
+        : 20,\n    \"previousRank\" : 33,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 499891,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"owmygroin\",\n      \"clanName\" : \"Latest and Greatest Gaming\",\n      \"clanTag\"
+        : \"lLaGl\",\n      \"profilePath\" : \"/profile/499891/1/owmygroin/\"\n    },\n
+        \   \"joinTimestamp\" : 1373480886,\n    \"points\" : 1909.0,\n    \"wins\"
+        : 519,\n    \"losses\" : 463,\n    \"highestRank\" : 48,\n    \"previousRank\"
+        : 54,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4162671,\n      \"realm\" : 1,\n      \"displayName\" : \"Serenity\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4162671/1/Serenity/\"\n    },\n    \"joinTimestamp\" : 1371453524,\n
+        \   \"points\" : 1908.0,\n    \"wins\" : 438,\n    \"losses\" : 384,\n    \"highestRank\"
+        : 34,\n    \"previousRank\" : 49,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3584165,\n      \"realm\" :
+        1,\n      \"displayName\" : \"IlllIlllIIll\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/3584165/1/IlllIlllIIll/\"\n
+        \   },\n    \"joinTimestamp\" : 1371476413,\n    \"points\" : 1895.0,\n    \"wins\"
+        : 171,\n    \"losses\" : 137,\n    \"highestRank\" : 52,\n    \"previousRank\"
+        : 68,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2657249,\n      \"realm\" : 1,\n      \"displayName\" : \"AiuR\",\n
+        \     \"clanName\" : \"Team SCA\",\n      \"clanTag\" : \"SCA\",\n      \"profilePath\"
+        : \"/profile/2657249/1/AiuR/\"\n    },\n    \"joinTimestamp\" : 1374996301,\n
+        \   \"points\" : 1893.0,\n    \"wins\" : 268,\n    \"losses\" : 212,\n    \"highestRank\"
+        : 33,\n    \"previousRank\" : 48,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3249198,\n      \"realm\" :
+        1,\n      \"displayName\" : \"SKBS\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/3249198/1/SKBS/\"\n    },\n    \"joinTimestamp\"
+        : 1372527037,\n    \"points\" : 1888.0,\n    \"wins\" : 119,\n    \"losses\"
+        : 68,\n    \"highestRank\" : 38,\n    \"previousRank\" : 72,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 867686,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"RuFF\",\n      \"clanName\" : \"Team oGaming\",\n
+        \     \"clanTag\" : \"oG\",\n      \"profilePath\" : \"/profile/867686/1/RuFF/\"\n
+        \   },\n    \"joinTimestamp\" : 1373926868,\n    \"points\" : 1884.0,\n    \"wins\"
+        : 562,\n    \"losses\" : 513,\n    \"highestRank\" : 33,\n    \"previousRank\"
+        : 99,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2833044,\n      \"realm\" : 1,\n      \"displayName\" : \"iloveKrnx\",\n
+        \     \"clanName\" : \"Too much SWAG\",\n      \"clanTag\" : \"SWAG1\",\n
+        \     \"profilePath\" : \"/profile/2833044/1/iloveKrnx/\"\n    },\n    \"joinTimestamp\"
+        : 1375066107,\n    \"points\" : 1881.0,\n    \"wins\" : 143,\n    \"losses\"
+        : 77,\n    \"highestRank\" : 57,\n    \"previousRank\" : 162,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 1585728,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Soulquest\",\n      \"clanName\" : \"Impulse
+        eSports\",\n      \"clanTag\" : \"iMp\",\n      \"profilePath\" : \"/profile/1585728/1/Soulquest/\"\n
+        \   },\n    \"joinTimestamp\" : 1373165409,\n    \"points\" : 1872.0,\n    \"wins\"
+        : 274,\n    \"losses\" : 244,\n    \"highestRank\" : 68,\n    \"previousRank\"
+        : 123,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 677001,\n      \"realm\" : 1,\n      \"displayName\" : \"RSM\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/677001/1/RSM/\"\n    },\n    \"joinTimestamp\" : 1374844499,\n
+        \   \"points\" : 1869.0,\n    \"wins\" : 142,\n    \"losses\" : 118,\n    \"highestRank\"
+        : 64,\n    \"previousRank\" : 91,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4069375,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"llllllllllll\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/4069375/1/llllllllllll/\"\n    },\n
+        \   \"joinTimestamp\" : 1375874576,\n    \"points\" : 1866.0,\n    \"wins\"
+        : 82,\n    \"losses\" : 38,\n    \"highestRank\" : 45,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\"
+        : 3458454,\n      \"realm\" : 1,\n      \"displayName\" : \"Zeth\",\n      \"clanName\"
+        : \"Cascade 1xBet team\",\n      \"clanTag\" : \"cSc1\",\n      \"profilePath\"
+        : \"/profile/3458454/1/Zeth/\"\n    },\n    \"joinTimestamp\" : 1371495813,\n
+        \   \"points\" : 1864.0,\n    \"wins\" : 147,\n    \"losses\" : 115,\n    \"highestRank\"
+        : 50,\n    \"previousRank\" : 72,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 318422,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"LzGaMeR\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/318422/1/LzGaMeR/\"\n    },\n
+        \   \"joinTimestamp\" : 1374960253,\n    \"points\" : 1862.0,\n    \"wins\"
+        : 182,\n    \"losses\" : 158,\n    \"highestRank\" : 62,\n    \"previousRank\"
+        : 111,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 414221,\n      \"realm\" : 1,\n      \"displayName\" : \"TTOne\",\n
+        \     \"clanName\" : \"me wanna some nerd blood\",\n      \"clanTag\" : \"TT1\",\n
+        \     \"profilePath\" : \"/profile/414221/1/TTOne/\"\n    },\n    \"joinTimestamp\"
+        : 1375581939,\n    \"points\" : 1855.0,\n    \"wins\" : 168,\n    \"losses\"
+        : 128,\n    \"highestRank\" : 40,\n    \"previousRank\" : 60,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 2334829,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Semper\",\n      \"clanName\" : \"Team Gravity\",\n
+        \     \"clanTag\" : \"Grav\",\n      \"profilePath\" : \"/profile/2334829/1/Semper/\"\n
+        \   },\n    \"joinTimestamp\" : 1371482292,\n    \"points\" : 1855.0,\n    \"wins\"
+        : 78,\n    \"losses\" : 66,\n    \"highestRank\" : 69,\n    \"previousRank\"
+        : 127,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4649430,\n      \"realm\" : 1,\n      \"displayName\" : \"HTOLuigi\",\n
+        \     \"clanName\" : \"Love your girlfriend\",\n      \"clanTag\" : \"LYGF\",\n
+        \     \"profilePath\" : \"/profile/4649430/1/HTOLuigi/\"\n    },\n    \"joinTimestamp\"
+        : 1376185550,\n    \"points\" : 1854.0,\n    \"wins\" : 112,\n    \"losses\"
+        : 86,\n    \"highestRank\" : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 3203375,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"HTOMario\",\n      \"clanName\" : \"Love your
+        girlfriend\",\n      \"clanTag\" : \"LYGF\",\n      \"profilePath\" : \"/profile/3203375/1/HTOMario/\"\n
+        \   },\n    \"joinTimestamp\" : 1372213692,\n    \"points\" : 1851.0,\n    \"wins\"
+        : 283,\n    \"losses\" : 230,\n    \"highestRank\" : 54,\n    \"previousRank\"
+        : 118,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 569266,\n      \"realm\" : 1,\n      \"displayName\" : \"Poo\",\n
+        \     \"clanName\" : \"compLexity\",\n      \"clanTag\" : \"coL\",\n      \"profilePath\"
+        : \"/profile/569266/1/Poo/\"\n    },\n    \"joinTimestamp\" : 1371453826,\n
+        \   \"points\" : 1850.0,\n    \"wins\" : 279,\n    \"losses\" : 243,\n    \"highestRank\"
+        : 33,\n    \"previousRank\" : 58,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3732577,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Adonminus\",\n      \"clanName\" : \"Cascade
+        1xBet team\",\n      \"clanTag\" : \"cSc1\",\n      \"profilePath\" : \"/profile/3732577/1/Adonminus/\"\n
+        \   },\n    \"joinTimestamp\" : 1376134763,\n    \"points\" : 1844.0,\n    \"wins\"
+        : 143,\n    \"losses\" : 98,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3750477,\n      \"realm\" : 1,\n      \"displayName\" : \"XionS\",\n
+        \     \"clanName\" : \"Xtreme Professional Gaming\",\n      \"clanTag\" :
+        \"XPGe\",\n      \"profilePath\" : \"/profile/3750477/1/XionS/\"\n    },\n
+        \   \"joinTimestamp\" : 1374599859,\n    \"points\" : 1842.0,\n    \"wins\"
+        : 240,\n    \"losses\" : 205,\n    \"highestRank\" : 37,\n    \"previousRank\"
+        : 107,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 389855,\n      \"realm\" : 1,\n      \"displayName\" : \"Wannabecool\",\n
+        \     \"clanName\" : \"Core Professional Gaming Team\",\n      \"clanTag\"
+        : \"Core\",\n      \"profilePath\" : \"/profile/389855/1/Wannabecool/\"\n
+        \   },\n    \"joinTimestamp\" : 1371454344,\n    \"points\" : 1842.0,\n    \"wins\"
+        : 231,\n    \"losses\" : 203,\n    \"highestRank\" : 71,\n    \"previousRank\"
+        : 138,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 4462289,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"IIIIIIII\",\n      \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4462289/1/IIIIIIII/\"\n    },\n    \"joinTimestamp\" : 1375642435,\n
+        \   \"points\" : 1841.0,\n    \"wins\" : 176,\n    \"losses\" : 103,\n    \"highestRank\"
+        : 68,\n    \"previousRank\" : 88,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4729263,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Avilo\",\n      \"clanName\" : \"FRITTZ\",\n      \"clanTag\"
+        : \"FRITTZ\",\n      \"profilePath\" : \"/profile/4729263/1/Avilo/\"\n    },\n
+        \   \"joinTimestamp\" : 1375409592,\n    \"points\" : 1841.0,\n    \"wins\"
+        : 179,\n    \"losses\" : 131,\n    \"highestRank\" : 61,\n    \"previousRank\"
+        : 84,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1618140,\n      \"realm\" : 1,\n      \"displayName\" : \"Hitman\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/1618140/1/Hitman/\"\n    },\n    \"joinTimestamp\" : 1375658253,\n
+        \   \"points\" : 1831.0,\n    \"wins\" : 156,\n    \"losses\" : 107,\n    \"highestRank\"
+        : 19,\n    \"previousRank\" : 82,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 1443122,\n      \"realm\" :
+        1,\n      \"displayName\" : \"DeeMo\",\n      \"clanName\" : \"Official Team
+        NrG\",\n      \"clanTag\" : \"lNrGl\",\n      \"profilePath\" : \"/profile/1443122/1/DeeMo/\"\n
+        \   },\n    \"joinTimestamp\" : 1374949279,\n    \"points\" : 1829.0,\n    \"wins\"
+        : 196,\n    \"losses\" : 176,\n    \"highestRank\" : 69,\n    \"previousRank\"
+        : 140,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2661999,\n      \"realm\" : 1,\n      \"displayName\" : \"Moosegills\",\n
+        \     \"clanName\" : \"Youngmoney\",\n      \"clanTag\" : \"YMCMB\",\n      \"profilePath\"
+        : \"/profile/2661999/1/Moosegills/\"\n    },\n    \"joinTimestamp\" : 1372550832,\n
+        \   \"points\" : 1828.0,\n    \"wins\" : 116,\n    \"losses\" : 97,\n    \"highestRank\"
+        : 71,\n    \"previousRank\" : 136,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 358024,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"EzTrouble\",\n      \"clanName\" : \"International Xtreme Oza's\",\n      \"clanTag\"
+        : \"IxO\",\n      \"profilePath\" : \"/profile/358024/1/EzTrouble/\"\n    },\n
+        \   \"joinTimestamp\" : 1373477392,\n    \"points\" : 1827.0,\n    \"wins\"
+        : 149,\n    \"losses\" : 126,\n    \"highestRank\" : 63,\n    \"previousRank\"
+        : 99,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2455827,\n      \"realm\" : 1,\n      \"displayName\" : \"Kayle\",\n
+        \     \"clanName\" : \"Team SCA\",\n      \"clanTag\" : \"SCA\",\n      \"profilePath\"
+        : \"/profile/2455827/1/Kayle/\"\n    },\n    \"joinTimestamp\" : 1375311791,\n
+        \   \"points\" : 1826.0,\n    \"wins\" : 159,\n    \"losses\" : 110,\n    \"highestRank\"
+        : 62,\n    \"previousRank\" : 129,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4176712,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"GoatSwarm\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/4176712/1/GoatSwarm/\"\n    },\n
+        \   \"joinTimestamp\" : 1375557943,\n    \"points\" : 1826.0,\n    \"wins\"
+        : 90,\n    \"losses\" : 73,\n    \"highestRank\" : 72,\n    \"previousRank\"
+        : 96,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3917328,\n      \"realm\" : 1,\n      \"displayName\" : \"CrystaX\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3917328/1/CrystaX/\"\n    },\n    \"joinTimestamp\" : 1371466480,\n
+        \   \"points\" : 1826.0,\n    \"wins\" : 120,\n    \"losses\" : 103,\n    \"highestRank\"
+        : 81,\n    \"previousRank\" : 114,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 985039,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Carnage\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/985039/1/Carnage/\"\n    },\n
+        \   \"joinTimestamp\" : 1376257344,\n    \"points\" : 1825.0,\n    \"wins\"
+        : 313,\n    \"losses\" : 275,\n    \"highestRank\" : 2,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\"
+        : 3272414,\n      \"realm\" : 1,\n      \"displayName\" : \"SoupyTwist\",\n
+        \     \"clanName\" : \"Team Fallacy\",\n      \"clanTag\" : \"fLc\",\n      \"profilePath\"
+        : \"/profile/3272414/1/SoupyTwist/\"\n    },\n    \"joinTimestamp\" : 1374354500,\n
+        \   \"points\" : 1820.0,\n    \"wins\" : 82,\n    \"losses\" : 67,\n    \"highestRank\"
+        : 54,\n    \"previousRank\" : 122,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2298749,\n      \"realm\" :
+        1,\n      \"displayName\" : \"icArus\",\n      \"clanName\" : \"Good Game
+        Kids Team\",\n      \"clanTag\" : \"GGKids\",\n      \"profilePath\" : \"/profile/2298749/1/icArus/\"\n
+        \   },\n    \"joinTimestamp\" : 1375304988,\n    \"points\" : 1819.0,\n    \"wins\"
+        : 144,\n    \"losses\" : 119,\n    \"highestRank\" : 50,\n    \"previousRank\"
+        : 86,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2003270,\n      \"realm\" : 1,\n      \"displayName\" : \"Fabled\",\n
+        \     \"clanName\" : \"Latest and Greatest Gaming\",\n      \"clanTag\" :
+        \"lLaGl\",\n      \"profilePath\" : \"/profile/2003270/1/Fabled/\"\n    },\n
+        \   \"joinTimestamp\" : 1371454818,\n    \"points\" : 1816.0,\n    \"wins\"
+        : 84,\n    \"losses\" : 63,\n    \"highestRank\" : 37,\n    \"previousRank\"
+        : 109,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 4024637,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"mewby\",\n      \"clanName\" : \"Clarity Gaming\",\n      \"clanTag\" :
+        \"CG\",\n      \"profilePath\" : \"/profile/4024637/1/mewby/\"\n    },\n    \"joinTimestamp\"
+        : 1373516752,\n    \"points\" : 1815.0,\n    \"wins\" : 180,\n    \"losses\"
+        : 168,\n    \"highestRank\" : 62,\n    \"previousRank\" : 102,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 2075865,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"city\",\n      \"clanName\" : \"Official Team
+        NrG\",\n      \"clanTag\" : \"lNrGl\",\n      \"profilePath\" : \"/profile/2075865/1/city/\"\n
+        \   },\n    \"joinTimestamp\" : 1374254639,\n    \"points\" : 1813.0,\n    \"wins\"
+        : 88,\n    \"losses\" : 75,\n    \"highestRank\" : 87,\n    \"previousRank\"
+        : 106,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 3101074,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"desRow\",\n      \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3101074/1/desRow/\"\n    },\n    \"joinTimestamp\" : 1375756131,\n
+        \   \"points\" : 1811.0,\n    \"wins\" : 106,\n    \"losses\" : 96,\n    \"highestRank\"
+        : 56,\n    \"previousRank\" : 130,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3763965,\n      \"realm\" :
+        1,\n      \"displayName\" : \"lIllIIIlIlII\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/3763965/1/lIllIIIlIlII/\"\n
+        \   },\n    \"joinTimestamp\" : 1376200410,\n    \"points\" : 1809.0,\n    \"wins\"
+        : 87,\n    \"losses\" : 46,\n    \"highestRank\" : 3,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1724561,\n      \"realm\" : 1,\n      \"displayName\" : \"LiquidFire\",\n
+        \     \"clanName\" : \"Too EZ Bro\",\n      \"clanTag\" : \"EzBM\",\n      \"profilePath\"
+        : \"/profile/1724561/1/LiquidFire/\"\n    },\n    \"joinTimestamp\" : 1375508471,\n
+        \   \"points\" : 1808.0,\n    \"wins\" : 107,\n    \"losses\" : 73,\n    \"highestRank\"
+        : 55,\n    \"previousRank\" : 70,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2509420,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Thecoolman\",\n      \"clanName\" : \"Team SCA\",\n
+        \     \"clanTag\" : \"SCA\",\n      \"profilePath\" : \"/profile/2509420/1/Thecoolman/\"\n
+        \   },\n    \"joinTimestamp\" : 1371454097,\n    \"points\" : 1802.0,\n    \"wins\"
+        : 289,\n    \"losses\" : 258,\n    \"highestRank\" : 45,\n    \"previousRank\"
+        : 64,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4292153,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4292153/1/llllllllllll/\"\n    },\n    \"joinTimestamp\" : 1375906542,\n
+        \   \"points\" : 1801.0,\n    \"wins\" : 170,\n    \"losses\" : 127,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4480622,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"IIIIIIIIIIII\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/4480622/1/IIIIIIIIIIII/\"\n    },\n
+        \   \"joinTimestamp\" : 1371497512,\n    \"points\" : 1801.0,\n    \"wins\"
+        : 173,\n    \"losses\" : 163,\n    \"highestRank\" : 74,\n    \"previousRank\"
+        : 119,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 617716,\n      \"realm\" : 1,\n      \"displayName\" : \"IIIIIIIIIIII\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/617716/1/IIIIIIIIIIII/\"\n    },\n    \"joinTimestamp\" : 1375780666,\n
+        \   \"points\" : 1798.0,\n    \"wins\" : 194,\n    \"losses\" : 148,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 111,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 329730,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Shen\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/329730/1/Shen/\"\n    },\n    \"joinTimestamp\"
+        : 1373823108,\n    \"points\" : 1796.0,\n    \"wins\" : 374,\n    \"losses\"
+        : 331,\n    \"highestRank\" : 69,\n    \"previousRank\" : 154,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 668585,\n      \"realm\"
+        : 2,\n      \"displayName\" : \"Cham\",\n      \"clanName\" : \"LaGPro\",\n
+        \     \"clanTag\" : \"LaGPro\",\n      \"profilePath\" : \"/profile/668585/2/Cham/\"\n
+        \   },\n    \"joinTimestamp\" : 1373862153,\n    \"points\" : 1790.0,\n    \"wins\"
+        : 111,\n    \"losses\" : 90,\n    \"highestRank\" : 66,\n    \"previousRank\"
+        : 73,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2537175,\n      \"realm\" : 1,\n      \"displayName\" : \"Arium\",\n
+        \     \"clanName\" : \"FRITTZ\",\n      \"clanTag\" : \"FRITTZ\",\n      \"profilePath\"
+        : \"/profile/2537175/1/Arium/\"\n    },\n    \"joinTimestamp\" : 1371453359,\n
+        \   \"points\" : 1789.0,\n    \"wins\" : 184,\n    \"losses\" : 171,\n    \"highestRank\"
+        : 75,\n    \"previousRank\" : 121,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3542084,\n      \"realm\" :
+        1,\n      \"displayName\" : \"llllllllllll\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/3542084/1/llllllllllll/\"\n
+        \   },\n    \"joinTimestamp\" : 1374804475,\n    \"points\" : 1786.0,\n    \"wins\"
+        : 234,\n    \"losses\" : 202,\n    \"highestRank\" : 65,\n    \"previousRank\"
+        : 105,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 2946836,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"IIIIIIIIIIII\",\n      \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n
+        \     \"profilePath\" : \"/profile/2946836/1/IIIIIIIIIIII/\"\n    },\n    \"joinTimestamp\"
+        : 1371482235,\n    \"points\" : 1784.0,\n    \"wins\" : 125,\n    \"losses\"
+        : 119,\n    \"highestRank\" : 47,\n    \"previousRank\" : 172,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 4720831,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Bughouse\",\n      \"clanName\" : \"Coca Cola\",\n
+        \     \"clanTag\" : \"Coca\",\n      \"profilePath\" : \"/profile/4720831/1/Bughouse/\"\n
+        \   },\n    \"joinTimestamp\" : 1375306619,\n    \"points\" : 1781.0,\n    \"wins\"
+        : 206,\n    \"losses\" : 180,\n    \"highestRank\" : 30,\n    \"previousRank\"
+        : 60,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2979721,\n      \"realm\" : 1,\n      \"displayName\" : \"IlIIIIllllII\",\n
+        \     \"clanName\" : \"Apocalipse Team\",\n      \"clanTag\" : \"ApT\",\n
+        \     \"profilePath\" : \"/profile/2979721/1/IlIIIIllllII/\"\n    },\n    \"joinTimestamp\"
+        : 1373983685,\n    \"points\" : 1781.0,\n    \"wins\" : 126,\n    \"losses\"
+        : 74,\n    \"highestRank\" : 33,\n    \"previousRank\" : 41,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 3287984,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Qkrwogud\",\n      \"clanName\" : \"Aoi no
+        Kaze\",\n      \"clanTag\" : \"AnK\",\n      \"profilePath\" : \"/profile/3287984/1/Qkrwogud/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453724,\n    \"points\" : 1779.0,\n    \"wins\"
+        : 90,\n    \"losses\" : 78,\n    \"highestRank\" : 75,\n    \"previousRank\"
+        : 119,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1539589,\n      \"realm\" : 1,\n      \"displayName\" : \"Aruncart\",\n
+        \     \"clanName\" : \"Cart\",\n      \"clanTag\" : \"Cart\",\n      \"profilePath\"
+        : \"/profile/1539589/1/Aruncart/\"\n    },\n    \"joinTimestamp\" : 1371454907,\n
+        \   \"points\" : 1777.0,\n    \"wins\" : 331,\n    \"losses\" : 310,\n    \"highestRank\"
+        : 73,\n    \"previousRank\" : 101,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 4645655,\n      \"realm\" :
+        1,\n      \"displayName\" : \"EGPartingRC\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/4645655/1/EGPartingRC/\"\n
+        \   },\n    \"joinTimestamp\" : 1375130275,\n    \"points\" : 1776.0,\n    \"wins\"
+        : 147,\n    \"losses\" : 124,\n    \"highestRank\" : 69,\n    \"previousRank\"
+        : 132,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 1192826,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"Strykerz\",\n      \"clanName\" : \"Clarity Gaming\",\n      \"clanTag\"
+        : \"CG\",\n      \"profilePath\" : \"/profile/1192826/1/Strykerz/\"\n    },\n
+        \   \"joinTimestamp\" : 1375766502,\n    \"points\" : 1776.0,\n    \"wins\"
+        : 103,\n    \"losses\" : 81,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 105,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 621032,\n      \"realm\" : 1,\n      \"displayName\" : \"QuanticPhog\",\n
+        \     \"clanName\" : \"Quantic Gaming\",\n      \"clanTag\" : \"Qntc\",\n
+        \     \"profilePath\" : \"/profile/621032/1/QuanticPhog/\"\n    },\n    \"joinTimestamp\"
+        : 1371501778,\n    \"points\" : 1775.0,\n    \"wins\" : 138,\n    \"losses\"
+        : 104,\n    \"highestRank\" : 57,\n    \"previousRank\" : 114,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 2677210,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Forte\",\n      \"clanName\" : \"TaiKuai\",\n
+        \     \"clanTag\" : \"Tai\",\n      \"profilePath\" : \"/profile/2677210/1/Forte/\"\n
+        \   },\n    \"joinTimestamp\" : 1374635907,\n    \"points\" : 1773.0,\n    \"wins\"
+        : 186,\n    \"losses\" : 147,\n    \"highestRank\" : 87,\n    \"previousRank\"
+        : 145,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4164929,\n      \"realm\" : 1,\n      \"displayName\" : \"IIIIIIIIIIII\",\n
+        \     \"clanName\" : \"BeneWarsie\",\n      \"clanTag\" : \"1200ms\",\n      \"profilePath\"
+        : \"/profile/4164929/1/IIIIIIIIIIII/\"\n    },\n    \"joinTimestamp\" : 1375558530,\n
+        \   \"points\" : 1764.0,\n    \"wins\" : 128,\n    \"losses\" : 100,\n    \"highestRank\"
+        : 89,\n    \"previousRank\" : 162,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 951060,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"fLcCardris\",\n      \"clanName\" : \"Team Fallacy\",\n      \"clanTag\"
+        : \"fLc\",\n      \"profilePath\" : \"/profile/951060/1/fLcCardris/\"\n    },\n
+        \   \"joinTimestamp\" : 1371464166,\n    \"points\" : 1751.0,\n    \"wins\"
+        : 99,\n    \"losses\" : 100,\n    \"highestRank\" : 100,\n    \"previousRank\"
+        : 176,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 2911057,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"QuanticBoyo\",\n      \"clanName\" : \"Quantic Gaming\",\n      \"clanTag\"
+        : \"Qntc\",\n      \"profilePath\" : \"/profile/2911057/1/QuanticBoyo/\"\n
+        \   },\n    \"joinTimestamp\" : 1376164634,\n    \"points\" : 1748.0,\n    \"wins\"
+        : 115,\n    \"losses\" : 74,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4710174,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4710174/1/llllllllllll/\"\n    },\n    \"joinTimestamp\" : 1375702532,\n
+        \   \"points\" : 1745.0,\n    \"wins\" : 110,\n    \"losses\" : 81,\n    \"highestRank\"
+        : 44,\n    \"previousRank\" : 109,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 344188,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"Blade\",\n      \"clanName\" : \"Outset Gaming\",\n      \"clanTag\" :
+        \"Outset\",\n      \"profilePath\" : \"/profile/344188/1/Blade/\"\n    },\n
+        \   \"joinTimestamp\" : 1371457691,\n    \"points\" : 1744.0,\n    \"wins\"
+        : 77,\n    \"losses\" : 79,\n    \"highestRank\" : 109,\n    \"previousRank\"
+        : 143,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4482478,\n      \"realm\" : 1,\n      \"displayName\" : \"IIIIIIIIIIII\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4482478/1/IIIIIIIIIIII/\"\n    },\n    \"joinTimestamp\" : 1376413311,\n
+        \   \"points\" : 1741.0,\n    \"wins\" : 98,\n    \"losses\" : 50,\n    \"highestRank\"
+        : 2,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4167637,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"llllllllllll\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/4167637/1/llllllllllll/\"\n    },\n
+        \   \"joinTimestamp\" : 1376129434,\n    \"points\" : 1740.0,\n    \"wins\"
+        : 141,\n    \"losses\" : 111,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\"
+        : 2933386,\n      \"realm\" : 1,\n      \"displayName\" : \"AcolyteBitS\",\n
+        \     \"clanName\" : \"Impulse eSports Community\",\n      \"clanTag\" : \"iMpco\",\n
+        \     \"profilePath\" : \"/profile/2933386/1/AcolyteBitS/\"\n    },\n    \"joinTimestamp\"
+        : 1374803024,\n    \"points\" : 1739.0,\n    \"wins\" : 304,\n    \"losses\"
+        : 278,\n    \"highestRank\" : 40,\n    \"previousRank\" : 70,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 945960,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"PsychO\",\n      \"clanName\" : \"Team Fallacy\",\n
+        \     \"clanTag\" : \"fLc\",\n      \"profilePath\" : \"/profile/945960/1/PsychO/\"\n
+        \   },\n    \"joinTimestamp\" : 1371452565,\n    \"points\" : 1738.0,\n    \"wins\"
+        : 88,\n    \"losses\" : 82,\n    \"highestRank\" : 87,\n    \"previousRank\"
+        : 113,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3081818,\n      \"realm\" : 1,\n      \"displayName\" : \"Fiasco\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3081818/1/Fiasco/\"\n    },\n    \"joinTimestamp\" : 1371453351,\n
+        \   \"points\" : 1738.0,\n    \"wins\" : 86,\n    \"losses\" : 88,\n    \"highestRank\"
+        : 124,\n    \"previousRank\" : 183,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3220187,\n      \"realm\" :
+        1,\n      \"displayName\" : \"iwantproteam\",\n      \"clanName\" : \"Everyone
+        in YMCMB hacks\",\n      \"clanTag\" : \"YMCMBH\",\n      \"profilePath\"
+        : \"/profile/3220187/1/iwantproteam/\"\n    },\n    \"joinTimestamp\" : 1374660236,\n
+        \   \"points\" : 1732.0,\n    \"wins\" : 243,\n    \"losses\" : 198,\n    \"highestRank\"
+        : 82,\n    \"previousRank\" : 97,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2540856,\n      \"realm\" :
+        1,\n      \"displayName\" : \"acslayer\",\n      \"clanName\" : \"The Walkers\",\n
+        \     \"clanTag\" : \"GRIMEY\",\n      \"profilePath\" : \"/profile/2540856/1/acslayer/\"\n
+        \   },\n    \"joinTimestamp\" : 1372853811,\n    \"points\" : 1730.0,\n    \"wins\"
+        : 67,\n    \"losses\" : 64,\n    \"highestRank\" : 120,\n    \"previousRank\"
+        : 167,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2313583,\n      \"realm\" : 1,\n      \"displayName\" : \"Dnice\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2313583/1/Dnice/\"\n    },\n    \"joinTimestamp\" : 1375477955,\n
+        \   \"points\" : 1728.0,\n    \"wins\" : 175,\n    \"losses\" : 161,\n    \"highestRank\"
+        : 113,\n    \"previousRank\" : 156,\n    \"favoriteRaceP1\" : \"TERRAN\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3034307,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Forsaken\",\n      \"clanName\" : \"Clarity
+        Gaming\",\n      \"clanTag\" : \"CG\",\n      \"profilePath\" : \"/profile/3034307/1/Forsaken/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453942,\n    \"points\" : 1726.0,\n    \"wins\"
+        : 189,\n    \"losses\" : 177,\n    \"highestRank\" : 116,\n    \"previousRank\"
+        : 152,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2680634,\n      \"realm\" : 1,\n      \"displayName\" : \"SHAWSHANK\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2680634/1/SHAWSHANK/\"\n    },\n    \"joinTimestamp\" : 1371454511,\n
+        \   \"points\" : 1721.0,\n    \"wins\" : 121,\n    \"losses\" : 111,\n    \"highestRank\"
+        : 80,\n    \"previousRank\" : 123,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2446261,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"ElhayM\",\n      \"clanName\" : \"Clarity Gaming\",\n
+        \     \"clanTag\" : \"CG\",\n      \"profilePath\" : \"/profile/2446261/1/ElhayM/\"\n
+        \   },\n    \"joinTimestamp\" : 1371462537,\n    \"points\" : 1721.0,\n    \"wins\"
+        : 74,\n    \"losses\" : 66,\n    \"highestRank\" : 128,\n    \"previousRank\"
+        : 143,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3657933,\n      \"realm\" : 1,\n      \"displayName\" : \"llllllllllll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3657933/1/llllllllllll/\"\n    },\n    \"joinTimestamp\" : 1372966769,\n
+        \   \"points\" : 1720.0,\n    \"wins\" : 183,\n    \"losses\" : 159,\n    \"highestRank\"
+        : 42,\n    \"previousRank\" : 99,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4240003,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"IllIllIllIll\",\n      \"clanName\" : \"Youngmoney\",\n
+        \     \"clanTag\" : \"YMCMB\",\n      \"profilePath\" : \"/profile/4240003/1/IllIllIllIll/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453116,\n    \"points\" : 1719.0,\n    \"wins\"
+        : 70,\n    \"losses\" : 59,\n    \"highestRank\" : 55,\n    \"previousRank\"
+        : 113,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 433550,\n      \"realm\" : 1,\n      \"displayName\" : \"Niphik\",\n
+        \     \"clanName\" : \"Team Fallacy\",\n      \"clanTag\" : \"fLc\",\n      \"profilePath\"
+        : \"/profile/433550/1/Niphik/\"\n    },\n    \"joinTimestamp\" : 1371453285,\n
+        \   \"points\" : 1718.0,\n    \"wins\" : 78,\n    \"losses\" : 67,\n    \"highestRank\"
+        : 99,\n    \"previousRank\" : 128,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 3486739,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Virium\",\n      \"clanName\" : \"Core Professional
+        Gaming Team\",\n      \"clanTag\" : \"Core\",\n      \"profilePath\" : \"/profile/3486739/1/Virium/\"\n
+        \   },\n    \"joinTimestamp\" : 1371454917,\n    \"points\" : 1718.0,\n    \"wins\"
+        : 151,\n    \"losses\" : 143,\n    \"highestRank\" : 73,\n    \"previousRank\"
+        : 135,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 2917048,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"IIIIIIIIII\",\n      \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2917048/1/IIIIIIIIII/\"\n    },\n    \"joinTimestamp\" : 1376367643,\n
+        \   \"points\" : 1717.0,\n    \"wins\" : 83,\n    \"losses\" : 56,\n    \"highestRank\"
+        : 2,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 4287059,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"llllllllll\",\n      \"clanName\" : \"Team HuaLi\",\n
+        \     \"clanTag\" : \"HuaLi\",\n      \"profilePath\" : \"/profile/4287059/1/llllllllll/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453724,\n    \"points\" : 1714.0,\n    \"wins\"
+        : 147,\n    \"losses\" : 117,\n    \"highestRank\" : 115,\n    \"previousRank\"
+        : 148,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1830362,\n      \"realm\" : 1,\n      \"displayName\" : \"Zoku\",\n
+        \     \"clanName\" : \"Impulse eSports\",\n      \"clanTag\" : \"iMp\",\n
+        \     \"profilePath\" : \"/profile/1830362/1/Zoku/\"\n    },\n    \"joinTimestamp\"
+        : 1374548157,\n    \"points\" : 1713.0,\n    \"wins\" : 230,\n    \"losses\"
+        : 211,\n    \"highestRank\" : 64,\n    \"previousRank\" : 84,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 1711920,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Debaser\",\n      \"clanName\" : \"Team Gravity\",\n
+        \     \"clanTag\" : \"Grav\",\n      \"profilePath\" : \"/profile/1711920/1/Debaser/\"\n
+        \   },\n    \"joinTimestamp\" : 1371488251,\n    \"points\" : 1713.0,\n    \"wins\"
+        : 97,\n    \"losses\" : 96,\n    \"highestRank\" : 75,\n    \"previousRank\"
+        : 92,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 1428705,\n      \"realm\" : 1,\n      \"displayName\" : \"Rast\",\n
+        \     \"clanName\" : \"Chronic Facture\",\n      \"clanTag\" : \"xCF\",\n
+        \     \"profilePath\" : \"/profile/1428705/1/Rast/\"\n    },\n    \"joinTimestamp\"
+        : 1375077908,\n    \"points\" : 1711.0,\n    \"wins\" : 337,\n    \"losses\"
+        : 301,\n    \"highestRank\" : 137,\n    \"previousRank\" : 175,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 471509,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Zark\",\n      \"clanName\" : \"Element\",\n
+        \     \"clanTag\" : \"LMnt\",\n      \"profilePath\" : \"/profile/471509/1/Zark/\"\n
+        \   },\n    \"joinTimestamp\" : 1371457169,\n    \"points\" : 1707.0,\n    \"wins\"
+        : 122,\n    \"losses\" : 113,\n    \"highestRank\" : 110,\n    \"previousRank\"
+        : 154,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4164201,\n      \"realm\" : 1,\n      \"displayName\" : \"Nogard\",\n
+        \     \"clanName\" : \"Old School Clan\",\n      \"clanTag\" : \"oScI\",\n
+        \     \"profilePath\" : \"/profile/4164201/1/Nogard/\"\n    },\n    \"joinTimestamp\"
+        : 1371458577,\n    \"points\" : 1706.0,\n    \"wins\" : 84,\n    \"losses\"
+        : 72,\n    \"highestRank\" : 125,\n    \"previousRank\" : 162,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 4160680,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Theobeo\",\n      \"clanName\" : \"Core Professional
+        Gaming Team\",\n      \"clanTag\" : \"Core\",\n      \"profilePath\" : \"/profile/4160680/1/Theobeo/\"\n
+        \   },\n    \"joinTimestamp\" : 1375493701,\n    \"points\" : 1704.0,\n    \"wins\"
+        : 170,\n    \"losses\" : 115,\n    \"highestRank\" : 132,\n    \"previousRank\"
+        : 151,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 314228,\n      \"realm\" : 1,\n      \"displayName\" : \"Bluemagic\",\n
+        \     \"clanName\" : \"exSAGAcity Gaming\",\n      \"clanTag\" : \"xSAGA\",\n
+        \     \"profilePath\" : \"/profile/314228/1/Bluemagic/\"\n    },\n    \"joinTimestamp\"
+        : 1371503307,\n    \"points\" : 1701.0,\n    \"wins\" : 142,\n    \"losses\"
+        : 142,\n    \"highestRank\" : 140,\n    \"previousRank\" : 181,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 2901396,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"fLcQuix\",\n      \"clanName\" : \"Youngmoney\",\n
+        \     \"clanTag\" : \"YMCMB\",\n      \"profilePath\" : \"/profile/2901396/1/fLcQuix/\"\n
+        \   },\n    \"joinTimestamp\" : 1374791941,\n    \"points\" : 1698.0,\n    \"wins\"
+        : 94,\n    \"losses\" : 73,\n    \"highestRank\" : 86,\n    \"previousRank\"
+        : 139,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 1976744,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"ScrubbleS\",\n      \"clanName\" : \"Youngmoney\",\n      \"clanTag\" :
+        \"YMCMB\",\n      \"profilePath\" : \"/profile/1976744/1/ScrubbleS/\"\n    },\n
+        \   \"joinTimestamp\" : 1374528777,\n    \"points\" : 1696.0,\n    \"wins\"
+        : 114,\n    \"losses\" : 97,\n    \"highestRank\" : 106,\n    \"previousRank\"
+        : 132,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 415053,\n      \"realm\" : 1,\n      \"displayName\" : \"Minkus\",\n
+        \     \"clanName\" : \"Good Game Kids Team\",\n      \"clanTag\" : \"GGKids\",\n
+        \     \"profilePath\" : \"/profile/415053/1/Minkus/\"\n    },\n    \"joinTimestamp\"
+        : 1371453392,\n    \"points\" : 1695.0,\n    \"wins\" : 106,\n    \"losses\"
+        : 89,\n    \"highestRank\" : 42,\n    \"previousRank\" : 68,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 4920421,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Milhouse\",\n      \"clanName\" : \"Latest
+        and Greatest Gaming\",\n      \"clanTag\" : \"lLaGl\",\n      \"profilePath\"
+        : \"/profile/4920421/1/Milhouse/\"\n    },\n    \"joinTimestamp\" : 1375872969,\n
+        \   \"points\" : 1689.0,\n    \"wins\" : 125,\n    \"losses\" : 85,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n
+        \   \"character\" : {\n      \"id\" : 3468044,\n      \"realm\" : 1,\n      \"displayName\"
+        : \"iluvWoOk\",\n      \"clanName\" : \"Impulse eSports\",\n      \"clanTag\"
+        : \"iMp\",\n      \"profilePath\" : \"/profile/3468044/1/iluvWoOk/\"\n    },\n
+        \   \"joinTimestamp\" : 1371476408,\n    \"points\" : 1686.0,\n    \"wins\"
+        : 109,\n    \"losses\" : 96,\n    \"highestRank\" : 133,\n    \"previousRank\"
+        : 189,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 4193843,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"Expect\",\n      \"clanName\" : \"Team SCA\",\n      \"clanTag\" : \"SCA\",\n
+        \     \"profilePath\" : \"/profile/4193843/1/Expect/\"\n    },\n    \"joinTimestamp\"
+        : 1375343714,\n    \"points\" : 1685.0,\n    \"wins\" : 106,\n    \"losses\"
+        : 65,\n    \"highestRank\" : 64,\n    \"previousRank\" : 92,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 3669320,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"fts\",\n      \"clanName\" : \"Core Professional
+        Gaming Team\",\n      \"clanTag\" : \"Core\",\n      \"profilePath\" : \"/profile/3669320/1/fts/\"\n
+        \   },\n    \"joinTimestamp\" : 1376176591,\n    \"points\" : 1684.0,\n    \"wins\"
+        : 124,\n    \"losses\" : 81,\n    \"highestRank\" : 1,\n    \"previousRank\"
+        : 0,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4163868,\n      \"realm\" : 1,\n      \"displayName\" : \"ExZotiK\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4163868/1/ExZotiK/\"\n    },\n    \"joinTimestamp\" : 1376048000,\n
+        \   \"points\" : 1683.0,\n    \"wins\" : 191,\n    \"losses\" : 153,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 1174812,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Days\",\n      \"clanName\" : \"sMi\",\n      \"clanTag\"
+        : \"sMi\",\n      \"profilePath\" : \"/profile/1174812/1/Days/\"\n    },\n
+        \   \"joinTimestamp\" : 1371455416,\n    \"points\" : 1680.0,\n    \"wins\"
+        : 369,\n    \"losses\" : 339,\n    \"highestRank\" : 59,\n    \"previousRank\"
+        : 145,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3798776,\n      \"realm\" : 1,\n      \"displayName\" : \"HypeR\",\n
+        \     \"clanName\" : \"Team SCA\",\n      \"clanTag\" : \"SCA\",\n      \"profilePath\"
+        : \"/profile/3798776/1/HypeR/\"\n    },\n    \"joinTimestamp\" : 1373387023,\n
+        \   \"points\" : 1676.0,\n    \"wins\" : 288,\n    \"losses\" : 249,\n    \"highestRank\"
+        : 109,\n    \"previousRank\" : 147,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 3115003,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Mercy\",\n      \"clanName\" : \"Clan OverDosed\",\n
+        \     \"clanTag\" : \"OD\",\n      \"profilePath\" : \"/profile/3115003/1/Mercy/\"\n
+        \   },\n    \"joinTimestamp\" : 1371454683,\n    \"points\" : 1675.0,\n    \"wins\"
+        : 233,\n    \"losses\" : 223,\n    \"highestRank\" : 115,\n    \"previousRank\"
+        : 140,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 639714,\n      \"realm\" : 1,\n      \"displayName\" : \"Bonkarooni\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/639714/1/Bonkarooni/\"\n    },\n    \"joinTimestamp\" : 1371454919,\n
+        \   \"points\" : 1673.0,\n    \"wins\" : 313,\n    \"losses\" : 292,\n    \"highestRank\"
+        : 127,\n    \"previousRank\" : 172,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 1102468,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Nutella\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/1102468/1/Nutella/\"\n    },\n
+        \   \"joinTimestamp\" : 1374787050,\n    \"points\" : 1671.0,\n    \"wins\"
+        : 119,\n    \"losses\" : 78,\n    \"highestRank\" : 103,\n    \"previousRank\"
+        : 162,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 302729,\n      \"realm\" : 2,\n      \"displayName\" : \"Talentz\",\n
+        \     \"clanName\" : \"Apocalipse Team\",\n      \"clanTag\" : \"ApT\",\n
+        \     \"profilePath\" : \"/profile/302729/2/Talentz/\"\n    },\n    \"joinTimestamp\"
+        : 1376365535,\n    \"points\" : 1669.0,\n    \"wins\" : 103,\n    \"losses\"
+        : 44,\n    \"highestRank\" : 3,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 515197,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"SwitcH\",\n      \"clanName\" : \"Outset Gaming\",\n
+        \     \"clanTag\" : \"Outset\",\n      \"profilePath\" : \"/profile/515197/1/SwitcH/\"\n
+        \   },\n    \"joinTimestamp\" : 1374732899,\n    \"points\" : 1668.0,\n    \"wins\"
+        : 264,\n    \"losses\" : 229,\n    \"highestRank\" : 116,\n    \"previousRank\"
+        : 158,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 3437555,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"PerplexD\",\n      \"clanName\" : \"Official Team NrG\",\n      \"clanTag\"
+        : \"lNrGl\",\n      \"profilePath\" : \"/profile/3437555/1/PerplexD/\"\n    },\n
+        \   \"joinTimestamp\" : 1371453376,\n    \"points\" : 1666.0,\n    \"wins\"
+        : 107,\n    \"losses\" : 89,\n    \"highestRank\" : 133,\n    \"previousRank\"
+        : 147,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4164738,\n      \"realm\" : 1,\n      \"displayName\" : \"IIIIIIIIIIII\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4164738/1/IIIIIIIIIIII/\"\n    },\n    \"joinTimestamp\" : 1376338902,\n
+        \   \"points\" : 1661.0,\n    \"wins\" : 83,\n    \"losses\" : 52,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2466822,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Schnitzel\",\n      \"clanName\" : \"Team SCA\",\n
+        \     \"clanTag\" : \"SCA\",\n      \"profilePath\" : \"/profile/2466822/1/Schnitzel/\"\n
+        \   },\n    \"joinTimestamp\" : 1375625605,\n    \"points\" : 1656.0,\n    \"wins\"
+        : 390,\n    \"losses\" : 357,\n    \"highestRank\" : 121,\n    \"previousRank\"
+        : 172,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 340431,\n      \"realm\" : 1,\n      \"displayName\" : \"coyote\",\n
+        \     \"clanName\" : \"SC2Strategy\",\n      \"clanTag\" : \"SCS\",\n      \"profilePath\"
+        : \"/profile/340431/1/coyote/\"\n    },\n    \"joinTimestamp\" : 1373068128,\n
+        \   \"points\" : 1652.0,\n    \"wins\" : 497,\n    \"losses\" : 486,\n    \"highestRank\"
+        : 121,\n    \"previousRank\" : 186,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2419304,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Sterling\",\n      \"clanName\" : \"Clarity Gaming\",\n
+        \     \"clanTag\" : \"CG\",\n      \"profilePath\" : \"/profile/2419304/1/Sterling/\"\n
+        \   },\n    \"joinTimestamp\" : 1375650572,\n    \"points\" : 1652.0,\n    \"wins\"
+        : 294,\n    \"losses\" : 265,\n    \"highestRank\" : 112,\n    \"previousRank\"
+        : 183,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2868603,\n      \"realm\" : 1,\n      \"displayName\" : \"Pezz\",\n
+        \     \"clanName\" : \"Team Silicon Sports\",\n      \"clanTag\" : \"SLCN\",\n
+        \     \"profilePath\" : \"/profile/2868603/1/Pezz/\"\n    },\n    \"joinTimestamp\"
+        : 1375759599,\n    \"points\" : 1647.0,\n    \"wins\" : 273,\n    \"losses\"
+        : 242,\n    \"highestRank\" : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 1377259,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"Jarppi\",\n      \"clanName\" : \"RoHTeaM\",\n
+        \     \"clanTag\" : \"RoH\",\n      \"profilePath\" : \"/profile/1377259/1/Jarppi/\"\n
+        \   },\n    \"joinTimestamp\" : 1371522990,\n    \"points\" : 1647.0,\n    \"wins\"
+        : 199,\n    \"losses\" : 176,\n    \"highestRank\" : 82,\n    \"previousRank\"
+        : 161,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4695631,\n      \"realm\" : 1,\n      \"displayName\" : \"Reprieve\",\n
+        \     \"clanName\" : \"Core Professional Gaming Team\",\n      \"clanTag\"
+        : \"Core\",\n      \"profilePath\" : \"/profile/4695631/1/Reprieve/\"\n    },\n
+        \   \"joinTimestamp\" : 1374997376,\n    \"points\" : 1642.0,\n    \"wins\"
+        : 125,\n    \"losses\" : 78,\n    \"highestRank\" : 136,\n    \"previousRank\"
+        : 174,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4179455,\n      \"realm\" : 1,\n      \"displayName\" : \"LiquidJinro\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4179455/1/LiquidJinro/\"\n    },\n    \"joinTimestamp\" : 1375482060,\n
+        \   \"points\" : 1640.0,\n    \"wins\" : 93,\n    \"losses\" : 25,\n    \"highestRank\"
+        : 116,\n    \"previousRank\" : 155,\n    \"favoriteRaceP1\" : \"TERRAN\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 1005127,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Pluto\",\n      \"clanName\" : \"Team Fallacy\",\n
+        \     \"clanTag\" : \"fLc\",\n      \"profilePath\" : \"/profile/1005127/1/Pluto/\"\n
+        \   },\n    \"joinTimestamp\" : 1371493773,\n    \"points\" : 1636.0,\n    \"wins\"
+        : 203,\n    \"losses\" : 192,\n    \"highestRank\" : 150,\n    \"previousRank\"
+        : 181,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 754745,\n      \"realm\" : 1,\n      \"displayName\" : \"Kyo\",\n
+        \     \"clanName\" : \"compLexity\",\n      \"clanTag\" : \"coL\",\n      \"profilePath\"
+        : \"/profile/754745/1/Kyo/\"\n    },\n    \"joinTimestamp\" : 1375129599,\n
+        \   \"points\" : 1636.0,\n    \"wins\" : 81,\n    \"losses\" : 70,\n    \"highestRank\"
+        : 138,\n    \"previousRank\" : 173,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 4161872,\n      \"realm\" :
+        1,\n      \"displayName\" : \"ColdScars\",\n      \"clanName\" : \"Core Professional
+        Gaming Team\",\n      \"clanTag\" : \"Core\",\n      \"profilePath\" : \"/profile/4161872/1/ColdScars/\"\n
+        \   },\n    \"joinTimestamp\" : 1371467426,\n    \"points\" : 1633.0,\n    \"wins\"
+        : 151,\n    \"losses\" : 149,\n    \"highestRank\" : 143,\n    \"previousRank\"
+        : 177,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3514567,\n      \"realm\" : 1,\n      \"displayName\" : \"Kirby\",\n
+        \     \"clanName\" : \"420 blaze it\",\n      \"clanTag\" : \"420\",\n      \"profilePath\"
+        : \"/profile/3514567/1/Kirby/\"\n    },\n    \"joinTimestamp\" : 1371453203,\n
+        \   \"points\" : 1633.0,\n    \"wins\" : 110,\n    \"losses\" : 118,\n    \"highestRank\"
+        : 162,\n    \"previousRank\" : 180,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2657582,\n      \"realm\" :
+        1,\n      \"displayName\" : \"llIIllIIllIl\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/2657582/1/llIIllIIllIl/\"\n
+        \   },\n    \"joinTimestamp\" : 1371469421,\n    \"points\" : 1633.0,\n    \"wins\"
+        : 122,\n    \"losses\" : 118,\n    \"highestRank\" : 147,\n    \"previousRank\"
+        : 169,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4175156,\n      \"realm\" : 1,\n      \"displayName\" : \"Narcotic\",\n
+        \     \"clanName\" : \"Old School Clan\",\n      \"clanTag\" : \"oScI\",\n
+        \     \"profilePath\" : \"/profile/4175156/1/Narcotic/\"\n    },\n    \"joinTimestamp\"
+        : 1371456201,\n    \"points\" : 1632.0,\n    \"wins\" : 161,\n    \"losses\"
+        : 148,\n    \"highestRank\" : 165,\n    \"previousRank\" : 182,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 2072274,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"RisingStorm\",\n      \"clanName\" : \"SC2Strategy\",\n
+        \     \"clanTag\" : \"SCS\",\n      \"profilePath\" : \"/profile/2072274/1/RisingStorm/\"\n
+        \   },\n    \"joinTimestamp\" : 1375497938,\n    \"points\" : 1629.0,\n    \"wins\"
+        : 377,\n    \"losses\" : 321,\n    \"highestRank\" : 119,\n    \"previousRank\"
+        : 146,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3575039,\n      \"realm\" : 1,\n      \"displayName\" : \"Deadman\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3575039/1/Deadman/\"\n    },\n    \"joinTimestamp\" : 1375980549,\n
+        \   \"points\" : 1626.0,\n    \"wins\" : 89,\n    \"losses\" : 45,\n    \"highestRank\"
+        : 1,\n    \"previousRank\" : 0,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 3248220,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"llIIllIIllII\",\n      \"clanName\" : \"\",\n      \"clanTag\"
+        : \"\",\n      \"profilePath\" : \"/profile/3248220/1/llIIllIIllII/\"\n    },\n
+        \   \"joinTimestamp\" : 1371453949,\n    \"points\" : 1626.0,\n    \"wins\"
+        : 228,\n    \"losses\" : 223,\n    \"highestRank\" : 132,\n    \"previousRank\"
+        : 173,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 1248787,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"Dashiz\",\n      \"clanName\" : \"Kaos Latin Gamers\",\n      \"clanTag\"
+        : \"KLG\",\n      \"profilePath\" : \"/profile/1248787/1/Dashiz/\"\n    },\n
+        \   \"joinTimestamp\" : 1371452861,\n    \"points\" : 1608.0,\n    \"wins\"
+        : 207,\n    \"losses\" : 189,\n    \"highestRank\" : 171,\n    \"previousRank\"
+        : 189,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 909257,\n      \"realm\" : 1,\n      \"displayName\" : \"crBox\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/909257/1/crBox/\"\n    },\n    \"joinTimestamp\" : 1371492814,\n
+        \   \"points\" : 1607.0,\n    \"wins\" : 150,\n    \"losses\" : 139,\n    \"highestRank\"
+        : 173,\n    \"previousRank\" : 180,\n    \"favoriteRaceP1\" : \"ZERG\"\n  },
+        {\n    \"character\" : {\n      \"id\" : 2812699,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"DeathEnD\",\n      \"clanName\" : \"Latest and Greatest
+        Gaming\",\n      \"clanTag\" : \"lLaGl\",\n      \"profilePath\" : \"/profile/2812699/1/DeathEnD/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453205,\n    \"points\" : 1602.0,\n    \"wins\"
+        : 208,\n    \"losses\" : 199,\n    \"highestRank\" : 171,\n    \"previousRank\"
+        : 185,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 2787184,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"IMBACoaching\",\n      \"clanName\" : \"twitch dot tv IMBACoaching\",\n
+        \     \"clanTag\" : \"REAL\",\n      \"profilePath\" : \"/profile/2787184/1/IMBACoaching/\"\n
+        \   },\n    \"joinTimestamp\" : 1375365221,\n    \"points\" : 1599.0,\n    \"wins\"
+        : 86,\n    \"losses\" : 49,\n    \"highestRank\" : 144,\n    \"previousRank\"
+        : 178,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3595294,\n      \"realm\" : 1,\n      \"displayName\" : \"Playa\",\n
+        \     \"clanName\" : \"Impulse eSports\",\n      \"clanTag\" : \"iMp\",\n
+        \     \"profilePath\" : \"/profile/3595294/1/Playa/\"\n    },\n    \"joinTimestamp\"
+        : 1373491643,\n    \"points\" : 1597.0,\n    \"wins\" : 207,\n    \"losses\"
+        : 172,\n    \"highestRank\" : 131,\n    \"previousRank\" : 148,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 237708,\n      \"realm\"
+        : 2,\n      \"displayName\" : \"Kelazhur\",\n      \"clanName\" : \"Get Over
+        It\",\n      \"clanTag\" : \"govT\",\n      \"profilePath\" : \"/profile/237708/2/Kelazhur/\"\n
+        \   },\n    \"joinTimestamp\" : 1375302207,\n    \"points\" : 1594.0,\n    \"wins\"
+        : 232,\n    \"losses\" : 203,\n    \"highestRank\" : 146,\n    \"previousRank\"
+        : 167,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4161722,\n      \"realm\" : 1,\n      \"displayName\" : \"frozz\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/4161722/1/frozz/\"\n    },\n    \"joinTimestamp\" : 1371458458,\n
+        \   \"points\" : 1587.0,\n    \"wins\" : 78,\n    \"losses\" : 75,\n    \"highestRank\"
+        : 111,\n    \"previousRank\" : 148,\n    \"favoriteRaceP1\" : \"TERRAN\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 450133,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"TheoRy\",\n      \"clanName\" : \"DALTON GEORGIA
+        BLAZE IT\",\n      \"clanTag\" : \"DALTON\",\n      \"profilePath\" : \"/profile/450133/1/TheoRy/\"\n
+        \   },\n    \"joinTimestamp\" : 1371453989,\n    \"points\" : 1587.0,\n    \"wins\"
+        : 98,\n    \"losses\" : 95,\n    \"highestRank\" : 177,\n    \"previousRank\"
+        : 184,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 436570,\n      \"realm\" : 1,\n      \"displayName\" : \"Lunar\",\n
+        \     \"clanName\" : \"Peanut Butter Tuesdays\",\n      \"clanTag\" : \"PBTues\",\n
+        \     \"profilePath\" : \"/profile/436570/1/Lunar/\"\n    },\n    \"joinTimestamp\"
+        : 1375608141,\n    \"points\" : 1585.0,\n    \"wins\" : 264,\n    \"losses\"
+        : 227,\n    \"highestRank\" : 96,\n    \"previousRank\" : 182,\n    \"favoriteRaceP1\"
+        : \"TERRAN\"\n  }, {\n    \"character\" : {\n      \"id\" : 2179312,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"ChuSeo\",\n      \"clanName\" : \"Latest and
+        Greatest Gaming\",\n      \"clanTag\" : \"lLaGl\",\n      \"profilePath\"
+        : \"/profile/2179312/1/ChuSeo/\"\n    },\n    \"joinTimestamp\" : 1371457267,\n
+        \   \"points\" : 1585.0,\n    \"wins\" : 96,\n    \"losses\" : 98,\n    \"highestRank\"
+        : 146,\n    \"previousRank\" : 172,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 2735763,\n      \"realm\" :
+        1,\n      \"displayName\" : \"KsSiTuaTioN\",\n      \"clanName\" : \"Team
+        Killing Spree\",\n      \"clanTag\" : \"TKS\",\n      \"profilePath\" : \"/profile/2735763/1/KsSiTuaTioN/\"\n
+        \   },\n    \"joinTimestamp\" : 1371507082,\n    \"points\" : 1584.0,\n    \"wins\"
+        : 140,\n    \"losses\" : 139,\n    \"highestRank\" : 168,\n    \"previousRank\"
+        : 179,\n    \"favoriteRaceP1\" : \"TERRAN\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3283395,\n      \"realm\" : 1,\n      \"displayName\" : \"IIIIIIIIllll\",\n
+        \     \"clanName\" : \"The United Federation\",\n      \"clanTag\" : \"uFx\",\n
+        \     \"profilePath\" : \"/profile/3283395/1/IIIIIIIIllll/\"\n    },\n    \"joinTimestamp\"
+        : 1375041076,\n    \"points\" : 1576.0,\n    \"wins\" : 174,\n    \"losses\"
+        : 152,\n    \"highestRank\" : 131,\n    \"previousRank\" : 183,\n    \"favoriteRaceP1\"
+        : \"ZERG\"\n  }, {\n    \"character\" : {\n      \"id\" : 2220707,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"ThuNdeR\",\n      \"clanName\" : \"Isurus
+        Gaming HyperX\",\n      \"clanTag\" : \"ISGHX\",\n      \"profilePath\" :
+        \"/profile/2220707/1/ThuNdeR/\"\n    },\n    \"joinTimestamp\" : 1375077197,\n
+        \   \"points\" : 1535.0,\n    \"wins\" : 180,\n    \"losses\" : 147,\n    \"highestRank\"
+        : 160,\n    \"previousRank\" : 187,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 623098,\n      \"realm\" : 1,\n
+        \     \"displayName\" : \"Tenza\",\n      \"clanName\" : \"Team oGaming\",\n
+        \     \"clanTag\" : \"oG\",\n      \"profilePath\" : \"/profile/623098/1/Tenza/\"\n
+        \   },\n    \"joinTimestamp\" : 1371457242,\n    \"points\" : 1464.0,\n    \"wins\"
+        : 72,\n    \"losses\" : 79,\n    \"highestRank\" : 190,\n    \"previousRank\"
+        : 193,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 2294961,\n      \"realm\" : 1,\n      \"displayName\" : \"moosy\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/2294961/1/moosy/\"\n    },\n    \"joinTimestamp\" : 1371464007,\n
+        \   \"points\" : 1450.0,\n    \"wins\" : 91,\n    \"losses\" : 100,\n    \"highestRank\"
+        : 172,\n    \"previousRank\" : 190,\n    \"favoriteRaceP1\" : \"TERRAN\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 4307498,\n      \"realm\" :
+        1,\n      \"displayName\" : \"MiraCle\",\n      \"clanName\" : \"Good Game
+        Kids Team\",\n      \"clanTag\" : \"GGKids\",\n      \"profilePath\" : \"/profile/4307498/1/MiraCle/\"\n
+        \   },\n    \"joinTimestamp\" : 1371649278,\n    \"points\" : 1450.0,\n    \"wins\"
+        : 123,\n    \"losses\" : 92,\n    \"highestRank\" : 189,\n    \"previousRank\"
+        : 193,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 3805020,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"Breeder\",\n      \"clanName\" : \"Too EZ Bro\",\n      \"clanTag\" : \"EzBM\",\n
+        \     \"profilePath\" : \"/profile/3805020/1/Breeder/\"\n    },\n    \"joinTimestamp\"
+        : 1374999725,\n    \"points\" : 1403.0,\n    \"wins\" : 147,\n    \"losses\"
+        : 117,\n    \"highestRank\" : 187,\n    \"previousRank\" : 178,\n    \"favoriteRaceP1\"
+        : \"PROTOSS\"\n  }, {\n    \"character\" : {\n      \"id\" : 4118187,\n      \"realm\"
+        : 1,\n      \"displayName\" : \"llllllllllll\",\n      \"clanName\" : \"\",\n
+        \     \"clanTag\" : \"\",\n      \"profilePath\" : \"/profile/4118187/1/llllllllllll/\"\n
+        \   },\n    \"joinTimestamp\" : 1371452591,\n    \"points\" : 1363.0,\n    \"wins\"
+        : 345,\n    \"losses\" : 328,\n    \"highestRank\" : 189,\n    \"previousRank\"
+        : 197,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 4833652,\n      \"realm\" : 1,\n      \"displayName\" : \"Nerffy\",\n
+        \     \"clanName\" : \"Too EZ Bro\",\n      \"clanTag\" : \"EzBM\",\n      \"profilePath\"
+        : \"/profile/4833652/1/Nerffy/\"\n    },\n    \"joinTimestamp\" : 1372906612,\n
+        \   \"points\" : 1340.0,\n    \"wins\" : 216,\n    \"losses\" : 179,\n    \"highestRank\"
+        : 190,\n    \"previousRank\" : 194,\n    \"favoriteRaceP1\" : \"TERRAN\"\n
+        \ }, {\n    \"character\" : {\n      \"id\" : 4167433,\n      \"realm\" :
+        1,\n      \"displayName\" : \"Xayf\",\n      \"clanName\" : \"Too EZ Bro\",\n
+        \     \"clanTag\" : \"EzBM\",\n      \"profilePath\" : \"/profile/4167433/1/Xayf/\"\n
+        \   },\n    \"joinTimestamp\" : 1371481691,\n    \"points\" : 1238.0,\n    \"wins\"
+        : 145,\n    \"losses\" : 150,\n    \"highestRank\" : 195,\n    \"previousRank\"
+        : 199,\n    \"favoriteRaceP1\" : \"PROTOSS\"\n  }, {\n    \"character\" :
+        {\n      \"id\" : 4838503,\n      \"realm\" : 1,\n      \"displayName\" :
+        \"RavenzAU\",\n      \"clanName\" : \"Into the darkness\",\n      \"clanTag\"
+        : \"Gh0stX\",\n      \"profilePath\" : \"/profile/4838503/1/RavenzAU/\"\n
+        \   },\n    \"joinTimestamp\" : 1373076996,\n    \"points\" : 1213.0,\n    \"wins\"
+        : 165,\n    \"losses\" : 159,\n    \"highestRank\" : 195,\n    \"previousRank\"
+        : 198,\n    \"favoriteRaceP1\" : \"ZERG\"\n  }, {\n    \"character\" : {\n
+        \     \"id\" : 3321825,\n      \"realm\" : 1,\n      \"displayName\" : \"IlllllllIlll\",\n
+        \     \"clanName\" : \"\",\n      \"clanTag\" : \"\",\n      \"profilePath\"
+        : \"/profile/3321825/1/IlllllllIlll/\"\n    },\n    \"joinTimestamp\" : 1371481353,\n
+        \   \"points\" : 1204.0,\n    \"wins\" : 104,\n    \"losses\" : 117,\n    \"highestRank\"
+        : 197,\n    \"previousRank\" : 198,\n    \"favoriteRaceP1\" : \"TERRAN\"\n
+        \ } ]\n}"
+    http_version: 
+  recorded_at: Wed, 14 Aug 2013 03:50:27 GMT
+recorded_with: VCR 2.5.0

@@ -1,6 +1,6 @@
-module SC2
-  class Achievement
-    attr_accessor :title, :description, :achievement_id, :category_id, :points, :icon
+module Starcraft2
+  class Reward
+    attr_accessor :title, :id, :icon, :achievement_id
 
     def initialize(options = {})
       options.each do |k,v|
@@ -10,8 +10,8 @@ module SC2
 
     def self.build(raw_data)
       data = JSON.parse(raw_data)
-      data['achievements'].map do |achievement|
-        new(achievement)
+      data['portraits'].map do |reward|
+        new(reward)
       end
     end
   end

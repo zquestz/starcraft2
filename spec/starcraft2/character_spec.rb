@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe SC2::Character do
+describe Starcraft2::Character do
   describe '.initialize' do
-    let(:character) { SC2::Character.new(@options) }
+    let(:character) { Starcraft2::Character.new(@options) }
 
     before do
       @options = {}

@@ -15,7 +15,7 @@ Then `bundle install`.
 ## Usage
 
 ```ruby
-SC2::Client.new(host: 'us.battle.net')
+Starcraft2::Client.new(host: 'us.battle.net')
 ```
 
 ## License

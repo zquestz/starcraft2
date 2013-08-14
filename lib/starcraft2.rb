@@ -1,1 +1,1 @@
-require File.join('sc2', 'loader.rb')
+require File.join('starcraft2', 'loader.rb')

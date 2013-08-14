@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe SC2::Member do
+describe Starcraft2::Member do
   describe '.initialize' do
-    let(:member) { SC2::Member.new(@options) }
+    let(:member) { Starcraft2::Member.new(@options) }
     let(:character) { {
         "id" => 333319,
         "realm" => 1,
@@ -18,7 +18,7 @@ describe SC2::Member do
 
     it 'should store the character' do
       @options = {:character => character}
-      member.character.class.should == SC2::Character
+      member.character.class.should == Starcraft2::Character
 
       member.character.id .should == 333319
       member.character.realm.should == 1

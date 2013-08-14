@@ -1,4 +1,4 @@
-module SC2
+module Starcraft2
   class Client
     ACHIEVEMENTS_PATH = "/api/sc2/data/achievements"
     REWARDS_PATH = "/api/sc2/data/rewards"
@@ -59,7 +59,6 @@ module SC2
     end
 
     def ladder_data(host, id)
-      puts "http://" + host + LADDER_PATH + id.to_s
       HTTParty.get("http://" + host + LADDER_PATH + id.to_s).body
     end
   end

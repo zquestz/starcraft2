@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe SC2::Achievement do
+describe Starcraft2::Achievement do
   describe '#build' do
-    let(:achievements) { SC2::Achievement.build(@raw_achievement_data)}
+    let(:achievements) { Starcraft2::Achievement.build(@raw_achievement_data)}
 
     before do
       VCR.use_cassette('achievements') do
@@ -13,13 +13,13 @@ describe SC2::Achievement do
     it 'should build an array of achievements' do
       achievements.class.should == Array
       achievements.each do |a|
-        a.class.should == SC2::Achievement
+        a.class.should == Starcraft2::Achievement
       end
     end
   end
 
   describe '.initialize' do
-    let(:achievement) {SC2::Achievement.new(@options)}
+    let(:achievement) {Starcraft2::Achievement.new(@options)}
 
     before do
       @options = {}
@@ -27,7 +27,7 @@ describe SC2::Achievement do
 
     it 'should import the first achievement' do
       VCR.use_cassette('achievements') do
-        @achievement = SC2::Achievement.build(HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body).first
+        @achievement = Starcraft2::Achievement.build(HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body).first
       end
 
       @achievement.title.should == "FFA Destroyer"

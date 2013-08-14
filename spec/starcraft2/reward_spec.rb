@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe SC2::Reward do
+describe Starcraft2::Reward do
   describe '#build' do
-    let(:rewards) { SC2::Reward.build(@raw_reward_data) }
+    let(:rewards) { Starcraft2::Reward.build(@raw_reward_data) }
 
     before do
       VCR.use_cassette('rewards') do
@@ -13,13 +13,13 @@ describe SC2::Reward do
     it 'should build an array of rewards' do
       rewards.class.should == Array
       rewards.each do |r|
-        r.class.should == SC2::Reward
+        r.class.should == Starcraft2::Reward
       end
     end
   end
 
   describe '.initialize' do
-    let(:reward) { SC2::Reward.new(@options) }
+    let(:reward) { Starcraft2::Reward.new(@options) }
 
     before do
       @options = {}
@@ -27,7 +27,7 @@ describe SC2::Reward do
 
     it 'should import the first reward' do
       VCR.use_cassette('rewards') do
-        @reward = SC2::Reward.build(HTTParty.get('http://us.battle.net/api/sc2/data/rewards').body).first
+        @reward = Starcraft2::Reward.build(HTTParty.get('http://us.battle.net/api/sc2/data/rewards').body).first
       end
 
       @reward.title.should == "Kachinsky"
