@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 09 Aug 2013 01:32:55 GMT
+      - Wed, 14 Aug 2013 01:38:01 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -872,9 +872,9 @@ http_interactions:
 
         "displayName" : "State",
 
-        "clanName" : "",
+        "clanName" : "ROOT Gaming",
 
-        "clanTag" : "",
+        "clanTag" : "ROOT",
 
         "profilePath" : "/profile/3749856/1/State/"
 
@@ -1480,9 +1480,9 @@ http_interactions:
 
         "displayName" : "Skipper",
 
-        "clanName" : "Hell Yeah Fckin Right",
+        "clanName" : "sMi",
 
-        "clanTag" : "HYYFFR",
+        "clanTag" : "sMi",
 
         "profilePath" : "/profile/2308717/1/Skipper/"
 
@@ -2600,9 +2600,9 @@ http_interactions:
 
         "displayName" : "RSM",
 
-        "clanName" : "Everyone in YMCMB hacks",
+        "clanName" : "",
 
-        "clanTag" : "YMCMBH",
+        "clanTag" : "",
 
         "profilePath" : "/profile/677001/1/RSM/"
 
@@ -2824,9 +2824,9 @@ http_interactions:
 
         "displayName" : "Seven",
 
-        "clanName" : "Deviant",
+        "clanName" : "",
 
-        "clanTag" : "dVi",
+        "clanTag" : "",
 
         "profilePath" : "/profile/2965254/1/Seven/"
 
@@ -3014,13 +3014,13 @@ http_interactions:
 
         "realm" : 1,
 
-        "displayName" : "Mystery",
+        "displayName" : "Forsaken",
 
         "clanName" : "Clarity Gaming",
 
         "clanTag" : "CG",
 
-        "profilePath" : "/profile/3034307/1/Mystery/"
+        "profilePath" : "/profile/3034307/1/Forsaken/"
 
         },
 
@@ -3336,9 +3336,9 @@ http_interactions:
 
         "displayName" : "llllllll",
 
-        "clanName" : "",
+        "clanName" : "Team Darkstar",
 
-        "clanTag" : "",
+        "clanTag" : "DStar",
 
         "profilePath" : "/profile/3712373/1/llllllll/"
 
@@ -3400,9 +3400,9 @@ http_interactions:
 
         "displayName" : "PreTTyFroG",
 
-        "clanName" : "Impulse eSports",
+        "clanName" : "",
 
-        "clanTag" : "iMp",
+        "clanTag" : "",
 
         "profilePath" : "/profile/4456745/1/PreTTyFroG/"
 
@@ -6370,5 +6370,5 @@ http_interactions:
 
         }'
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 01:33:03 GMT
+  recorded_at: Wed, 14 Aug 2013 01:38:10 GMT
 recorded_with: VCR 2.5.0

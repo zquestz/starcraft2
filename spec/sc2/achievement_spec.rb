@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe SC2::Achievement do
-  describe '#build_achievements' do
-    let(:achievements) { SC2::Achievement.build_achievements(@raw_achievement_data)}
+  describe '#build' do
+    let(:achievements) { SC2::Achievement.build(@raw_achievement_data)}
 
     before do
       VCR.use_cassette('achievements') do
@@ -23,6 +23,19 @@ describe SC2::Achievement do
 
     before do
       @options = {}
+    end
+
+    it 'should import the first achievement' do
+      VCR.use_cassette('achievements') do
+        @achievement = SC2::Achievement.build(HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body).first
+      end
+
+      @achievement.title.should == "FFA Destroyer"
+      @achievement.description.should == "Win a Free-For-All Unranked game as each race option."
+      @achievement.achievement_id.should == 91475320766632
+      @achievement.category_id.should == 4325391
+      @achievement.points.should == 10
+      @achievement.icon.should == {"x" => 0, "y" => -375, "w" => 75, "h" => 75, "offset" => 45, "url" => "http://media.blizzard.com/sc2/achievements/5-75.jpg"}
     end
 
     it 'should store the title' do
@@ -51,8 +64,8 @@ describe SC2::Achievement do
     end
 
     it 'should store the icon data' do
-      @options = {:icon => {:x => 1, :y => 2, :w => 3, :h => 4, :offset => 0, :url => 'http://example.com'}}
-      achievement.icon.should == {:x => 1, :y => 2, :w => 3, :h => 4, :offset => 0, :url => 'http://example.com'}
+      @options = {:icon => {"x" => 1, "y" => 2, "w" => 3, "h" => 4, "offset" => 0, "url" => 'http://example.com'}}
+      achievement.icon.should == {"x" => 1, "y" => 2, "w" => 3, "h" => 4, "offset" => 0, "url" => 'http://example.com'}
     end
   end
 end

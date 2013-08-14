@@ -8,7 +8,7 @@ module SC2
       end
     end
 
-    def self.build_rewards(raw_data)
+    def self.build(raw_data)
       data = JSON.parse(raw_data)
       data['portraits'].map do |reward|
         reward['achievement_id'] = reward.delete('achievementId')

@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe SC2::Reward do
-  describe '.build_rewards' do
-    let(:rewards) { SC2::Reward.build_rewards(@raw_reward_data)}
+  describe '#build' do
+    let(:rewards) { SC2::Reward.build(@raw_reward_data) }
 
     before do
       VCR.use_cassette('rewards') do
@@ -19,10 +19,21 @@ describe SC2::Reward do
   end
 
   describe '.initialize' do
-    let(:reward) {SC2::Reward.new(@options)}
+    let(:reward) { SC2::Reward.new(@options) }
 
     before do
       @options = {}
+    end
+
+    it 'should import the first reward' do
+      VCR.use_cassette('rewards') do
+        @reward = SC2::Reward.build(HTTParty.get('http://us.battle.net/api/sc2/data/rewards').body).first
+      end
+
+      @reward.title.should == "Kachinsky"
+      @reward.id.should == 2951153716
+      @reward.icon.should == {"x" => 0, "y" => 0, "w" => 90, "h" => 90, "offset" => 0, "url" => "http://media.blizzard.com/sc2/portraits/0-90.jpg"}
+      @reward.achievement_id.should == 0
     end
 
     it 'should store the title' do
@@ -36,8 +47,8 @@ describe SC2::Reward do
     end
 
     it 'should store the icon data' do
-      @options = {:icon => {:x => 1, :y => 2, :w => 3, :h => 4, :offset => 0, :url => 'http://example.com'}}
-      reward.icon.should == {:x => 1, :y => 2, :w => 3, :h => 4, :offset => 0, :url => 'http://example.com'}
+      @options = {:icon => {"x" => 1, "y" => 2, "w" => 3, "h" => 4, "offset" => 0, "url" => 'http://example.com'}}
+      reward.icon.should == {"x" => 1, "y" => 2, "w" => 3, "h" => 4, "offset" => 0, "url" => 'http://example.com'}
     end
 
     it "should store the achievement id" do

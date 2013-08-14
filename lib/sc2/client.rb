@@ -12,11 +12,11 @@ module SC2
     end
 
     def achievements
-      Achievement.build_achievements(achievements_data)
+      Achievement.build(achievements_data)
     end
 
     def rewards
-      Reward.build_rewards(rewards_data)
+      Reward.build(rewards_data)
     end
 
     def ladder(id)
