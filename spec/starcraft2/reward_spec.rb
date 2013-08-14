@@ -6,7 +6,7 @@ describe Starcraft2::Reward do
 
     before do
       VCR.use_cassette('rewards') do
-        @raw_reward_data = HTTParty.get('http://us.battle.net/api/sc2/data/rewards').body
+        @raw_reward_data = HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body
       end
     end
 
@@ -27,7 +27,7 @@ describe Starcraft2::Reward do
 
     it 'should import the first reward' do
       VCR.use_cassette('rewards') do
-        @reward = Starcraft2::Reward.build(HTTParty.get('http://us.battle.net/api/sc2/data/rewards').body).first
+        @reward = Starcraft2::Reward.build(HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body).first
       end
 
       @reward.title.should == 'Kachinsky'
@@ -47,8 +47,8 @@ describe Starcraft2::Reward do
     end
 
     it 'should store the icon data' do
-      @options = {:icon => {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'http://example.com'}}
-      reward.icon.should == {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'http://example.com'}
+      @options = {:icon => {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'https://example.com'}}
+      reward.icon.should == {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'https://example.com'}
     end
 
     it 'should store the achievement id' do

@@ -6,7 +6,7 @@ describe Starcraft2::Achievement do
 
     before do
       VCR.use_cassette('achievements') do
-        @achievements_json = HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body
+        @achievements_json = HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body
       end
     end
 
@@ -27,7 +27,7 @@ describe Starcraft2::Achievement do
 
     it 'should import the first achievement' do
       VCR.use_cassette('achievements') do
-        @achievement = Starcraft2::Achievement.build(HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body).first
+        @achievement = Starcraft2::Achievement.build(HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body).first
       end
 
       @achievement.title.should == 'FFA Destroyer'
@@ -64,8 +64,8 @@ describe Starcraft2::Achievement do
     end
 
     it 'should store the icon data' do
-      @options = {:icon => {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'http://example.com'}}
-      achievement.icon.should == {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'http://example.com'}
+      @options = {:icon => {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'https://example.com'}}
+      achievement.icon.should == {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'https://example.com'}
     end
   end
 end

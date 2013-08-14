@@ -41,7 +41,7 @@ module Starcraft2
     end
 
     def achievements_url
-      'http://' + host + ACHIEVEMENTS_PATH + locale_param
+      'https://' + host + ACHIEVEMENTS_PATH + locale_param
     end
 
     def rewards_data
@@ -49,7 +49,7 @@ module Starcraft2
     end
 
     def rewards_url
-      'http://' + host + REWARDS_PATH + locale_param
+      'https://' + host + REWARDS_PATH + locale_param
     end
 
     def ladder_data(id)
@@ -57,7 +57,7 @@ module Starcraft2
     end
 
     def ladder_url(id)
-      'http://' + host + LADDER_PATH + id.to_s + locale_param
+      'https://' + host + LADDER_PATH + id.to_s + locale_param
     end
 
     def locale_param

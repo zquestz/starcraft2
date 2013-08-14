@@ -106,9 +106,9 @@ describe Starcraft2::Client do
       member.character.clan_tag == ''
       member.character.profile_path == '/profile/2778732/1/lIlIlIlIlIlI/'
 
-      member.points.should == 2362.0
-      member.wins.should == 250
-      member.losses.should == 101
+      member.points.should == 2374.0
+      member.wins.should == 253
+      member.losses.should == 102
       member.join_timestamp.should == 1373859935
       member.highest_rank.should == 1
       member.previous_rank.should == 1
