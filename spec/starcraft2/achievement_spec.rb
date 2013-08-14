@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe Starcraft2::Achievement do
   describe '#build' do
-    let(:achievements) { Starcraft2::Achievement.build(@raw_achievement_data)}
+    let(:achievements) { Starcraft2::Achievement.build(@achievements_json) }
 
     before do
       VCR.use_cassette('achievements') do
-        @raw_achievement_data = HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body
+        @achievements_json = HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body
       end
     end
 
@@ -19,7 +19,7 @@ describe Starcraft2::Achievement do
   end
 
   describe '.initialize' do
-    let(:achievement) {Starcraft2::Achievement.new(@options)}
+    let(:achievement) { Starcraft2::Achievement.new(@options) }
 
     before do
       @options = {}
@@ -30,12 +30,12 @@ describe Starcraft2::Achievement do
         @achievement = Starcraft2::Achievement.build(HTTParty.get('http://us.battle.net/api/sc2/data/achievements').body).first
       end
 
-      @achievement.title.should == "FFA Destroyer"
-      @achievement.description.should == "Win a Free-For-All Unranked game as each race option."
+      @achievement.title.should == 'FFA Destroyer'
+      @achievement.description.should == 'Win a Free-For-All Unranked game as each race option.'
       @achievement.achievement_id.should == 91475320766632
       @achievement.category_id.should == 4325391
       @achievement.points.should == 10
-      @achievement.icon.should == {"x" => 0, "y" => -375, "w" => 75, "h" => 75, "offset" => 45, "url" => "http://media.blizzard.com/sc2/achievements/5-75.jpg"}
+      @achievement.icon.should == {'x' => 0, 'y' => -375, 'w' => 75, 'h' => 75, 'offset' => 45, 'url' => 'http://media.blizzard.com/sc2/achievements/5-75.jpg'}
     end
 
     it 'should store the title' do
@@ -64,8 +64,8 @@ describe Starcraft2::Achievement do
     end
 
     it 'should store the icon data' do
-      @options = {:icon => {"x" => 1, "y" => 2, "w" => 3, "h" => 4, "offset" => 0, "url" => 'http://example.com'}}
-      achievement.icon.should == {"x" => 1, "y" => 2, "w" => 3, "h" => 4, "offset" => 0, "url" => 'http://example.com'}
+      @options = {:icon => {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'http://example.com'}}
+      achievement.icon.should == {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'http://example.com'}
     end
   end
 end

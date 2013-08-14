@@ -8,8 +8,8 @@ module Starcraft2
       end
     end
 
-    def self.build(raw_data)
-      data = JSON.parse(raw_data)
+    def self.build(rewards_json)
+      data = JSON.parse(rewards_json)
       data['portraits'].map do |reward|
         new(reward)
       end

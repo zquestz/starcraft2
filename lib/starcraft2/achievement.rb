@@ -8,8 +8,8 @@ module Starcraft2
       end
     end
 
-    def self.build(raw_data)
-      data = JSON.parse(raw_data)
+    def self.build(achievements_json)
+      data = JSON.parse(achievements_json)
       data['achievements'].map do |achievement|
         new(achievement)
       end

@@ -17,7 +17,7 @@ describe Starcraft2::Client do
     end
   end
 
-  describe ".initialize" do
+  describe '.initialize' do
     it 'should store the locale' do
       @options = { :locale => 'en_US' }
       client.locale.should == 'en_US'
@@ -29,7 +29,7 @@ describe Starcraft2::Client do
     end
   end
 
-  describe ".achievements" do
+  describe '.achievements' do
     it 'should return an array of achievements' do
       VCR.use_cassette('achievements') do
         client.achievements.class.should == Array
@@ -42,16 +42,16 @@ describe Starcraft2::Client do
       end
     end
 
-    it "should return achievements in the correct locale" do
-      @options.merge!({:locale => "pt_BR"})
+    it 'should return achievements in the correct locale' do
+      @options.merge!({:locale => 'pt_BR'})
 
       VCR.use_cassette('achievements') do
-        client.achievements.first.title.should == "TCT Destruidor"
+        client.achievements.first.title.should == 'TCT Destruidor'
       end
     end
   end
 
-  describe ".rewards" do
+  describe '.rewards' do
     it 'should return an array of rewards' do
       VCR.use_cassette('rewards') do
         client.rewards.class.should == Array
@@ -64,11 +64,11 @@ describe Starcraft2::Client do
       end
     end
 
-    it "should return rewards in the correct locale" do
-      @options.merge!({:locale => "pt_BR"})
+    it 'should return rewards in the correct locale' do
+      @options.merge!({:locale => 'pt_BR'})
 
       VCR.use_cassette('rewards') do
-        client.rewards.first.title.should == "Kachinsky"
+        client.rewards.first.title.should == 'Kachinsky'
       end
     end
   end
@@ -98,9 +98,9 @@ describe Starcraft2::Client do
       member.character.id == 2778732
       member.character.realm == 1
       member.character.display_name == 'lIlIlIlIlIlI'
-      member.character.clan_name == ""
-      member.character.clan_tag == ""
-      member.character.profile_path == "/profile/2778732/1/lIlIlIlIlIlI/"
+      member.character.clan_name == ''
+      member.character.clan_tag == ''
+      member.character.profile_path == '/profile/2778732/1/lIlIlIlIlIlI/'
 
       member.points.should == 2362.0
       member.wins.should == 250
@@ -108,7 +108,7 @@ describe Starcraft2::Client do
       member.join_timestamp.should == 1373859935
       member.highest_rank.should == 1
       member.previous_rank.should == 1
-      member.favorite_race_p1.should == "PROTOSS"
+      member.favorite_race_p1.should == 'PROTOSS'
     end
   end
 end

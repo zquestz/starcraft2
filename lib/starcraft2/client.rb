@@ -1,8 +1,8 @@
 module Starcraft2
   class Client
-    ACHIEVEMENTS_PATH = "/api/sc2/data/achievements"
-    REWARDS_PATH = "/api/sc2/data/rewards"
-    LADDER_PATH = "/api/sc2/ladder/"
+    ACHIEVEMENTS_PATH = '/api/sc2/data/achievements'
+    REWARDS_PATH = '/api/sc2/data/rewards'
+    LADDER_PATH = '/api/sc2/ladder/'
 
     attr_accessor :locale, :host
 
@@ -39,7 +39,7 @@ module Starcraft2
     end
 
     def achievements_url
-      "http://" + host + ACHIEVEMENTS_PATH + locale_param
+      'http://' + host + ACHIEVEMENTS_PATH + locale_param
     end
 
     def rewards_data
@@ -47,7 +47,7 @@ module Starcraft2
     end
 
     def rewards_url
-      "http://" + host + REWARDS_PATH + locale_param
+      'http://' + host + REWARDS_PATH + locale_param
     end
 
     def ladder_data(id)
@@ -55,7 +55,7 @@ module Starcraft2
     end
 
     def ladder_url(id)
-      "http://" + host + LADDER_PATH + id.to_s + locale_param
+      'http://' + host + LADDER_PATH + id.to_s + locale_param
     end
 
     def locale_param
