@@ -4,6 +4,8 @@ module Starcraft2
 
     def initialize(options = {})
       options.each do |k,v|
+        v = OpenStruct.new(v) if [:icon].include?(k.to_sym)
+
         self.send(:"#{StringUtils.underscore(k.to_s)}=", v)
       end
     end

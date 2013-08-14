@@ -35,7 +35,12 @@ describe Starcraft2::Achievement do
       @achievement.achievement_id.should == 91475320766632
       @achievement.category_id.should == 4325391
       @achievement.points.should == 10
-      @achievement.icon.should == {'x' => 0, 'y' => -375, 'w' => 75, 'h' => 75, 'offset' => 45, 'url' => 'http://media.blizzard.com/sc2/achievements/5-75.jpg'}
+      @achievement.icon.x.should == 0
+      @achievement.icon.y.should == -375
+      @achievement.icon.w.should == 75
+      @achievement.icon.h.should == 75
+      @achievement.icon.offset.should == 45
+      @achievement.icon.url.should == 'http://media.blizzard.com/sc2/achievements/5-75.jpg'
     end
 
     it 'should store the title' do
@@ -65,7 +70,12 @@ describe Starcraft2::Achievement do
 
     it 'should store the icon data' do
       @options = {:icon => {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'https://example.com'}}
-      achievement.icon.should == {'x' => 1, 'y' => 2, 'w' => 3, 'h' => 4, 'offset' => 0, 'url' => 'https://example.com'}
+      achievement.icon.x.should == 1
+      achievement.icon.y.should == 2
+      achievement.icon.w.should == 3
+      achievement.icon.h.should == 4
+      achievement.icon.offset.should == 0
+      achievement.icon.url.should == 'https://example.com'
     end
   end
 end
