@@ -1,7 +1,6 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
   gem.add_dependency 'httparty'
-  gem.add_dependency 'activesupport', '>= 3.1'
 
   gem.authors       = ["Josh Ellithorpe", "James Fickel", "Jan Hein Hoogstad"]
   gem.email         = ["quest@mac.com"]

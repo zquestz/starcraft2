@@ -1,6 +1,6 @@
 require 'httparty'
 require 'json'
-require File.join('active_support', 'inflector')
+require File.join('starcraft2', 'string')
 require File.join('starcraft2', 'client')
 require File.join('starcraft2', 'achievement')
 require File.join('starcraft2', 'reward')
