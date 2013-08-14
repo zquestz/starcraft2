@@ -79,29 +79,36 @@ describe Starcraft2::Client do
         client.grandmaster_ladder
       end
     end
+    let(:member) { ladder.first }
 
     it 'should return an array of members' do
       ladder.class.should == Array
-      ladder.each do |member|
-        member.class.should == Starcraft2::Member
+      ladder.each do |m|
+        m.class.should == Starcraft2::Member
       end
     end
 
     it 'should build characters within the members' do
-      ladder.each do |member|
-        member.character.class.should == Starcraft2::Character
+      ladder.each do |m|
+        m.character.class.should == Starcraft2::Character
       end
     end
 
     it 'should return the first grandmaster' do
-      # ladder.first.character.should == ""
-      ladder.first.points.should == 2352.0
-      ladder.first.wins.should == 249
-      ladder.first.losses.should == 101
-      ladder.first.join_timestamp.should == 1373859935
-      ladder.first.highest_rank.should == 1
-      ladder.first.previous_rank.should == 11
-      ladder.first.favorite_race_p1.should == "PROTOSS"
+      member.character.id == 2778732
+      member.character.realm == 1
+      member.character.display_name == 'lIlIlIlIlIlI'
+      member.character.clan_name == ""
+      member.character.clan_tag == ""
+      member.character.profile_path == "/profile/2778732/1/lIlIlIlIlIlI/"
+
+      member.points.should == 2352.0
+      member.wins.should == 249
+      member.losses.should == 101
+      member.join_timestamp.should == 1373859935
+      member.highest_rank.should == 1
+      member.previous_rank.should == 11
+      member.favorite_race_p1.should == "PROTOSS"
     end
   end
 end
