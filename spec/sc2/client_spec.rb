@@ -89,43 +89,55 @@ describe SC2::Client do
     end
 
     it 'should build characters within the members' do
-      pending
-
       ladder.each do |member|
         member.character.class.should == SC2::Character
       end
     end
 
     it 'should return the first grandmaster' do
-      ladder.first.should == ""
+      # ladder.first.character.should == ""
+      ladder.first.points.should == 2352.0
+      ladder.first.wins.should == 249
+      ladder.first.losses.should == 101
+      ladder.first.join_timestamp.should == 1373859935
+      ladder.first.highest_rank.should == 1
+      ladder.first.previous_rank.should == 11
+      ladder.first.favorite_race_p1.should == "PROTOSS"
     end
   end
 
-  describe '.previous_grandmaster_ladder' do
+  # describe '.previous_grandmaster_ladder' do
 
-    let(:ladder) do
-      VCR.use_cassette('previous_grandmaster') do
-        SC2::Client.previous_grandmaster_ladder
-      end
-    end
+  #   let(:ladder) do
+  #     VCR.use_cassette('previous_grandmaster') do
+  #       client.previous_grandmaster_ladder
+  #     end
+  #   end
 
-    it 'should return an array of members' do
-      ladder.class.should == Array
-      ladder.each do |member|
-        member.class.should == SC2::Member
-      end
-    end
+  #   it 'should return an array of members' do
+  #     ladder.class.should == Array
+  #     ladder.each do |member|
+  #       member.class.should == SC2::Member
+  #     end
+  #   end
 
-    it 'should build characters within the members' do
-      pending
+  #   it 'should build characters within the members' do
+  #     pending
 
-      ladder.each do |member|
-        member.character.class.should == SC2::Character
-      end
-    end
+  #     ladder.each do |member|
+  #       member.character.class.should == SC2::Character
+  #     end
+  #   end
 
-    it 'should return the first grandmaster' do
-      ladder.first.should == ""
-    end
-  end
+  #   it 'should return the first grandmaster' do
+  #     # ladder.first.character.should == ""
+  #     ladder.first.points.should == ""
+  #     ladder.first.wins.should == ""
+  #     ladder.first.losses.should == ""
+  #     ladder.first.join_timestamp.should == ""
+  #     ladder.first.highest_rank.should == ""
+  #     ladder.first.previous_rank.should == ""
+  #     ladder.first.favorite_race_p1.should == ""
+  #   end
+  # end
 end

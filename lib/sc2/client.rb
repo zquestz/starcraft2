@@ -59,6 +59,7 @@ module SC2
     end
 
     def ladder_data(host, id)
+      puts "http://" + host + LADDER_PATH + id.to_s
       HTTParty.get("http://" + host + LADDER_PATH + id.to_s).body
     end
   end
