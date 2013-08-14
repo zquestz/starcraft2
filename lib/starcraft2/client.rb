@@ -15,15 +15,15 @@ module Starcraft2
     end
 
     def achievements
-      Achievement.build(achievements_data)
+      Achievement.build(achievements_json)
     end
 
     def rewards
-      Reward.build(rewards_data)
+      Reward.build(rewards_json)
     end
 
     def ladder(id)
-      Ladder.build(ladder_data(id))
+      Ladder.build(ladder_json(id))
     end
 
     def grandmaster_ladder
@@ -36,7 +36,7 @@ module Starcraft2
 
     private
 
-    def achievements_data
+    def achievements_json
       HTTParty.get(achievements_url).body
     end
 
@@ -44,7 +44,7 @@ module Starcraft2
       'https://' + host + ACHIEVEMENTS_PATH + locale_param
     end
 
-    def rewards_data
+    def rewards_json
       HTTParty.get(rewards_url).body
     end
 
@@ -52,7 +52,7 @@ module Starcraft2
       'https://' + host + REWARDS_PATH + locale_param
     end
 
-    def ladder_data(id)
+    def ladder_json(id)
       HTTParty.get(ladder_url(id)).body
     end
 
