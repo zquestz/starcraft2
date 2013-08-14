@@ -18,6 +18,9 @@ Then `bundle install`.
 Starcraft2::Client.new(host: 'us.battle.net')
 ```
 
+## Build Status
+[![Build Status](https://travis-ci.org/zquestz/starcraft2.png)](https://travis-ci.org/zquestz/starcraft2)
+
 ## License
 
 Copyright (c) 2013 by Josh Ellithorpe, James Fickel, and Jan Hein Hoogstad
