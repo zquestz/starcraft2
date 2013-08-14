@@ -6,6 +6,7 @@ module Starcraft2
     def initialize(options = {})
       options.each do |k,v|
         v = Starcraft2::Character.new(v) if k.to_sym == :character
+
         self.send(:"#{StringUtils.underscore(k.to_s)}=", v)
       end
     end
