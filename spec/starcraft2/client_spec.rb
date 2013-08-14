@@ -18,6 +18,10 @@ describe Starcraft2::Client do
   end
 
   describe '.initialize' do
+    it 'should default to us.battle.net' do
+      client.host.should == 'us.battle.net'
+    end
+
     it 'should store the locale' do
       @options = { :locale => 'en_US' }
       client.locale.should == 'en_US'

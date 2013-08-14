@@ -10,6 +10,8 @@ module Starcraft2
       options.each do |k,v|
         self.send(:"#{k}=", v)
       end
+
+      self.host = 'us.battle.net' if self.host.nil?
     end
 
     def achievements
