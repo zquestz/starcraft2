@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 14 Aug 2013 04:22:25 GMT
+      - Wed, 14 Aug 2013 04:38:41 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -1832,7 +1832,7 @@ http_interactions:
         YS5ibGl6emFyZC5jb20vc2MyL2FuaW1hdGlvbnMvMC03NS5qcGciCn0sCiJh
         Y2hpZXZlbWVudElkIiA6IDkxNDc1MzIwNzY4NTI5Cn0gXQp9
     http_version: 
-  recorded_at: Wed, 14 Aug 2013 04:22:26 GMT
+  recorded_at: Wed, 14 Aug 2013 04:38:45 GMT
 - request:
     method: get
     uri: http://us.battle.net/api/sc2/data/rewards?locale=pt_BR
@@ -1843,22 +1843,30 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Date:
-      - Wed, 14 Aug 2013 04:22:26 GMT
-      Server:
-      - Apache
-      X-Frame-Options:
-      - SAMEORIGIN
-      Content-Language:
-      - pt-BR
-      Vary:
-      - Accept-Encoding
-      Transfer-Encoding:
-      - chunked
-      Content-Type:
-      - application/json;charset=UTF-8
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAxNCBBdWcgMjAxMyAwNDozODo0NSBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q29udGVudC1MYW5ndWFnZQ==":
+      - !binary |-
+        cHQtQlI=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -4180,5 +4188,5 @@ http_interactions:
         Y29tL3NjMi9hbmltYXRpb25zLzAtNzUuanBnIgogICAgfSwKICAgICJhY2hp
         ZXZlbWVudElkIiA6IDkxNDc1MzIwNzY4NTI5CiAgfSBdCn0=
     http_version: 
-  recorded_at: Wed, 14 Aug 2013 04:22:28 GMT
+  recorded_at: Wed, 14 Aug 2013 04:38:58 GMT
 recorded_with: VCR 2.5.0

@@ -102,12 +102,12 @@ describe Starcraft2::Client do
       member.character.clan_tag == ""
       member.character.profile_path == "/profile/2778732/1/lIlIlIlIlIlI/"
 
-      member.points.should == 2352.0
-      member.wins.should == 249
+      member.points.should == 2362.0
+      member.wins.should == 250
       member.losses.should == 101
       member.join_timestamp.should == 1373859935
       member.highest_rank.should == 1
-      member.previous_rank.should == 11
+      member.previous_rank.should == 1
       member.favorite_race_p1.should == "PROTOSS"
     end
   end

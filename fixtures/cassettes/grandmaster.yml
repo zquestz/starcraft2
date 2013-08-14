@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 14 Aug 2013 04:22:28 GMT
+      - Wed, 14 Aug 2013 04:38:58 GMT
       Server:
       - Apache
       X-Frame-Options:
@@ -50,15 +50,15 @@ http_interactions:
 
         "joinTimestamp" : 1373859935,
 
-        "points" : 2352.0,
+        "points" : 2362.0,
 
-        "wins" : 249,
+        "wins" : 250,
 
         "losses" : 101,
 
         "highestRank" : 1,
 
-        "previousRank" : 11,
+        "previousRank" : 1,
 
         "favoriteRaceP1" : "PROTOSS"
 
@@ -402,11 +402,11 @@ http_interactions:
 
         "joinTimestamp" : 1371454350,
 
-        "points" : 2079.0,
+        "points" : 2077.0,
 
         "wins" : 297,
 
-        "losses" : 233,
+        "losses" : 234,
 
         "highestRank" : 12,
 
@@ -2498,38 +2498,6 @@ http_interactions:
 
         "character" : {
 
-        "id" : 1443122,
-
-        "realm" : 1,
-
-        "displayName" : "DeeMo",
-
-        "clanName" : "Official Team NrG",
-
-        "clanTag" : "lNrGl",
-
-        "profilePath" : "/profile/1443122/1/DeeMo/"
-
-        },
-
-        "joinTimestamp" : 1374949279,
-
-        "points" : 1850.0,
-
-        "wins" : 198,
-
-        "losses" : 176,
-
-        "highestRank" : 69,
-
-        "previousRank" : 140,
-
-        "favoriteRaceP1" : "TERRAN"
-
-        }, {
-
-        "character" : {
-
         "id" : 3732577,
 
         "realm" : 1,
@@ -2685,6 +2653,38 @@ http_interactions:
         "previousRank" : 84,
 
         "favoriteRaceP1" : "PROTOSS"
+
+        }, {
+
+        "character" : {
+
+        "id" : 1443122,
+
+        "realm" : 1,
+
+        "displayName" : "DeeMo",
+
+        "clanName" : "Official Team NrG",
+
+        "clanTag" : "lNrGl",
+
+        "profilePath" : "/profile/1443122/1/DeeMo/"
+
+        },
+
+        "joinTimestamp" : 1374949279,
+
+        "points" : 1839.0,
+
+        "wins" : 198,
+
+        "losses" : 177,
+
+        "highestRank" : 69,
+
+        "previousRank" : 140,
+
+        "favoriteRaceP1" : "TERRAN"
 
         }, {
 
@@ -2998,7 +2998,7 @@ http_interactions:
 
         "wins" : 112,
 
-        "losses" : 90,
+        "losses" : 91,
 
         "highestRank" : 66,
 
@@ -3133,6 +3133,38 @@ http_interactions:
         "previousRank" : 0,
 
         "favoriteRaceP1" : "TERRAN"
+
+        }, {
+
+        "character" : {
+
+        "id" : 2075865,
+
+        "realm" : 1,
+
+        "displayName" : "city",
+
+        "clanName" : "Official Team NrG",
+
+        "clanTag" : "lNrGl",
+
+        "profilePath" : "/profile/2075865/1/city/"
+
+        },
+
+        "joinTimestamp" : 1374254639,
+
+        "points" : 1809.0,
+
+        "wins" : 89,
+
+        "losses" : 78,
+
+        "highestRank" : 87,
+
+        "previousRank" : 106,
+
+        "favoriteRaceP1" : "PROTOSS"
 
         }, {
 
@@ -3325,38 +3357,6 @@ http_interactions:
         "previousRank" : 154,
 
         "favoriteRaceP1" : "TERRAN"
-
-        }, {
-
-        "character" : {
-
-        "id" : 2075865,
-
-        "realm" : 1,
-
-        "displayName" : "city",
-
-        "clanName" : "Official Team NrG",
-
-        "clanTag" : "lNrGl",
-
-        "profilePath" : "/profile/2075865/1/city/"
-
-        },
-
-        "joinTimestamp" : 1374254639,
-
-        "points" : 1791.0,
-
-        "wins" : 88,
-
-        "losses" : 78,
-
-        "highestRank" : 87,
-
-        "previousRank" : 106,
-
-        "favoriteRaceP1" : "PROTOSS"
 
         }, {
 
@@ -3906,6 +3906,38 @@ http_interactions:
 
         "character" : {
 
+        "id" : 2313583,
+
+        "realm" : 1,
+
+        "displayName" : "Dnice",
+
+        "clanName" : "",
+
+        "clanTag" : "",
+
+        "profilePath" : "/profile/2313583/1/Dnice/"
+
+        },
+
+        "joinTimestamp" : 1375477955,
+
+        "points" : 1742.0,
+
+        "wins" : 176,
+
+        "losses" : 161,
+
+        "highestRank" : 113,
+
+        "previousRank" : 156,
+
+        "favoriteRaceP1" : "TERRAN"
+
+        }, {
+
+        "character" : {
+
         "id" : 4482478,
 
         "realm" : 1,
@@ -4130,38 +4162,6 @@ http_interactions:
 
         "character" : {
 
-        "id" : 2313583,
-
-        "realm" : 1,
-
-        "displayName" : "Dnice",
-
-        "clanName" : "",
-
-        "clanTag" : "",
-
-        "profilePath" : "/profile/2313583/1/Dnice/"
-
-        },
-
-        "joinTimestamp" : 1375477955,
-
-        "points" : 1728.0,
-
-        "wins" : 175,
-
-        "losses" : 161,
-
-        "highestRank" : 113,
-
-        "previousRank" : 156,
-
-        "favoriteRaceP1" : "TERRAN"
-
-        }, {
-
-        "character" : {
-
         "id" : 3034307,
 
         "realm" : 1,
@@ -4189,6 +4189,38 @@ http_interactions:
         "previousRank" : 152,
 
         "favoriteRaceP1" : "ZERG"
+
+        }, {
+
+        "character" : {
+
+        "id" : 1428705,
+
+        "realm" : 1,
+
+        "displayName" : "Rast",
+
+        "clanName" : "Chronic Facture",
+
+        "clanTag" : "xCF",
+
+        "profilePath" : "/profile/1428705/1/Rast/"
+
+        },
+
+        "joinTimestamp" : 1375077908,
+
+        "points" : 1724.0,
+
+        "wins" : 338,
+
+        "losses" : 302,
+
+        "highestRank" : 131,
+
+        "previousRank" : 175,
+
+        "favoriteRaceP1" : "PROTOSS"
 
         }, {
 
@@ -4477,38 +4509,6 @@ http_interactions:
         "previousRank" : 92,
 
         "favoriteRaceP1" : "TERRAN"
-
-        }, {
-
-        "character" : {
-
-        "id" : 1428705,
-
-        "realm" : 1,
-
-        "displayName" : "Rast",
-
-        "clanName" : "Chronic Facture",
-
-        "clanTag" : "xCF",
-
-        "profilePath" : "/profile/1428705/1/Rast/"
-
-        },
-
-        "joinTimestamp" : 1375077908,
-
-        "points" : 1711.0,
-
-        "wins" : 337,
-
-        "losses" : 301,
-
-        "highestRank" : 137,
-
-        "previousRank" : 175,
-
-        "favoriteRaceP1" : "PROTOSS"
 
         }, {
 
@@ -5142,7 +5142,7 @@ http_interactions:
 
         "wins" : 107,
 
-        "losses" : 89,
+        "losses" : 90,
 
         "highestRank" : 133,
 
@@ -5570,38 +5570,6 @@ http_interactions:
 
         "character" : {
 
-        "id" : 2466822,
-
-        "realm" : 1,
-
-        "displayName" : "Schnitzel",
-
-        "clanName" : "Team SCA",
-
-        "clanTag" : "SCA",
-
-        "profilePath" : "/profile/2466822/1/Schnitzel/"
-
-        },
-
-        "joinTimestamp" : 1375625605,
-
-        "points" : 1630.0,
-
-        "wins" : 390,
-
-        "losses" : 361,
-
-        "highestRank" : 121,
-
-        "previousRank" : 172,
-
-        "favoriteRaceP1" : "TERRAN"
-
-        }, {
-
-        "character" : {
-
         "id" : 2072274,
 
         "realm" : 1,
@@ -5693,6 +5661,38 @@ http_interactions:
         "previousRank" : 173,
 
         "favoriteRaceP1" : "PROTOSS"
+
+        }, {
+
+        "character" : {
+
+        "id" : 2466822,
+
+        "realm" : 1,
+
+        "displayName" : "Schnitzel",
+
+        "clanName" : "Team SCA",
+
+        "clanTag" : "SCA",
+
+        "profilePath" : "/profile/2466822/1/Schnitzel/"
+
+        },
+
+        "joinTimestamp" : 1375625605,
+
+        "points" : 1611.0,
+
+        "wins" : 390,
+
+        "losses" : 362,
+
+        "highestRank" : 121,
+
+        "previousRank" : 172,
+
+        "favoriteRaceP1" : "TERRAN"
 
         }, {
 
@@ -6402,5 +6402,5 @@ http_interactions:
 
         }'
     http_version: 
-  recorded_at: Wed, 14 Aug 2013 04:22:35 GMT
+  recorded_at: Wed, 14 Aug 2013 04:38:59 GMT
 recorded_with: VCR 2.5.0
