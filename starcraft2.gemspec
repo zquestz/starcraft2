@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
   gem.add_dependency 'httparty'
-  gem.add_dependency 'active_support'
+  gem.add_dependency 'activesupport'
 
   gem.authors       = ["Josh Ellithorpe", "James Fickel", "Jan Hein Hoogstad"]
   gem.email         = ["quest@mac.com"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
   gem.name          = "starcraft2"
   gem.require_paths = ["lib"]
-  gem.version       = "0.0.4"
+  gem.version       = "0.0.5"
 
   gem.add_development_dependency 'rspec', '~> 2.6.0'
   gem.add_development_dependency 'rake'
