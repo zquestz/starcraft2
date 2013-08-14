@@ -3,8 +3,8 @@ require 'spec_helper'
 describe SC2::Ladder do
   describe '#build' do
     let(:id) { 148200 }
-    let(:host) { 'us.battle.net'}
-    let(:ladder) { SC2::Ladder.build(@raw_ladder_data)}
+    let(:host) { 'us.battle.net' }
+    let(:ladder) { SC2::Ladder.build(@raw_ladder_data) }
 
     before do
       VCR.use_cassette("ladder_#{id}") do
@@ -20,15 +20,9 @@ describe SC2::Ladder do
     end
 
     it 'should build characters within the members' do
-      pending
-      
       ladder.each do |member|
         member.character.class.should == SC2::Character
       end
     end
-  end
-
-  describe ".initialize" do
-
   end
 end
