@@ -23,6 +23,14 @@ module SC2
       fetch_ladder(host, id)
     end
 
+    def grandmaster_ladder
+      ladder('grandmaster')
+    end
+
+    def previous_grandmaster_ladder
+      ladder('grandmaster/last')
+    end
+
     private
 
     def achievements_data

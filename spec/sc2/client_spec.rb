@@ -72,4 +72,60 @@ describe SC2::Client do
       end
     end
   end
+
+  describe '.grandmaster_ladder' do
+
+    let(:ladder) do
+      VCR.use_cassette('grandmaster') do
+        client.grandmaster_ladder
+      end
+    end
+
+    it 'should return an array of members' do
+      ladder.class.should == Array
+      ladder.each do |member|
+        member.class.should == SC2::Member
+      end
+    end
+
+    it 'should build characters within the members' do
+      pending
+
+      ladder.each do |member|
+        member.character.class.should == SC2::Character
+      end
+    end
+
+    it 'should return the first grandmaster' do
+      ladder.first.should == ""
+    end
+  end
+
+  describe '.previous_grandmaster_ladder' do
+
+    let(:ladder) do
+      VCR.use_cassette('previous_grandmaster') do
+        SC2::Client.previous_grandmaster_ladder
+      end
+    end
+
+    it 'should return an array of members' do
+      ladder.class.should == Array
+      ladder.each do |member|
+        member.class.should == SC2::Member
+      end
+    end
+
+    it 'should build characters within the members' do
+      pending
+
+      ladder.each do |member|
+        member.character.class.should == SC2::Character
+      end
+    end
+
+    it 'should return the first grandmaster' do
+      ladder.first.should == ""
+    end
+  end
 end

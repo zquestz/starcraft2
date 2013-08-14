@@ -21,7 +21,7 @@ describe SC2::Ladder do
 
     it 'should build characters within the members' do
       pending
-      
+
       ladder.each do |member|
         member.character.class.should == SC2::Character
       end

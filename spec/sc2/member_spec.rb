@@ -10,7 +10,7 @@ describe SC2::Member do
     end
 
     it 'should store the character' do
-      # @options = {:character => character}
+    # @options = {:character => character}
     end
 
     it 'should store the join timestamp' do
