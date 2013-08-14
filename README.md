@@ -15,8 +15,10 @@ Then `bundle install`.
 ## Usage
 
 ```ruby
-Starcraft2::Client.new(host: 'us.battle.net')
+Starcraft2::Client.new(:host => 'us.battle.net', :locale => 'en_US')
 ```
+
+A full list of hosts and locales can be found in the API documentation above.
 
 ## Build Status
 [![Build Status](https://travis-ci.org/zquestz/starcraft2.png)](https://travis-ci.org/zquestz/starcraft2)
