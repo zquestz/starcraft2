@@ -6,7 +6,7 @@ module Starcraft2
 
     attr_accessor :locale, :host
 
-    def initialize(options)
+    def initialize(options = {})
       options.each do |k,v|
         self.send(:"#{k}=", v)
       end
