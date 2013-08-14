@@ -1,6 +1,5 @@
 module SC2
   class Ladder
-    LADDER_PATH = "/api/sc2/ladder/"
     def self.build(raw_data)
       data = JSON.parse(raw_data)
       data['ladderMembers'].map do |member|

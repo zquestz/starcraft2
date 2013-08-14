@@ -2,6 +2,7 @@ module SC2
   class Client
     ACHIEVEMENTS_PATH = "/api/sc2/data/achievements"
     REWARDS_PATH = "/api/sc2/data/rewards"
+    LADDER_PATH = "/api/sc2/ladder/"
 
     attr_accessor :locale, :host
 
