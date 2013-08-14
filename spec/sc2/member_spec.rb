@@ -58,9 +58,24 @@ describe SC2::Member do
       member.previous_rank.should == 5
     end
 
-    it "should store the favorite race" do
-      @options = {:favorite_race => "Protoss"}
-      member.favorite_race.should == "Protoss"
+    it "should store the favorite race for player 1" do
+      @options = {:favorite_race_p1 => "Protoss"}
+      member.favorite_race_p1.should == "Protoss"
+    end
+
+    it "should store the favorite race for player 2" do
+      @options = {:favorite_race_p2 => "Protoss"}
+      member.favorite_race_p2.should == "Protoss"
+    end
+
+    it "should store the favorite race for player 3" do
+      @options = {:favorite_race_p3 => "Protoss"}
+      member.favorite_race_p3.should == "Protoss"
+    end
+
+    it "should store the favorite race for player 4" do
+      @options = {:favorite_race_p4 => "Protoss"}
+      member.favorite_race_p4.should == "Protoss"
     end
   end
 end

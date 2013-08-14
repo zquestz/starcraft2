@@ -4,17 +4,15 @@ module SC2
 
     def initialize(options = {})
       options.each do |k,v|
-        self.send(:"#{k}=", v)
+        self.send(:"#{k.to_s.underscore}=", v)
       end
     end
 
     def self.build(raw_data)
       data = JSON.parse(raw_data)
       data['portraits'].map do |reward|
-        reward['achievement_id'] = reward.delete('achievementId')
         new(reward)
       end
     end
-
   end
 end
