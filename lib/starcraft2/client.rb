@@ -21,7 +21,7 @@ module Starcraft2
     end
 
     def ladder(id)
-      fetch_ladder(host, id)
+      Ladder.build(ladder_data(id))
     end
 
     def grandmaster_ladder
@@ -50,16 +50,16 @@ module Starcraft2
       "http://" + host + REWARDS_PATH + locale_param
     end
 
+    def ladder_data(id)
+      HTTParty.get(ladder_url(id)).body
+    end
+
+    def ladder_url(id)
+      "http://" + host + LADDER_PATH + id.to_s + locale_param
+    end
+
     def locale_param
       locale.nil? ? '' : "?locale=#{locale}"
-    end
-
-    def fetch_ladder(host, id)
-      Ladder.build(ladder_data(host,id))
-    end
-
-    def ladder_data(host, id)
-      HTTParty.get("http://" + host + LADDER_PATH + id.to_s).body
     end
   end
 end
