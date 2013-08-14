@@ -3,9 +3,7 @@ module Starcraft2
     attr_accessor :x, :y, :w, :h, :offset, :url
 
     def initialize(options = {})
-      options.each do |k,v|
-        self.send(:"#{StringUtils.underscore(k.to_s)}=", v)
-      end
+      Utils.load(self, options)
     end
   end
 end

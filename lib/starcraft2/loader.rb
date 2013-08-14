@@ -2,7 +2,7 @@ require 'ostruct'
 require 'httparty'
 require 'json'
 
-require File.join('starcraft2', 'string_utils')
+require File.join('starcraft2', 'utils')
 require File.join('starcraft2', 'icon')
 require File.join('starcraft2', 'client')
 require File.join('starcraft2', 'achievement')

@@ -3,11 +3,7 @@ module Starcraft2
     attr_accessor :title, :id, :icon, :achievement_id
 
     def initialize(options = {})
-      options.each do |k,v|
-        v = Icon.new(v) if k.to_sym == :icon
-
-        self.send(:"#{StringUtils.underscore(k.to_s)}=", v)
-      end
+      Utils.load(self, options, {:icon => Icon})
     end
 
     def self.build(rewards_json)
