@@ -4,7 +4,7 @@ module Starcraft2
 
     def initialize(options = {})
       options.each do |k,v|
-        self.send(:"#{k.to_s.underscore}=", v)
+        self.send(:"#{StringUtils.underscore(k.to_s)}=", v)
       end
     end
   end
