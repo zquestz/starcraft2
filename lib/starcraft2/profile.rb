@@ -15,9 +15,8 @@ module Starcraft2
       })
     end
 
-    def self.build(client, profile_json)
-      profile = JSON.parse(profile_json)
-      new(profile.merge!(:client => client))
+    def self.build(client, data)
+      new(data.merge!(:client => client))
     end
 
     def matches

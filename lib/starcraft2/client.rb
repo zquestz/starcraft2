@@ -42,14 +42,16 @@ module Starcraft2
       ladder('grandmaster')
     end
 
-    def previous_grandmaster_ladder
+    def last_grandmaster_ladder
       ladder('grandmaster/last')
     end
 
     private
 
     def profile_json(options)
-      HTTParty.get(profile_url(options)).body
+      get_body do
+        HTTParty.get(profile_url(options))
+      end
     end
 
     def profile_url(options)
@@ -61,7 +63,9 @@ module Starcraft2
     end
 
     def match_json(options)
-      HTTParty.get(match_url(options)).body
+      get_body do
+        HTTParty.get(match_url(options))
+      end
     end
 
     def match_url(options)
@@ -69,7 +73,9 @@ module Starcraft2
     end
 
     def achievements_json
-      HTTParty.get(achievements_url).body
+      get_body do
+        HTTParty.get(achievements_url)
+      end
     end
 
     def achievements_url
@@ -77,7 +83,9 @@ module Starcraft2
     end
 
     def rewards_json
-      HTTParty.get(rewards_url).body
+      get_body do
+        HTTParty.get(rewards_url)
+      end
     end
 
     def rewards_url
@@ -85,7 +93,9 @@ module Starcraft2
     end
 
     def ladder_json(id)
-      HTTParty.get(ladder_url(id)).body
+      get_body do
+        HTTParty.get(ladder_url(id))
+      end
     end
 
     def ladder_url(id)
@@ -94,6 +104,28 @@ module Starcraft2
 
     def locale_param
       locale.nil? ? '' : "?locale=#{locale}"
+    end
+
+    def get_body
+      response = yield
+      case response.code
+        when 200
+          body = JSON.parse(response.body)
+          case body['code']
+            when 200
+              body
+            when 404
+              raise Starcraft2::NotFoundError, body['message'] || body['reason']
+            when 500
+              raise Starcraft2::ApiError, body['message'] || body['reason']
+            else
+              body
+          end
+        when 404
+          raise Starcraft2::NotFoundError, 'Record not found.'
+        when 500
+          raise Starcraft2::ApiError, 'An API error occurred.'
+      end
     end
   end
 end

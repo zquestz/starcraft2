@@ -5,11 +5,11 @@ describe Starcraft2::Profile do
   let(:profile) { Starcraft2::Profile.new(@options) }
 
   describe '#build' do
-    let(:profile) { Starcraft2::Profile.build(client, @profile_json) }
+    let(:profile) { Starcraft2::Profile.build(client, @profile) }
 
     before do
       VCR.use_cassette("profile_999000") do
-        @profile_json = HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body
+        @profile = JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body)
       end
     end
 

@@ -6,8 +6,7 @@ module Starcraft2
       Utils.load(self, options, {:icon => Icon})
     end
 
-    def self.build(achievements_json)
-      data = JSON.parse(achievements_json)
+    def self.build(data)
       data['achievements'].map do |achievement|
         new(achievement)
       end

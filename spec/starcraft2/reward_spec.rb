@@ -6,7 +6,7 @@ describe Starcraft2::Reward do
 
     before do
       VCR.use_cassette('rewards') do
-        @raw_reward_data = HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body
+        @raw_reward_data = JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body)
       end
     end
 
@@ -27,7 +27,7 @@ describe Starcraft2::Reward do
 
     it 'should import the first reward' do
       VCR.use_cassette('rewards') do
-        @reward = Starcraft2::Reward.build(HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body).first
+        @reward = Starcraft2::Reward.build(JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body)).first
       end
 
       @reward.title.should == 'Kachinsky'

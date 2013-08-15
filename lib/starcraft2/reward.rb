@@ -6,8 +6,7 @@ module Starcraft2
       Utils.load(self, options, {:icon => Icon})
     end
 
-    def self.build(rewards_json)
-      data = JSON.parse(rewards_json)
+    def self.build(data)
       data['portraits'].map do |reward|
         new(reward)
       end

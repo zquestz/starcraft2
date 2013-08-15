@@ -52,10 +52,6 @@ describe Starcraft2::Client do
     end
   end
 
-  VCR.use_cassette("profile_#{999000}") do
-    @profile_json = HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body
-  end
-
   describe '.achievements' do
     it 'should return an array of achievements' do
       VCR.use_cassette('achievements') do

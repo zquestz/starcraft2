@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe Starcraft2::Achievement do
   describe '#build' do
-    let(:achievements) { Starcraft2::Achievement.build(@achievements_json) }
+    let(:achievements) { Starcraft2::Achievement.build(@achievements) }
 
     before do
       VCR.use_cassette('achievements') do
-        @achievements_json = HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body
+        @achievements = JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body)
       end
     end
 
@@ -27,7 +27,7 @@ describe Starcraft2::Achievement do
 
     it 'should import the first achievement' do
       VCR.use_cassette('achievements') do
-        @achievement = Starcraft2::Achievement.build(HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body).first
+        @achievement = Starcraft2::Achievement.build(JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body)).first
       end
 
       @achievement.title.should == 'FFA Destroyer'

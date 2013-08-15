@@ -7,8 +7,7 @@ module Starcraft2
         Utils.load(self, options)
       end
 
-      def self.build(match_json)
-        data = JSON.parse(match_json)
+      def self.build(data)
         data['matches'].map do |m|
           new(m)
         end

@@ -3,6 +3,8 @@ require 'httparty'
 require 'json'
 
 require File.join('starcraft2', 'errors', 'missing_arguments_error')
+require File.join('starcraft2', 'errors', 'api_error')
+require File.join('starcraft2', 'errors', 'not_found_error')
 require File.join('starcraft2', 'utils')
 require File.join('starcraft2', 'icon')
 require File.join('starcraft2', 'client')
