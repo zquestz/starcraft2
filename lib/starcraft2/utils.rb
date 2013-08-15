@@ -10,9 +10,10 @@ module Starcraft2
       word
     end
 
-    def self.load(klass, options, class_map = {})
+    def self.load(klass, options, class_map = {}, build_map = {})
       options.each do |k, v|
         v = class_map[k.to_sym].new(v) if class_map.keys.include?(k.to_sym)
+        v = build_map[k.to_sym].build(v) if build_map.keys.include?(k.to_sym)
 
         klass.send(:"#{self.underscore(k.to_s)}=", v)
       end

@@ -4,7 +4,7 @@ module Starcraft2
       attr_accessor :season_id, :total_games_this_season, :stats
 
       def initialize(options={})
-        Utils.load(self, options)
+        Utils.load(self, options, {}, {:stats => Stats})
       end
     end
   end
