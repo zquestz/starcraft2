@@ -8,7 +8,7 @@ describe Starcraft2::Profile::Campaign do
   end
 
   describe '.initialize' do
-    it 'should store the attributes' do
+    it 'should store attributes as underscored' do
       @options = {'wol' => 'BRUTAL', 'hots' => 'BRUTAL'}
 
       campaign.wol.should == 'BRUTAL'

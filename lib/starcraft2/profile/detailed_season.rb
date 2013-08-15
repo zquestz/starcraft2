@@ -4,7 +4,7 @@ module Starcraft2
       attr_accessor :ladder, :characters, :non_ranked
 
       def initialize(options = {})
-        Utils.load(self, options, {}, { :ladder => Ladder, :characters => ::Starcraft2::Character, :non_ranked => NonRank })
+        Utils.load(self, options, {}, {:ladder => Ladder, :characters => ::Starcraft2::Character, :non_ranked => NonRank})
       end
 
       def self.build(detailed_season)

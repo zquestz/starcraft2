@@ -17,6 +17,13 @@ describe Starcraft2::Utils do
       icon.y.should == 3
     end
 
+    it 'should convert camelCased to underscored' do
+      career = Starcraft2::Profile::Career.new()
+      career.protoss_wins.should == nil
+      Starcraft2::Utils.load(career, {'protossWins' => 5})
+      career.protoss_wins.should == 5
+    end
+
     it 'should allow a key to initialize another class' do
       member = Starcraft2::Member.new()
       Starcraft2::Utils.load(member, {:points => 10, :character => {:display_name => 'steve'}}, {:character => Starcraft2::Character})

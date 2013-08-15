@@ -17,7 +17,7 @@ describe Starcraft2::Profile::Career do
     }
   end
 
-  it 'should store the attributes as underscored' do
+  it 'should store attributes as underscored' do
     career.primary_race.should == 'PROTOSS'
     career.league.should == 'GAMMA'
     career.terran_wins.should == 121
