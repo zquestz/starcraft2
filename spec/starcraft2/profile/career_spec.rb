@@ -1,54 +1,37 @@
 require 'spec_helper'
 
 describe Starcraft2::Profile::Career do
-  let(:profile) { Starcraft2::Profile::Career.new(@options) }
+  let(:career) { Starcraft2::Profile::Career.new(@options) }
 
   before do
-    @options = {}
+    @options = {
+      'primaryRace' => 'PROTOSS',
+      'league' => 'GAMMA',
+      'terranWins' => 121,
+      'protossWins' => 123,
+      'zergWins' => 82,
+      'highest1v1Rank' => 'GOLD',
+      'highestTeamRank' => 'MASTER',
+      'seasonTotalGames' => 596,
+      'careerTotalGames' => 1293
+    }
   end
 
-  it 'should store the primary_race' do
-    @options = {:primary_race => 'PROTOSS'}
-    profile.primary_race.should == 'PROTOSS'
+  it 'should store the attributes as underscored' do
+    career.primary_race.should == 'PROTOSS'
+    career.league.should == 'GAMMA'
+    career.terran_wins.should == 121
+    career.protoss_wins.should == 123
+    career.zerg_wins.should == 82
+    career.highest1v1_rank.should == 'GOLD'
+    career.highest_team_rank.should =='MASTER'
+    career.season_total_games.should == 596
+    career.career_total_games.should == 1293
   end
 
-  it 'should store the league' do
-    @options = {:league => 'GAMMA'}
-    profile.league.should == 'GAMMA'
-  end
+  it 'should use Stracraft2::Utils.load to populate the model' do
+    Starcraft2::Utils.should_receive(:load).with(anything, @options)
 
-  it 'should store the terran_wins' do
-    @options = {:terran_wins => 121}
-    profile.terran_wins.should == 121
-  end
-
-  it 'should store the protoss_wins' do
-    @options = {:protoss_wins => 123}
-    profile.protoss_wins.should == 123
-  end
-
-  it 'should store the zerg_wins' do
-    @options = {:zerg_wins => 82}
-    profile.zerg_wins.should == 82
-  end
-
-  it 'should store the highest_1v1_rank' do
-    @options = {:highest1v1_rank => 'GOLD'}
-    profile.highest1v1_rank.should == 'GOLD'
-  end
-
-  it 'should store the highest_team_rank' do
-    @options = {:highest_team_rank => 'MASTER'}
-    profile.highest_team_rank.should =='MASTER'
-  end
-
-  it 'should store the season_total_games' do
-    @options = {:season_total_games => 596}
-    profile.season_total_games.should == 596
-  end
-
-  it 'should store the career_total_games' do
-    @options = {:career_total_games => 1293}
-    profile.career_total_games.should == 1293
+    career
   end
 end
