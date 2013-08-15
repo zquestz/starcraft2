@@ -115,6 +115,9 @@ describe Starcraft2::Profile::DetailedSeason do
 
       ds1 = detailed_seasons.first
       ds1.class.should == Starcraft2::Profile::DetailedSeason
+      ds1.ladder.should == []
+      ds1.non_ranked.should == []
+
       c1 = ds1.characters.first
       c1.id.should == 3113795
       c1.realm.should == 1
@@ -133,6 +136,9 @@ describe Starcraft2::Profile::DetailedSeason do
 
       ds2 = detailed_seasons.last
       ds2.class.should == Starcraft2::Profile::DetailedSeason
+      ds2.ladder.should == []
+      ds2.non_ranked.should == []
+      
       c1 = ds2.characters.first
       c1.id.should == 3113796
       c1.realm.should == 1
