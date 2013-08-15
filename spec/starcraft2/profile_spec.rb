@@ -94,6 +94,27 @@ describe Starcraft2::Profile do
           }
         }
       }
+
+      profile.swarm_levels.class.should == Starcraft2::Profile::SwarmLevels
+      profile.swarm_levels.level.should == 45
+
+      terran = profile.swarm_levels.terran
+      terran.class.should == Starcraft2::Profile::SwarmRace
+      terran.level.should == 9
+      terran.total_level_xp.should == 150000
+      terran.current_level_xp.should == 8826
+
+      zerg = profile.swarm_levels.zerg
+      zerg.class.should == Starcraft2::Profile::SwarmRace
+      zerg.level.should == 6
+      zerg.total_level_xp.should == 150000
+      zerg.current_level_xp.should == 1231
+
+      protoss = profile.swarm_levels.protoss
+      protoss.class.should == Starcraft2::Profile::SwarmRace
+      protoss.level.should == 30
+      protoss.total_level_xp.should == 150000
+      protoss.current_level_xp.should == 8826
     end
 
     it 'should store the campaign' do
