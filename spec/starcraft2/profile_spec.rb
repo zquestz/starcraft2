@@ -1,13 +1,14 @@
 require 'spec_helper'
 
 describe Starcraft2::Profile do
+  let(:client) { Starcraft2::Client.new }
   let(:profile) { Starcraft2::Profile.new(@options) }
 
   describe '#build' do
-    let(:profile) { Starcraft2::Profile.build(@profile_json) }
+    let(:profile) { Starcraft2::Profile.build(client, @profile_json) }
 
     before do
-      VCR.use_cassette("profile_#{999000}") do
+      VCR.use_cassette("profile_999000") do
         @profile_json = HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body
       end
     end
@@ -192,6 +193,23 @@ describe Starcraft2::Profile do
           ]
         }
       }
+    end
+  end
+
+  describe '.matches' do
+    let(:client) { Starcraft2::Client.new() }
+
+    it 'should return a list of matches' do
+      VCR.use_cassette("matches_999000") do
+        matches = client.profile(:character_name => 'DayNine', :id => 999000, :realm => 1).matches
+        matches.class.should == Array
+        matches.first.class.should == Starcraft2::Profile::Match
+        matches.first.map.should == 'HOTS Unit Tester Online'
+        matches.first.type.should == 'CUSTOM'
+        matches.first.decision.should == 'BAILER'
+        matches.first.speed.should == 'FASTER'
+        matches.first.date.should == 1376528216
+      end
     end
   end
 end

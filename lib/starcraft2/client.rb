@@ -16,10 +16,14 @@ module Starcraft2
 
     def profile(options = {})
       if (args = [:character_name, :id, :realm] - options.keys).empty?
-        Profile.build(profile_json(options))
+        Profile.build(self, profile_json(options))
       else
         raise MissingArgumentsError, "Missing Keys: #{args.map {|i| ":#{i}"}.join(', ')}"
       end
+    end
+
+    def matches(options = {})
+      Profile::Match.build(match_json(options))
     end
 
     def achievements
@@ -54,6 +58,14 @@ module Starcraft2
 
     def profile_path(options)
       "/api/sc2/profile/#{options[:id]}/#{options[:realm]}/#{options[:character_name]}/" + locale_param
+    end
+
+    def match_json(options)
+      HTTParty.get(match_url(options)).body
+    end
+
+    def match_url(options)
+      'https://' + host + profile_path(options) + 'matches' + locale_param
     end
 
     def achievements_json
