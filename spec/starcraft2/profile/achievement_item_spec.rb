@@ -23,27 +23,22 @@ describe Starcraft2::Profile::AchievementItem do
 
     before do
       @items = [
-        {'achievementId' => 1, 'completionDate' => 13333333},
-        {'achievementId' => 2, 'completionDate' => 13333334}
+        {'achievementId' => 1},
+        {'achievementId' => 2}
       ]
     end
 
     it 'should build multiple achievement items' do
       achievement_items.class.should == Array
-
-      a1 = achievement_items.first
-      a1.class.should == Starcraft2::Profile::AchievementItem
-      a1.achievement_id.should == 1
-      a1.completion_date.should == 13333333
-
-      a2 = achievement_items.last
-      a2.class.should == Starcraft2::Profile::AchievementItem
-      a2.achievement_id.should == 2
-      a2.completion_date.should == 13333334
+      achievement_items.each do |ai|
+        ai.class.should == Starcraft2::Profile::AchievementItem
+      end
     end
 
     it 'should build items using new' do
-      Starcraft2::Profile::AchievementItem.should_receive(:new).twice
+      @items.each do |i|
+        Starcraft2::Profile::AchievementItem.should_receive(:new).with(i)
+      end
 
       achievement_items
     end
