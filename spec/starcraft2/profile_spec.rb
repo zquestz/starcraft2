@@ -23,33 +23,19 @@ describe Starcraft2::Profile do
       @options = {}
     end
 
-    it 'should store the id' do
-      @options = {:id => 12345}
+    it 'should store the attributes as underscored' do
+      @options = {'id' => 12345,
+                  'realm' => 1,
+                  'display_name' => 'steve',
+                  'clan_name' => 'clan',
+                  'clan_tag' => 'tag',
+                  'profilePath' => '/profile/example'}
+
       profile.id.should == 12345
-    end
-
-    it 'should store the realm' do
-      @options = {:realm => 1}
       profile.realm.should == 1
-    end
-
-    it 'should store the display_name' do
-      @options = {:display_name => 'steve'}
       profile.display_name.should == 'steve'
-    end
-
-    it 'should store the clan_name' do
-      @options = {:clan_name => 'clan'}
       profile.clan_name.should == 'clan'
-    end
-
-    it 'should store the clan_tag' do
-      @options = {:clan_tag => 'tag'}
       profile.clan_tag.should == 'tag'
-    end
-
-    it 'should store the profile_path' do
-      @options = {:profile_path => '/profile/example'}
       profile.profile_path.should == '/profile/example'
     end
 
@@ -63,18 +49,18 @@ describe Starcraft2::Profile do
       profile.portrait.url.should == 'https://example.com'
     end
 
-    it 'should store the career' do
+    it 'should store the career attributes as underscored' do
       @options = {
-        :career => {
-          :primary_race => 'TERRAN',
-          :league => 'KAPPA',
-          :terran_wins => 1,
-          :protoss_wins => 268,
-          :zerg_wins => 7,
-          :highest1v1_rank => 'MASTER',
-          :highest_team_rank => 'MASTER',
-          :season_total_games => 399,
-          :career_total_games => 1531
+        'career' => {
+          'primaryRace' => 'TERRAN',
+          'league' => 'KAPPA',
+          'terranWins' => 1,
+          'protossWins' => 268,
+          'zergWins' => 7,
+          'highest1v1Rank' => 'MASTER',
+          'highestTeamRank' => 'MASTER',
+          'seasonTotalGames' => 399,
+          'careerTotalGames' => 1531
         }
       }
       profile.career.primary_race.should == 'TERRAN'
@@ -88,24 +74,24 @@ describe Starcraft2::Profile do
       profile.career.career_total_games.should == 1531
     end
 
-    it 'should store the swarm_levels' do
+    it 'should store the swarm_levels as underscored' do
       @options = {
-        :swarm_levels => {
-          :level => 45,
-          :terran => {
-            :level => 9,
-            :total_level_XP => 150000,
-            :current_level_XP => 8826
+        'swarmLevels' => {
+          'level' => 45,
+          'terran' => {
+            'level' => 9,
+            'totalLevelXP' => 150000,
+            'currentLevelXP' => 8826
           },
-          :zerg => {
-            :level => 6,
-            :total_level_XP => 150000,
-            :current_level_XP => 1231
+          'zerg' => {
+            'level' => 6,
+            'totalLevelXP' => 150000,
+            'currentLevelXP' => 1231
           },
-          :protoss => {
-            :level => 30,
-            :total_level_XP => 150000,
-            :current_level_XP => 8826
+          'protoss' => {
+            'level' => 30,
+            'totalLevelXP' => 150000,
+            'currentLevelXP' => 8826
           }
         }
       }
@@ -133,35 +119,39 @@ describe Starcraft2::Profile do
     end
 
     it 'should store the campaign' do
-      @options = {:campaign => {:wol => 'BRUTAL', :hots => 'BRUTAL'}}
+      @options = {:campaign => {'wol' => 'BRUTAL', 'hots' => 'BRUTAL'}}
       profile.campaign.wol.should == 'BRUTAL'
       profile.campaign.hots.should == 'BRUTAL'
     end
 
-    it 'should store the season' do
+    it 'should store the season as underscored' do
       @options = {
-        :season => {
-          :season_id => 14,
-          :total_games_this_season => 399,
-          :stats => [
+        'season' => {
+          'seasonId' => 14,
+          'totalGamesThisSeason' => 399,
+          'stats' => [
             {
-              :type => '1v1',
-              :wins => 254,
-              :games => 357
+              'type' => '1v1',
+              'wins' => 254,
+              'games' => 357
             }, {
-              :type => '2v2',
-              :wins => 27,
-              :games => 39
+              'type' => '2v2',
+              'wins' => 27,
+              'games' => 39
             }
           ]
         }}
+      profile.season.class.should == Starcraft2::Profile::Season
+      profile.season.season_id.should == 14
+      profile.season.stats.class.should == Array
+      profile.season.stats.first.class.should == Starcraft2::Profile::Stats
     end
 
     it 'should store the rewards' do
       @options = {
-        :rewards => {
-          :selected => [18730036, 2009110693, 2359737029, 4189275055],
-          :earned => [144654643, 171155159, 199895074, 234481452, 367294557, 531423509, 533048170, 637508413]
+        'rewards' => {
+          'selected' => [18730036, 2009110693, 2359737029, 4189275055],
+          'earned' => [144654643, 171155159, 199895074, 234481452, 367294557, 531423509, 533048170, 637508413]
         }
       }
       profile.rewards.selected.should == [18730036, 2009110693, 2359737029, 4189275055]
@@ -170,10 +160,10 @@ describe Starcraft2::Profile do
 
     it 'should store the achievements' do
       @options = {
-        :achievements => {
-          :points => {
-            :totalPoints => 3375,
-            :categoryPoints => {
+        'achievements' => {
+          'points' => {
+            'totalPoints' => 3375,
+            'categoryPoints' => {
               '4325382' => 0,
               '4325380' => 390,
               '4325408' => 90,
@@ -182,17 +172,21 @@ describe Starcraft2::Profile do
               '4325377' => 600
             }
           },
-          :achievements => [
+          'achievements' => [
             {
-              :achievementId => 91475320766493,
-              :completionDate => 1375779974
+              'achievementId' => 91475320766493,
+              'completionDate' => 1375779974
             }, {
-              :achievementId => 91475035553809,
-              :completionDate => 1371117026
+              'achievementId' => 91475035553809,
+              'completionDate' => 1371117026
             }
           ]
         }
       }
+      profile.achievements.class.should == Starcraft2::Profile::Achievements
+      profile.achievements.points.class.should == Starcraft2::Profile::Points
+      profile.achievements.achievements.class.should == Array
+      profile.achievements.achievements.first.class.should == Starcraft2::Profile::AchievementItem
     end
   end
 
@@ -200,7 +194,7 @@ describe Starcraft2::Profile do
     let(:client) { Starcraft2::Client.new() }
 
     it 'should return a list of matches' do
-      VCR.use_cassette("matches_999000") do
+      VCR.use_cassette('matches_999000') do
         matches = client.profile(:character_name => 'DayNine', :id => 999000, :realm => 1).matches
         matches.class.should == Array
         matches.first.class.should == Starcraft2::Profile::Match
