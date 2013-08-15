@@ -4,7 +4,7 @@ module Starcraft2
                   :career, :swarm_levels, :campaign, :season, :rewards, :achievements
 
     def initialize(options = {})
-      Utils.load(self, options, {:portrait => Icon})
+      Utils.load(self, options, {:portrait => Icon, :career => Career})
     end
   end
 end

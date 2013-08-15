@@ -62,6 +62,15 @@ describe Starcraft2::Profile do
           :career_total_games => 1531
         }
       }
+      profile.career.primary_race.should == 'TERRAN'
+      profile.career.league.should == 'KAPPA'
+      profile.career.terran_wins.should == 1
+      profile.career.protoss_wins.should == 268
+      profile.career.zerg_wins.should == 7
+      profile.career.highest_1v1_rank.should == 'MASTER'
+      profile.career.highest_team_rank.should == 'MASTER'
+      profile.career.season_total_games.should == 399
+      profile.career.career_total_games.should == 1531
     end
 
     it 'should store the swarm_levels' do
