@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Starcraft2::Client do
-  let(:client) { Starcraft2::Client.new(@options)}
+  let(:client) { Starcraft2::Client.new(@options) }
 
   before do
     @options = {:host => 'us.battle.net'}
@@ -23,12 +23,12 @@ describe Starcraft2::Client do
     end
 
     it 'should store the locale' do
-      @options = { :locale => 'en_US' }
+      @options = {:locale => 'en_US'}
       client.locale.should == 'en_US'
     end
 
     it 'should store the host' do
-      @options = { :host => 'someserver.com'}
+      @options = {:host => 'someserver.com'}
       client.host.should == 'someserver.com'
     end
   end

@@ -4,12 +4,12 @@ describe Starcraft2::Member do
   describe '.initialize' do
     let(:member) { Starcraft2::Member.new(@options) }
     let(:character) { {
-        'id' => 333319,
-        'realm' => 1,
-        'displayName' => 'NajM',
-        'clanName' => '',
-        'clanTag' => '',
-        'profilePath' => '/profile/333319/1/NajM/'
+      'id' => 333319,
+      'realm' => 1,
+      'displayName' => 'NajM',
+      'clanName' => '',
+      'clanTag' => '',
+      'profilePath' => '/profile/333319/1/NajM/'
     } }
 
     before do
@@ -20,7 +20,7 @@ describe Starcraft2::Member do
       @options = {:character => character}
       member.character.class.should == Starcraft2::Character
 
-      member.character.id .should == 333319
+      member.character.id.should == 333319
       member.character.realm.should == 1
       member.character.display_name.should == 'NajM'
       member.character.clan_name.should == ''
