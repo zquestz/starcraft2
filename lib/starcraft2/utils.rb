@@ -12,10 +12,12 @@ module Starcraft2
 
     def self.load(klass, options, class_map = {}, build_map = {})
       options.each do |k, v|
-        v = class_map[k.to_sym].new(v) if class_map.keys.include?(k.to_sym)
-        v = build_map[k.to_sym].build(v) if build_map.keys.include?(k.to_sym)
+        k = self.underscore(k.to_s)
+        k = k.to_sym
+        v = class_map[k].new(v) if class_map.keys.include?(k)
+        v = build_map[k].build(v) if build_map.keys.include?(k)
 
-        klass.send(:"#{self.underscore(k.to_s)}=", v)
+        klass.send(:"#{k}=", v)
       end
     end
   end
