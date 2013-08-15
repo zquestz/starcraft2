@@ -23,12 +23,11 @@ describe Starcraft2::Profile::Achievements do
   end
 
   it 'should store achievement_items' do
-    @options = {:items => [{ :achievement_id => 91475035553845, :completion_date => 1365790265},
-                           { :achievement_id => 91475320768475, :completion_date => 1365392587},
-                           { :achievement_id => 91475320768585, :completion_date => 1364634012}]}
+    @options = {:achievements => [{ :achievement_id => 91475035553845, :completion_date => 1365790265},
+                                  { :achievement_id => 91475320768475, :completion_date => 1365392587},
+                                  { :achievement_id => 91475320768585, :completion_date => 1364634012}]}
 
-    # achievements.items.should == [{ :achievement_id => 91475035553845, :completion_date => 1365790265},
-                                 # { :achievement_id => 91475320768475, :completion_date => 1365392587},
-                                 # { :achievement_id => 91475320768585, :completion_date => 1364634012}]
+    achievements.achievements.class.should == Array
+    achievements.achievements.first.class.should == Starcraft2::Profile::AchievementItem
   end
 end

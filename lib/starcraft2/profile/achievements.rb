@@ -1,10 +1,10 @@
 module Starcraft2
   class Profile
     class Achievements
-      attr_accessor :points, :achievement_items
+      attr_accessor :points, :achievements
 
       def initialize(options = {})
-        Utils.load(self, options, {:points => Points}, { :achievement_items => AchievementItem })
+        Utils.load(self, options, { :points => Points }, {:achievments => AchievementItem})
       end
     end
   end
