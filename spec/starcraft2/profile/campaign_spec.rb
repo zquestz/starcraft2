@@ -8,14 +8,17 @@ describe Starcraft2::Profile::Campaign do
   end
 
   describe '.initialize' do
-    it 'should store wol' do
-      @options = {:wol => 'BRUTAL'}
+    it 'should store the attributes' do
+      @options = {'wol' => 'BRUTAL', 'hots' => 'BRUTAL'}
+
       campaign.wol.should == 'BRUTAL'
+      campaign.hots.should == 'BRUTAL'
     end
 
-    it 'should store hots' do
-      @options = {:hots => 'BRUTAL'}
-      campaign.hots.should == 'BRUTAL'
+    it 'should use Stracraft2::Utils.load to populate the model' do
+      Starcraft2::Utils.should_receive(:load).with(anything, @options)
+
+      campaign
     end
   end
 end
