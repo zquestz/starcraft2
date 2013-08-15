@@ -2,6 +2,7 @@ module Starcraft2
   class Profile
     class Stats
       attr_accessor :type, :wins, :games
+
       def initialize(options = {})
         Utils.load(self, options)
       end

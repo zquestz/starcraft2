@@ -4,8 +4,15 @@ module Starcraft2
                   :career, :swarm_levels, :campaign, :season, :rewards, :achievements
 
     def initialize(options = {})
-      Utils.load(self, options, {:portrait => Icon, :campaign => Campaign, :career => Career,
-        :swarm_levels => SwarmLevels, :season => Season, :rewards => Rewards, :achievements => Achievements})
+      Utils.load(self, options, {
+        :portrait => Icon,
+        :campaign => Campaign,
+        :career => Career,
+        :swarm_levels => SwarmLevels,
+        :season => Season,
+        :rewards => Rewards,
+        :achievements => Achievements
+      })
     end
 
     def self.build(profile_json)
