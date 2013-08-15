@@ -7,8 +7,8 @@ module Starcraft2
         Utils.load(self, options)
       end
 
-      def self.build(stats_data)
-        stats_data.map do |s|
+      def self.build(stats)
+        stats.map do |s|
           new(s)
         end
       end

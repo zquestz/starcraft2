@@ -16,30 +16,30 @@ module Starcraft2
 
     def profile(options = {})
       if (args = [:character_name, :id, :realm] - options.keys).empty?
-        Profile.build(self, profile_json(options))
+        Profile.build(self, profile_data(options))
       else
         raise MissingArgumentsError, "Missing Keys: #{args.map {|i| ":#{i}"}.join(', ')}"
       end
     end
 
     def matches(options = {})
-      Profile::Match.build(match_json(options))
+      Profile::Match.build(match_data(options))
     end
 
     def ladders(options = {})
-      Profile::Ladders.build(ladders_json(options))
+      Profile::Ladders.build(ladders_data(options))
     end
 
     def achievements
-      Achievement.build(achievements_json)
+      Achievement.build(achievements_data)
     end
 
     def rewards
-      Reward.build(rewards_json)
+      Reward.build(rewards_data)
     end
 
     def ladder(id)
-      Ladder.build(ladder_json(id))
+      Ladder.build(ladder_data(id))
     end
 
     def grandmaster_ladder
@@ -52,8 +52,8 @@ module Starcraft2
 
     private
 
-    def profile_json(options)
-      get_body do
+    def profile_data(options)
+      get_json do
         HTTParty.get(profile_url(options))
       end
     end
@@ -66,14 +66,14 @@ module Starcraft2
       "/api/sc2/profile/#{options[:id]}/#{options[:realm]}/#{options[:character_name]}/" + locale_param
     end
 
-    def match_json(options)
-      get_body do
+    def match_data(options)
+      get_json do
         HTTParty.get(match_url(options))
       end
     end
 
-    def ladder_json(options)
-      get_body do
+    def ladder_data(options)
+      get_json do
         HTTParty.get(ladders_url(options))
       end
     end
@@ -86,8 +86,8 @@ module Starcraft2
       'https://' + host + profile_path(options) + 'ladders' + locale_param
     end
 
-    def achievements_json
-      get_body do
+    def achievements_data
+      get_json do
         HTTParty.get(achievements_url)
       end
     end
@@ -96,8 +96,8 @@ module Starcraft2
       'https://' + host + ACHIEVEMENTS_PATH + locale_param
     end
 
-    def rewards_json
-      get_body do
+    def rewards_data
+      get_json do
         HTTParty.get(rewards_url)
       end
     end
@@ -106,8 +106,8 @@ module Starcraft2
       'https://' + host + REWARDS_PATH + locale_param
     end
 
-    def ladder_json(id)
-      get_body do
+    def ladder_data(id)
+      get_json do
         HTTParty.get(ladder_url(id))
       end
     end
@@ -120,7 +120,7 @@ module Starcraft2
       locale.nil? ? '' : "?locale=#{locale}"
     end
 
-    def get_body
+    def get_json
       response = yield
       case response.code
         when 200

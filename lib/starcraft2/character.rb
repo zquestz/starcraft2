@@ -6,8 +6,8 @@ module Starcraft2
       Utils.load(self, options)
     end
 
-    def self.build(character_data)
-      character_data.map do |c|
+    def self.build(characters)
+      characters.map do |c|
         new(c)
       end
     end

@@ -24,7 +24,7 @@ module Starcraft2
     end
 
     def ladders
-      client.ladders()
+      client.ladders
     end
   end
 end

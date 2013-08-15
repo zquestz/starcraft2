@@ -7,8 +7,8 @@ module Starcraft2
         Utils.load(self, options)
       end
 
-      def self.build(achievement_item_data)
-        achievement_item_data.map do |a|
+      def self.build(achievements)
+        achievements.map do |a|
           new(a)
         end
       end

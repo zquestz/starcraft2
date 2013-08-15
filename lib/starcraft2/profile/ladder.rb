@@ -7,8 +7,8 @@ module Starcraft2
         Utils.load(self, options)
       end
 
-      def self.build(ladder_data)
-        ladder_data.map do |l|
+      def self.build(ladders)
+        ladders.map do |l|
           new(l)
         end
       end
