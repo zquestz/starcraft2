@@ -26,6 +26,10 @@ module Starcraft2
       Profile::Match.build(match_json(options))
     end
 
+    def ladders(options = {})
+      Profile::Ladders.build(ladders_json(options))
+    end
+
     def achievements
       Achievement.build(achievements_json)
     end
@@ -68,8 +72,18 @@ module Starcraft2
       end
     end
 
+    def ladder_json(options)
+      get_body do
+        HTTParty.get(ladders_url(options))
+      end
+    end
+
     def match_url(options)
       'https://' + host + profile_path(options) + 'matches' + locale_param
+    end
+
+    def ladders_url(options)
+      'https://' + host + profile_path(options) + 'ladders' + locale_param
     end
 
     def achievements_json

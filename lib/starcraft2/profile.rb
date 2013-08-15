@@ -22,5 +22,9 @@ module Starcraft2
     def matches
       client.matches(:character_name => self.display_name, :id => self.id, :realm => self.realm)
     end
+
+    def ladders
+      client.ladders()
+    end
   end
 end
