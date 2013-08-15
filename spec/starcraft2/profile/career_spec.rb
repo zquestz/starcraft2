@@ -33,8 +33,8 @@ describe Starcraft2::Profile::Career do
   end
 
   it 'should store the highest_1v1_rank' do
-    @options = {:highest_1v1_rank => 'GOLD'}
-    profile.highest_1v1_rank.should == 'GOLD'
+    @options = {:highest1v1_rank => 'GOLD'}
+    profile.highest1v1_rank.should == 'GOLD'
   end
 
   it 'should store the highest_team_rank' do

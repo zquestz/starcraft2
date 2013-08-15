@@ -3,11 +3,25 @@ require 'spec_helper'
 describe Starcraft2::Profile do
   let(:profile) { Starcraft2::Profile.new(@options) }
 
-  before do
-    @options = {}
+  describe '#build' do
+    let(:profile) { Starcraft2::Profile.build(@profile_json) }
+
+    before do
+      VCR.use_cassette("profile_#{999000}") do
+        @profile_json = HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body
+      end
+    end
+
+    it 'should build a profile' do
+      profile.class.should == Starcraft2::Profile
+    end
   end
 
   describe '.initialize' do
+    before do
+      @options = {}
+    end
+
     it 'should store the id' do
       @options = {:id => 12345}
       profile.id.should == 12345
@@ -56,7 +70,7 @@ describe Starcraft2::Profile do
           :terran_wins => 1,
           :protoss_wins => 268,
           :zerg_wins => 7,
-          :highest_1v1_rank => 'MASTER',
+          :highest1v1_rank => 'MASTER',
           :highest_team_rank => 'MASTER',
           :season_total_games => 399,
           :career_total_games => 1531
@@ -67,7 +81,7 @@ describe Starcraft2::Profile do
       profile.career.terran_wins.should == 1
       profile.career.protoss_wins.should == 268
       profile.career.zerg_wins.should == 7
-      profile.career.highest_1v1_rank.should == 'MASTER'
+      profile.career.highest1v1_rank.should == 'MASTER'
       profile.career.highest_team_rank.should == 'MASTER'
       profile.career.season_total_games.should == 399
       profile.career.career_total_games.should == 1531
@@ -119,6 +133,8 @@ describe Starcraft2::Profile do
 
     it 'should store the campaign' do
       @options = {:campaign => {:wol => 'BRUTAL', :hots => 'BRUTAL'}}
+      profile.campaign.wol.should == 'BRUTAL'
+      profile.campaign.hots.should == 'BRUTAL'
     end
 
     it 'should store the season' do

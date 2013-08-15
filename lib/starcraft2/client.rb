@@ -14,6 +14,14 @@ module Starcraft2
       self.host = 'us.battle.net' if self.host.nil?
     end
 
+    def profile(options = {})
+      if (args = [:character_name, :id, :realm] - options.keys).empty?
+        Profile.build(profile_json(options))
+      else
+        raise MissingArgumentsError, "Missing Keys: #{args.map {|i| ":#{i}"}.join(', ')}"
+      end
+    end
+
     def achievements
       Achievement.build(achievements_json)
     end
@@ -35,6 +43,18 @@ module Starcraft2
     end
 
     private
+
+    def profile_json(options)
+      HTTParty.get(profile_url(options)).body
+    end
+
+    def profile_url(options)
+      'https://' + host + profile_path(options) + locale_param
+    end
+
+    def profile_path(options)
+      "/api/sc2/profile/#{options[:id]}/#{options[:realm]}/#{options[:character_name]}/" + locale_param
+    end
 
     def achievements_json
       HTTParty.get(achievements_url).body

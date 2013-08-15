@@ -33,6 +33,29 @@ describe Starcraft2::Client do
     end
   end
 
+  describe '.profile' do
+    it 'should return an sc2 profile' do
+      VCR.use_cassette("profile_#{999000}") do
+        options = {:character_name => 'DayNine', :id => 999000, :realm => 1}
+        client.profile(options).class.should == Starcraft2::Profile
+      end
+    end
+
+    it 'should error with invalid arguments' do
+      expect {
+        client.profile({})
+      }.to raise_error(Starcraft2::MissingArgumentsError, 'Missing Keys: :character_name, :id, :realm')
+
+      expect {
+        client.profile({:character_name => 'DayNine'})
+      }.to raise_error(Starcraft2::MissingArgumentsError, 'Missing Keys: :id, :realm')
+    end
+  end
+
+  VCR.use_cassette("profile_#{999000}") do
+    @profile_json = HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body
+  end
+
   describe '.achievements' do
     it 'should return an array of achievements' do
       VCR.use_cassette('achievements') do
