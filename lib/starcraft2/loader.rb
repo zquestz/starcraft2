@@ -14,3 +14,5 @@ require File.join('starcraft2', 'profile', 'swarm_race')
 require File.join('starcraft2', 'profile', 'swarm_levels')
 require File.join('starcraft2', 'profile')
 require File.join('starcraft2', 'profile', 'career')
+require File.join('starcraft2', 'profile', 'campaign')
+
