@@ -137,10 +137,29 @@ describe Starcraft2::Profile::Ladders do
                }]
                }
 
+    ladder.previous_season.class.should == Array
+    ladder.previous_season.first.class.should == Starcraft2::Profile::DetailedSeason
+    ladder.previous_season.first.ladder.class.should == Array
+    ladder.previous_season.first.ladder.should == []
+
+    ladder.previous_season.first.characters.class.should == Array
+    ladder.previous_season.first.characters.first.id.should == 3113795
+    ladder.previous_season.first.characters.first.realm.should == 1
+    ladder.previous_season.first.characters.first.display_name.should == "Smix"
+    ladder.previous_season.first.characters.first.clan_name.should == ""
+    ladder.previous_season.first.characters.first.clan_tag.should == ""
+    ladder.previous_season.first.characters.first.profile_path.should == "/profile/3113795/1/Smix/"
+
+    ladder.previous_season.first.non_ranked.class.should == Array
+    ladder.previous_season.first.non_ranked.first.class.should == Starcraft2::Profile::NonRank
+
+    ladder.previous_season.first.non_ranked.first.mmq.should == "HOTS_TWOS"
+    ladder.previous_season.first.non_ranked.first.games_played.should == 2
   end
 
   it 'should set the showcase_placement' do
-
+    @options = { :showcase_placement => []}
+    ladder.showcase_placement.should == []
   end
 
 end
