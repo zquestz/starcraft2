@@ -4,7 +4,7 @@ module Starcraft2
       attr_accessor :points, :achievements
 
       def initialize(options = {})
-        Utils.load(self, options, { :points => Points }, {:achievments => AchievementItem})
+        Utils.load(self, options, { :points => Points }, {:achievements => AchievementItem})
       end
     end
   end

@@ -29,5 +29,7 @@ describe Starcraft2::Profile::Achievements do
 
     achievements.achievements.class.should == Array
     achievements.achievements.first.class.should == Starcraft2::Profile::AchievementItem
+    achievements.achievements.first.achievement_id.should == 91475035553845
+    achievements.achievements.first.completion_date.should == 1365790265
   end
 end
