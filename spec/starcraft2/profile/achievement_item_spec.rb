@@ -4,9 +4,11 @@ describe Starcraft2::Profile::AchievementItem do
   describe '.initialize' do
     let(:achievement_item) { Starcraft2::Profile::AchievementItem.new(@options) }
 
-    it 'should store attributes as underscored' do
+    before do
       @options = {'achievementId' => 1, 'completionDate' => 13333333}
+    end
 
+    it 'should store attributes as underscored' do
       achievement_item.achievement_id.should == 1
       achievement_item.completion_date.should == 13333333
     end
