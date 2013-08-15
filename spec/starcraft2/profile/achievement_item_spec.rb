@@ -11,7 +11,7 @@ describe Starcraft2::Profile::AchievementItem do
       achievement_item.completion_date.should == 13333333
     end
 
-    it 'should store camelCase attributes as underscored' do
+    it 'should store camelCased attributes as underscored' do
       @options = {'achievementId' => 1, 'completionDate' => 13333333}
 
       achievement_item.achievement_id.should == 1
