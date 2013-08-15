@@ -65,7 +65,10 @@ describe Starcraft2::Profile::Ladders do
                  }],
                  :nonRanked => []
                }]}
-    ladder.current_season.class.should == Starcraft2::Profile::DetailedSeason
+    ladder.current_season.class.should == Array
+    ladder.current_season.first.class.should == Starcraft2::Profile::DetailedSeason
+    ladder.current_season.first.ladder.class.should == Array
+    ladder.current_season.first.ladder.first.class.should == Starcraft2::Profile::Ladder
   end
 
   it 'should set the previous_season' do

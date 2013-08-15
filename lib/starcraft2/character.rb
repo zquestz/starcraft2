@@ -5,5 +5,11 @@ module Starcraft2
     def initialize(options = {})
       Utils.load(self, options)
     end
+
+    def self.build(character_data)
+      character_data.map do |c|
+        new(c)
+      end
+    end
   end
 end

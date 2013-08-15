@@ -6,6 +6,12 @@ module Starcraft2
       def initialize(options = {})
         Utils.load(self, options)
       end
+
+      def self.build(non_rank_data)
+        non_rank_data.map do |nr|
+          new(nr)
+        end
+      end
     end
   end
 end
