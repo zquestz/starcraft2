@@ -69,6 +69,26 @@ describe Starcraft2::Profile::Ladders do
     ladder.current_season.first.class.should == Starcraft2::Profile::DetailedSeason
     ladder.current_season.first.ladder.class.should == Array
     ladder.current_season.first.ladder.first.class.should == Starcraft2::Profile::Ladder
+
+    ladder.current_season.first.ladder.first.ladder_name.should == "Shuttle Tango"
+    ladder.current_season.first.ladder.first.ladder_id.should == 153300
+    ladder.current_season.first.ladder.first.division.should == 34
+    ladder.current_season.first.ladder.first.rank.should == 28
+    ladder.current_season.first.ladder.first.league.should == "PLATINUM"
+    ladder.current_season.first.ladder.first.match_making_queue.should == "HOTS_TWOS"
+    ladder.current_season.first.ladder.first.wins.should == 7
+    ladder.current_season.first.ladder.first.losses.should == 1
+
+    ladder.current_season.first.characters.class.should == Array
+    ladder.current_season.first.characters.first.id.should == 999000
+    ladder.current_season.first.characters.first.realm.should == 1
+    ladder.current_season.first.characters.first.display_name.should == "DayNine"
+    ladder.current_season.first.characters.first.clan_name.should == "Team 9"
+    ladder.current_season.first.characters.first.clan_tag.should == "Nine"
+    ladder.current_season.first.characters.first.profile_path.should == "/profile/999000/1/DayNine/"
+
+    ladder.current_season.first.non_ranked.class.should == Array
+    ladder.current_season.first.non_ranked.should == []
   end
 
   it 'should set the previous_season' do
