@@ -4,7 +4,7 @@ module Starcraft2
       attr_accessor :current_season, :previous_season, :showcase_placement
 
       def initialize(options = {})
-        Utils.load(self, options, {}, { :current_season => DetailedSeason, :previous_season => DetailedSeason })
+        Utils.load(self, options, {}, {:current_season => DetailedSeason, :previous_season => DetailedSeason})
       end
 
       def self.build(data)
