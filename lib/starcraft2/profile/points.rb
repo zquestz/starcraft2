@@ -4,7 +4,7 @@ module Starcraft2
       attr_accessor :total_points, :category_points
 
       def initialize(options = {})
-        Utils.load(self, options, {:category_points => OpenStruct })
+        Utils.load(self, options, {:category_points => Hash })
       end
     end
   end
