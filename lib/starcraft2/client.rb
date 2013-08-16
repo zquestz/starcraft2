@@ -126,8 +126,6 @@ module Starcraft2
         when 200
           body = JSON.parse(response.body)
           case body['code']
-            when 200
-              body
             when 404
               raise Starcraft2::NotFoundError, body['message'] || body['reason']
             when 500

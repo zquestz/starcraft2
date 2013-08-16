@@ -33,9 +33,12 @@ describe Starcraft2::Client do
 
   describe '.profile' do
     it 'should return an sc2 profile' do
-      VCR.use_cassette("profile_#{999000}") do
+      VCR.use_cassette('profile_999000') do
         options = {:character_name => 'DayNine', :id => 999000, :realm => 1}
-        client.profile(options).class.should == Starcraft2::Profile
+        profile = client.profile(options)
+        profile.class.should == Starcraft2::Profile
+        profile.display_name.should == 'DayNine'
+        profile.id.should == 999000
       end
     end
 
@@ -53,13 +56,11 @@ describe Starcraft2::Client do
   describe '.achievements' do
     it 'should return an array of achievements' do
       VCR.use_cassette('achievements') do
-        client.achievements.class.should == Array
-      end
-    end
-
-    it 'should return items of type Starcraft2::Achievement' do
-      VCR.use_cassette('achievements') do
-        client.achievements.first.class.should == Starcraft2::Achievement
+        achievements = client.achievements
+        achievements.class.should == Array
+        achievements.each do |a|
+          a.class.should == Starcraft2::Achievement
+        end
       end
     end
 
@@ -75,13 +76,11 @@ describe Starcraft2::Client do
   describe '.rewards' do
     it 'should return an array of rewards' do
       VCR.use_cassette('rewards') do
-        client.rewards.class.should == Array
-      end
-    end
-
-    it 'should return items of type Starcraft2::Reward' do
-      VCR.use_cassette('rewards') do
-        client.rewards.first.class.should == Starcraft2::Reward
+        rewards = client.rewards
+        rewards.class.should == Array
+        rewards.each do |r|
+          r.class.should == Starcraft2::Reward
+        end
       end
     end
 
@@ -102,15 +101,10 @@ describe Starcraft2::Client do
     end
     let(:member) { ladder.first }
 
-    it 'should return an array of members' do
+    it 'should return an array of members with characters' do
       ladder.class.should == Array
       ladder.each do |m|
         m.class.should == Starcraft2::Member
-      end
-    end
-
-    it 'should build characters within the members' do
-      ladder.each do |m|
         m.character.class.should == Starcraft2::Character
       end
     end
@@ -141,15 +135,10 @@ describe Starcraft2::Client do
     end
     let(:member) { ladder.first }
 
-    it 'should return an array of members' do
+    it 'should return an array of members with characters' do
       ladder.class.should == Array
       ladder.each do |m|
         m.class.should == Starcraft2::Member
-      end
-    end
-
-    it 'should build characters within the members' do
-      ladder.each do |m|
         m.character.class.should == Starcraft2::Character
       end
     end

@@ -8,13 +8,14 @@ describe Starcraft2::Profile do
     let(:profile) { Starcraft2::Profile.build(client, @profile) }
 
     before do
-      VCR.use_cassette("profile_999000") do
+      VCR.use_cassette('profile_999000') do
         @profile = JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body)
       end
     end
 
     it 'should build a profile' do
       profile.class.should == Starcraft2::Profile
+      profile.display_name.should == 'DayNine'
     end
   end
 
