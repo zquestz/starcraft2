@@ -1,31 +1,41 @@
 require 'spec_helper'
 
 describe Starcraft2::Profile::Season do
-  let(:season) { Starcraft2::Profile::Season.new(@options) }
+  describe '.initialize' do
+    let(:season) { Starcraft2::Profile::Season.new(@options) }
 
-  before do
-    @options = {}
-  end
+    before do
+      @options = {
+        'seasonId' => 11,
+        'totalGamesThisSeason' => 252,
+        'stats' => [{'type' => '1v1', 'wins' => 129, 'games' => 102}, {'type' => '2v2', 'wins' => 21, 'games' => 9}]
+      }
+    end
 
-  it 'should store the season_id' do
-    @options = {:season_id => 11}
-    season.season_id.should == 11
-  end
+    it 'should store attributes as underscored' do
+      season.season_id.should == 11
+      season.total_games_this_season.should == 252
 
-  it 'should store the total_games_this_season' do
-    @options = {:total_games_this_season => 252}
-    season.total_games_this_season.should == 252
-  end
+      season.stats.class.should == Array
+      season.stats.each do |s|
+        s.class.should == Starcraft2::Profile::Stats
+      end
 
-  it 'should store the stats' do
-    @options = {:stats => [{ :type => '1v1', :wins => 129, :games => 102 }, { :type => '2v2', :wins => 21, :games => 9}]}
-    season.stats.class.should == Array
-    season.stats.first.class.should == Starcraft2::Profile::Stats
-    season.stats.first.type.should == '1v1'
-    season.stats.first.wins.should == 129
-    season.stats.first.games.should == 102
-    season.stats.last.type.should == '2v2'
-    season.stats.last.wins.should == 21
-    season.stats.last.games.should == 9
+      s1 = season.stats.first
+      s1.type.should == '1v1'
+      s1.wins.should == 129
+      s1.games.should == 102
+
+      s2 = season.stats.last
+      s2.type.should == '2v2'
+      s2.wins.should == 21
+      s2.games.should == 9
+    end
+
+    it 'should use Stracraft2::Utils.load to populate the model' do
+      Starcraft2::Utils.should_receive(:load).with(anything, @options, {}, {:stats => Starcraft2::Profile::Stats})
+
+      season
+    end
   end
 end
