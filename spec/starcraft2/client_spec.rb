@@ -8,12 +8,10 @@ describe Starcraft2::Client do
   end
 
   context 'url constants' do
-    it 'should store the achievements url' do
+    it 'should store the key endpoint paths' do
       Starcraft2::Client::ACHIEVEMENTS_PATH.should == '/api/sc2/data/achievements'
-    end
-
-    it 'should store the rewards url' do
       Starcraft2::Client::REWARDS_PATH.should == '/api/sc2/data/rewards'
+      Starcraft2::Client::LADDER_PATH.should == '/api/sc2/ladder/'
     end
   end
 
