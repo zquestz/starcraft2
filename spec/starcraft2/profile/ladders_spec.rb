@@ -166,10 +166,10 @@ describe Starcraft2::Profile::Ladders do
     let(:ladders) { Starcraft2::Profile::Ladders.build(@items) }
 
     before do
-      @items = [
+      @items = {'ladders' => [
         { 'currentSeason' => [{ 'characters' => []}] },
         { 'previousSeason' => [{ 'characters' => []}] }
-      ]
+      ]}
     end
 
     it 'should build multiple ladders objects' do
@@ -180,7 +180,7 @@ describe Starcraft2::Profile::Ladders do
     end
 
     it 'should build ladders using new' do
-      @items.each do |l|
+      @items['ladders'].each do |l|
         Starcraft2::Profile::Ladders.should_receive(:new).with(l)
       end
       ladders
