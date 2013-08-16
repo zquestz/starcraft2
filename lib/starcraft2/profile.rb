@@ -20,11 +20,11 @@ module Starcraft2
     end
 
     def matches
-      client.matches(:character_name => self.display_name, :id => self.id, :realm => self.realm)
+      client.send(:matches, {:character_name => self.display_name, :id => self.id, :realm => self.realm})
     end
 
     def ladders
-      client.ladders(:character_name => self.display_name, :id => self.id, :realm => self.realm)
+      client.send(:ladders, {:character_name => self.display_name, :id => self.id, :realm => self.realm})
     end
   end
 end

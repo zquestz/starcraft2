@@ -22,14 +22,6 @@ module Starcraft2
       end
     end
 
-    def matches(options = {})
-      Profile::Match.build(match_data(options))
-    end
-
-    def ladders(options = {})
-      Profile::Ladders.new(ladders_data(options))
-    end
-
     def achievements
       Achievement.build(achievements_data)
     end
@@ -51,6 +43,14 @@ module Starcraft2
     end
 
     private
+
+    def matches(options = {})
+      Profile::Match.build(match_data(options))
+    end
+
+    def ladders(options = {})
+      Profile::Ladders.new(ladders_data(options))
+    end
 
     def profile_data(options)
       get_json do
