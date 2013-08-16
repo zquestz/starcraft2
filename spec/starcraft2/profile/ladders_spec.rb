@@ -163,26 +163,28 @@ describe Starcraft2::Profile::Ladders do
   end
 
   describe '#build' do
-    let(:ladders) { Starcraft2::Profile::Ladders.new(@items) }
+    let(:ladders) { Starcraft2::Profile::Ladders.build(@items) }
 
     before do
-      @options = { :current_season => {'characters' => [{ 'displayName' => 'Idra'}, {'displayName' => 'MC'}], 'nonRanked' => [{'mmq' => 'HOTS_TWOS'}]}}
+      @items = [
+        { 'currentSeason' => [{ 'characters' => []}] },
+        { 'previousSeason' => [{ 'characters' => []}] }
+      ]
     end
 
-    it 'should build multiple characters using new' do
-      ladders.characters.class.should == Array
-      ladders.characters.each do |c|
-        Starcraft2::Profile::Character.should_receive(:new).with(c)
+    it 'should build multiple ladders objects' do
+      ladders.class.should == Array
+      ladders.each do |l|
+        l.class.should == Starcraft2::Profile::Ladders
       end
-      ladders
     end
 
-    it 'should build non_ranked using new' do
-      ladders.non_ranked.class.should == Array
-      ladders.non_ranked.each do |nr|
-        Starcraft2::Profile::NonRank.should_receive(:new).with(nr)
+    it 'should build ladders using new' do
+      @items.each do |l|
+        Starcraft2::Profile::Ladders.should_receive(:new).with(l)
       end
       ladders
     end
   end
 end
+
