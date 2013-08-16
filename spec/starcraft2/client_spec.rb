@@ -1,4 +1,4 @@
-require "spec_helper"
+require 'spec_helper'
 
 describe Starcraft2::Client do
   let(:client) { Starcraft2::Client.new(@options) }
