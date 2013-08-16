@@ -24,12 +24,14 @@ describe Starcraft2::Profile do
     end
 
     it 'should store the attributes as underscored' do
-      @options = {'id' => 12345,
-                  'realm' => 1,
-                  'display_name' => 'steve',
-                  'clan_name' => 'clan',
-                  'clan_tag' => 'tag',
-                  'profilePath' => '/profile/example'}
+      @options = {
+        'id' => 12345,
+        'realm' => 1,
+        'displayName' => 'steve',
+        'clanName' => 'clan',
+        'clanTag' => 'tag',
+        'profilePath' => '/profile/example'
+      }
 
       profile.id.should == 12345
       profile.realm.should == 1
