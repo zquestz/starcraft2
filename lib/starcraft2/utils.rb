@@ -20,5 +20,25 @@ module Starcraft2
         klass.send(:"#{k}=", v)
       end
     end
+
+    def self.get_json
+      response = yield
+      case response.code
+        when 200
+          body = JSON.parse(response.body)
+          case body['code']
+            when 404
+              raise Starcraft2::NotFoundError, body['message'] || body['reason']
+            when 500
+              raise Starcraft2::ApiError, body['message'] || body['reason']
+            else
+              body
+          end
+        when 404
+          raise Starcraft2::NotFoundError, 'Record not found.'
+        when 500
+          raise Starcraft2::ApiError, 'An API error occurred.'
+      end
+    end
   end
 end

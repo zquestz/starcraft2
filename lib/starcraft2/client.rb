@@ -53,7 +53,7 @@ module Starcraft2
     end
 
     def profile_data(options)
-      get_json do
+      Utils.get_json do
         HTTParty.get(profile_url(options))
       end
     end
@@ -67,13 +67,13 @@ module Starcraft2
     end
 
     def match_data(options)
-      get_json do
+      Utils.get_json do
         HTTParty.get(match_url(options))
       end
     end
 
     def ladders_data(options)
-      get_json do
+      Utils.get_json do
         HTTParty.get(ladders_url(options))
       end
     end
@@ -87,7 +87,7 @@ module Starcraft2
     end
 
     def achievements_data
-      get_json do
+      Utils.get_json do
         HTTParty.get(achievements_url)
       end
     end
@@ -97,7 +97,7 @@ module Starcraft2
     end
 
     def rewards_data
-      get_json do
+      Utils.get_json do
         HTTParty.get(rewards_url)
       end
     end
@@ -107,7 +107,7 @@ module Starcraft2
     end
 
     def ladder_data(id)
-      get_json do
+      Utils.get_json do
         HTTParty.get(ladder_url(id))
       end
     end
@@ -118,26 +118,6 @@ module Starcraft2
 
     def locale_param
       locale.nil? ? '' : "?locale=#{locale}"
-    end
-
-    def get_json
-      response = yield
-      case response.code
-        when 200
-          body = JSON.parse(response.body)
-          case body['code']
-            when 404
-              raise Starcraft2::NotFoundError, body['message'] || body['reason']
-            when 500
-              raise Starcraft2::ApiError, body['message'] || body['reason']
-            else
-              body
-          end
-        when 404
-          raise Starcraft2::NotFoundError, 'Record not found.'
-        when 500
-          raise Starcraft2::ApiError, 'An API error occurred.'
-      end
     end
   end
 end
