@@ -14,11 +14,33 @@ Then `bundle install`.
 
 ## Usage
 
+The Client class is the starting point for all calls made to the API. A full list of hosts and locales can be found in the API documentation above.
+
 ```ruby
-Starcraft2::Client.new(:host => 'us.battle.net', :locale => 'en_US')
+client = Starcraft2::Client.new(:host => 'us.battle.net', :locale => 'en_US')
 ```
 
-A full list of hosts and locales can be found in the API documentation above.
+### Profiles
+
+`Starcraft2::Profile` contains all profile information. Realm, character name and id can all be found in a player's profile url.
+
+```ruby
+profile = client.profile(realm: 1, character_name: "DayNine", id: 999000)
+```
+
+**Grab a profile's ladders**
+
+```ruby
+profile.ladders
+```
+
+**Grab a profile's recent matches**
+
+```ruby
+profile.matches
+```
+
+
 
 ## Build Status
 [![Build Status](https://travis-ci.org/zquestz/starcraft2.png)](https://travis-ci.org/zquestz/starcraft2)
