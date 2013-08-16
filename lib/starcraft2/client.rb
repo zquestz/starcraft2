@@ -18,7 +18,7 @@ module Starcraft2
       if (args = [:character_name, :id, :realm] - options.keys).empty?
         Profile.build(self, profile_data(options))
       else
-        raise MissingArgumentsError, "Missing Keys: #{args.map {|i| ":#{i}"}.join(', ')}"
+        raise MissingArgumentsError, "Missing Keys: #{args.map { |i| ":#{i}" }.join(', ')}"
       end
     end
 
@@ -42,6 +42,10 @@ module Starcraft2
       ladder('grandmaster/last')
     end
 
+    def flush_cache
+      @memoizations = {}
+    end
+
     private
 
     def matches(options = {})
@@ -53,8 +57,10 @@ module Starcraft2
     end
 
     def profile_data(options)
-      Utils.get_json do
-        HTTParty.get(profile_url(options))
+      memoize(:profile_data, options) do
+        Utils.get_json do
+          HTTParty.get(profile_url(options))
+        end
       end
     end
 
@@ -67,14 +73,18 @@ module Starcraft2
     end
 
     def match_data(options)
-      Utils.get_json do
-        HTTParty.get(match_url(options))
+      memoize(:match_data, options) do
+        Utils.get_json do
+          HTTParty.get(match_url(options))
+        end
       end
     end
 
     def ladders_data(options)
-      Utils.get_json do
-        HTTParty.get(ladders_url(options))
+      memoize(:ladders_data, options) do
+        Utils.get_json do
+          HTTParty.get(ladders_url(options))
+        end
       end
     end
 
@@ -87,8 +97,10 @@ module Starcraft2
     end
 
     def achievements_data
-      Utils.get_json do
-        HTTParty.get(achievements_url)
+      memoize(:achievements_data) do
+        Utils.get_json do
+          HTTParty.get(achievements_url)
+        end
       end
     end
 
@@ -97,8 +109,10 @@ module Starcraft2
     end
 
     def rewards_data
-      Utils.get_json do
-        HTTParty.get(rewards_url)
+      memoize(:rewards_data) do
+        Utils.get_json do
+          HTTParty.get(rewards_url)
+        end
       end
     end
 
@@ -107,8 +121,10 @@ module Starcraft2
     end
 
     def ladder_data(id)
-      Utils.get_json do
-        HTTParty.get(ladder_url(id))
+      memoize(:ladder_data, id) do
+        Utils.get_json do
+          HTTParty.get(ladder_url(id))
+        end
       end
     end
 
@@ -118,6 +134,16 @@ module Starcraft2
 
     def locale_param
       locale.nil? ? '' : "?locale=#{locale}"
+    end
+
+    def memoize(name, *args)
+      @memoizations ||= {}
+      @memoizations[name] ||= {}
+      if @memoizations[name].has_key?(args)
+        @memoizations[name][args]
+      else
+        @memoizations[name][args] = yield
+      end
     end
   end
 end

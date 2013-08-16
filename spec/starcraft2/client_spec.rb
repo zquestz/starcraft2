@@ -160,4 +160,12 @@ describe Starcraft2::Client do
       member.favorite_race_p1.should == 'PROTOSS'
     end
   end
+
+  describe '.flush_cache' do
+    it 'should clear out all memoizations' do
+      client.instance_variable_set('@memoizations', {:foo => 'bar'})
+      client.flush_cache
+      client.instance_variable_get('@memoizations').should == {}
+    end
+  end
 end
