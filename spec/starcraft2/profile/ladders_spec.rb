@@ -162,4 +162,27 @@ describe Starcraft2::Profile::Ladders do
     ladder.showcase_placement.should == []
   end
 
+  describe '#build' do
+    let(:ladders) { Starcraft2::Profile::Ladders.new(@items) }
+
+    before do
+      @options = { :current_season => {'characters' => [{ 'displayName' => 'Idra'}, {'displayName' => 'MC'}], 'nonRanked' => [{'mmq' => 'HOTS_TWOS'}]}}
+    end
+
+    it 'should build multiple characters using new' do
+      ladders.characters.class.should == Array
+      ladders.characters.each do |c|
+        Starcraft2::Profile::Character.should_receive(:new).with(c)
+      end
+      ladders
+    end
+
+    it 'should build non_ranked using new' do
+      ladders.non_ranked.class.should == Array
+      ladders.non_ranked.each do |nr|
+        Starcraft2::Profile::NonRank.should_receive(:new).with(nr)
+      end
+      ladders
+    end
+  end
 end
