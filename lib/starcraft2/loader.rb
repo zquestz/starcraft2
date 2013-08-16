@@ -1,14 +1,16 @@
 require 'httparty'
 require 'json'
 
-Dir[File.join("#{File.expand_path File.dirname(__FILE__)}", 'errors', '*.rb')].each do |file|
+base = File.expand_path File.dirname(__FILE__)
+
+Dir[File.join(base, 'errors', '*.rb')].each do |file|
   require file
 end
 
-Dir[File.join("#{File.expand_path File.dirname(__FILE__)}", 'profile', '*.rb')].each do |file|
+Dir[File.join(base, 'profile', '*.rb')].each do |file|
   require file
 end
 
-Dir[File.join("#{File.expand_path File.dirname(__FILE__)}", '*.rb')].each do |file|
+Dir[File.join(base, '*.rb')].each do |file|
   require file
 end
