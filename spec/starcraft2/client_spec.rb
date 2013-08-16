@@ -132,4 +132,43 @@ describe Starcraft2::Client do
       member.favorite_race_p1.should == 'PROTOSS'
     end
   end
+
+  describe '.last_grandmaster_ladder' do
+    let(:ladder) do
+      VCR.use_cassette('last_grandmaster') do
+        client.last_grandmaster_ladder
+      end
+    end
+    let(:member) { ladder.first }
+
+    it 'should return an array of members' do
+      ladder.class.should == Array
+      ladder.each do |m|
+        m.class.should == Starcraft2::Member
+      end
+    end
+
+    it 'should build characters within the members' do
+      ladder.each do |m|
+        m.character.class.should == Starcraft2::Character
+      end
+    end
+
+    it 'should return the first grandmaster' do
+      member.character.id == 2778732
+      member.character.realm == 1
+      member.character.display_name == 'lIlIlIlIlIlI'
+      member.character.clan_name == ''
+      member.character.clan_tag == ''
+      member.character.profile_path == '/profile/2778732/1/lIlIlIlIlIlI/'
+
+      member.points.should == 2374.0
+      member.wins.should == 253
+      member.losses.should == 102
+      member.join_timestamp.should == 1373859935
+      member.highest_rank.should == 1
+      member.previous_rank.should == 1
+      member.favorite_race_p1.should == 'PROTOSS'
+    end
+  end
 end
