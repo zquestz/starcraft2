@@ -1,10 +1,12 @@
+require 'simplecov'
+SimpleCov.start do
+  add_filter 'spec'
+end
+
 require File.join('bundler', 'setup')
 require 'rspec'
 require 'vcr'
 require 'starcraft2'
-require 'simplecov'
-
-SimpleCov.start
 
 VCR.configure do |c|
   c.cassette_library_dir = 'fixtures/cassettes'
