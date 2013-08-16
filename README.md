@@ -25,7 +25,7 @@ client = Starcraft2::Client.new(:host => 'us.battle.net', :locale => 'en_US')
 `Starcraft2::Profile` contains all profile information. Realm, character name and id can all be found in a player's profile url.
 
 ```ruby
-profile = client.profile(realm: 1, character_name: "Minigun", id: 288081)
+profile = client.profile(:realm => 1, :character_name => "Minigun", :id => 288081)
 ```
 
 **Call a player's league**
