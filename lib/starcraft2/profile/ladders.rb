@@ -6,12 +6,6 @@ module Starcraft2
       def initialize(options = {})
         Utils.load(self, options, {}, {:current_season => DetailedSeason, :previous_season => DetailedSeason})
       end
-
-      def self.build(data)
-        data['ladders'].map do |m|
-          new(m)
-        end
-      end
     end
   end
 end

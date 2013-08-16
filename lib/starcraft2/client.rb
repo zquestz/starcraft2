@@ -27,7 +27,7 @@ module Starcraft2
     end
 
     def ladders(options = {})
-      Profile::Ladders.build(ladders_data(options))
+      Profile::Ladders.new(ladders_data(options))
     end
 
     def achievements
@@ -72,7 +72,7 @@ module Starcraft2
       end
     end
 
-    def ladder_data(options)
+    def ladders_data(options)
       get_json do
         HTTParty.get(ladders_url(options))
       end

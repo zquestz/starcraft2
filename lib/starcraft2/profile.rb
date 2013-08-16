@@ -24,7 +24,7 @@ module Starcraft2
     end
 
     def ladders
-      client.ladders
+      client.ladders(:character_name => self.display_name, :id => self.id, :realm => self.realm)
     end
   end
 end
