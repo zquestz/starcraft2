@@ -208,4 +208,15 @@ describe Starcraft2::Profile do
       end
     end
   end
+
+  describe '.ladders' do
+    it 'should return a profiles ladder information' do
+      VCR.use_cassette('ladders_999000') do
+        ladders = client.profile(:character_name => 'DayNine', :id => 999000, :realm => 1).ladders
+        ladders.class.should == Starcraft2::Profile::Ladders
+        ladders.current_season.first.class.should == Starcraft2::Profile::DetailedSeason
+        ladders.current_season.first.ladder.first.ladder_name.should == 'Shuttle Tango'
+      end
+    end
+  end
 end
