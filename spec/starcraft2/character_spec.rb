@@ -5,37 +5,55 @@ describe Starcraft2::Character do
     let(:character) { Starcraft2::Character.new(@options) }
 
     before do
-      @options = {}
+      @options = {
+        'id' => 5,
+        'realm' => 'somewhere',
+        'displayName' => 'display me',
+        'clanName' => 'clan name',
+        'clanTag' => 'clan tag',
+        'profilePath' => '/some/path'
+      }
     end
 
-    it 'should store the id' do
-      @options = {:id => 5}
+    it 'should store attributes as underscored' do
       character.id.should == 5
-    end
-
-    it 'should store the realm' do
-      @options = {:realm => 'somewhere'}
       character.realm.should == 'somewhere'
-    end
-
-    it 'should store the display_name' do
-      @options = {:display_name => 'display me'}
       character.display_name.should == 'display me'
-    end
-
-    it 'should store the clan_name' do
-      @options = {:clan_name => 'clan name'}
       character.clan_name.should == 'clan name'
-    end
-
-    it 'should store the clan_tag' do
-      @options = {:clan_tag => 'clan tag'}
       character.clan_tag.should == 'clan tag'
+      character.profile_path.should == '/some/path'
     end
 
-    it 'should store the profile_path' do
-      @options = {:profile_path => '/some/path'}
-      character.profile_path.should == '/some/path'
+    it 'should use Stracraft2::Utils.load to populate the model' do
+      Starcraft2::Utils.should_receive(:load).with(anything, @options)
+
+      character
+    end
+  end
+
+  describe '#build' do
+    let(:characters) { Starcraft2::Character.build(@items) }
+
+    before do
+      @items = [
+        {'id' => 1},
+        {'id' => 2}
+      ]
+    end
+
+    it 'should build multiple character objects' do
+      characters.class.should == Array
+      characters.each do |s|
+        s.class.should == Starcraft2::Character
+      end
+    end
+
+    it 'should build items using new' do
+      @items.each do |i|
+        Starcraft2::Character.should_receive(:new).with(i)
+      end
+
+      characters
     end
   end
 end
