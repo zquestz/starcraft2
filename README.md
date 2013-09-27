@@ -62,7 +62,7 @@ client.rewards
 
 ### Authorization
 
-If you require authorization then the changes are very simple. Just set the following 2 ENV variables.
+If you require authorization then the changes are very simple. Just set the following two ENV variables.
 
 ```
 STARCRAFT2_API_PRIVATE_KEY = <YOUR_PRIVATE_KEY>
