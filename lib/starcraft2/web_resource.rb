@@ -1,5 +1,5 @@
 require 'base64'
-require 'hmac-sha1'
+require 'digest/hmac'
 
 class WebResource
   def self.get(url)
@@ -20,9 +20,8 @@ GET
 #{Time.now.rfc2822}
 #{url_path}
 EOF
-    hmac = HMAC::SHA1.new(private_key)
-    hmac.update(signature.encode('UTF-8'))
+    hd = Digest::HMAC.hexdigest(signature.encode('UTF-8'), private_key, Digest::SHA1)
 
-    Base64.encode64("#{hmac.digest}")
+    Base64.encode64("#{hd}")
   end
 end
