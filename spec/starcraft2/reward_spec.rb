@@ -32,7 +32,7 @@ describe Starcraft2::Reward do
 
     before do
       VCR.use_cassette('rewards') do
-        @rewards = JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/data/rewards').body)
+        @rewards = JSON.parse(WebResource.get('https://us.battle.net/api/sc2/data/rewards').body)
       end
     end
 

@@ -9,7 +9,7 @@ describe Starcraft2::Profile do
 
     before do
       VCR.use_cassette('profile_999000') do
-        @profile = JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body)
+        @profile = JSON.parse(WebResource.get('https://us.battle.net/api/sc2/profile/999000/1/DayNine/').body)
       end
     end
 

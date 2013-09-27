@@ -59,7 +59,7 @@ module Starcraft2
     def profile_data(options)
       memoize(:profile_data, options) do
         Utils.get_json do
-          HTTParty.get(profile_url(options))
+          WebResource.get(profile_url(options))
         end
       end
     end
@@ -75,7 +75,7 @@ module Starcraft2
     def match_data(options)
       memoize(:match_data, options) do
         Utils.get_json do
-          HTTParty.get(match_url(options))
+          WebResource.get(match_url(options))
         end
       end
     end
@@ -83,7 +83,7 @@ module Starcraft2
     def ladders_data(options)
       memoize(:ladders_data, options) do
         Utils.get_json do
-          HTTParty.get(ladders_url(options))
+          WebResource.get(ladders_url(options))
         end
       end
     end
@@ -99,7 +99,7 @@ module Starcraft2
     def achievements_data
       memoize(:achievements_data) do
         Utils.get_json do
-          HTTParty.get(achievements_url)
+          WebResource.get(achievements_url)
         end
       end
     end
@@ -111,7 +111,7 @@ module Starcraft2
     def rewards_data
       memoize(:rewards_data) do
         Utils.get_json do
-          HTTParty.get(rewards_url)
+          WebResource.get(rewards_url)
         end
       end
     end
@@ -123,7 +123,7 @@ module Starcraft2
     def ladder_data(id)
       memoize(:ladder_data, id) do
         Utils.get_json do
-          HTTParty.get(ladder_url(id))
+          WebResource.get(ladder_url(id))
         end
       end
     end

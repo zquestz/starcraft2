@@ -59,7 +59,7 @@ describe Starcraft2::Achievement do
 
     it 'should import the achievements from blizzard' do
       VCR.use_cassette('achievements') do
-        @achievement = Starcraft2::Achievement.build(JSON.parse(HTTParty.get('https://us.battle.net/api/sc2/data/achievements').body)).first
+        @achievement = Starcraft2::Achievement.build(JSON.parse(WebResource.get('https://us.battle.net/api/sc2/data/achievements').body)).first
       end
 
       @achievement.title.should == 'FFA Destroyer'

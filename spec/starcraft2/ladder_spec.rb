@@ -8,7 +8,7 @@ describe Starcraft2::Ladder do
 
     before do
       VCR.use_cassette("ladder_#{id}") do
-        @raw_ladder_data = JSON.parse(HTTParty.get("https://us.battle.net/api/sc2/ladder/#{id}").body)
+        @raw_ladder_data = JSON.parse(WebResource.get("https://us.battle.net/api/sc2/ladder/#{id}").body)
       end
     end
 
