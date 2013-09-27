@@ -60,6 +60,16 @@ client.achievements
 client.rewards
 ```
 
+### Authorization
+
+If you require authorization then the changes are very simple. Just set the following 2 ENV variables.
+
+```
+STARCRAFT2_API_PRIVATE_KEY = <YOUR_PRIVATE_KEY>
+STARCRAFT2_API_PUBLIC_KEY = <YOUR_PUBLIC_KEY>
+```
+
+Once those are set, the gem will take care of the rest for you.
 
 ## Build Status
 [![Build Status](https://travis-ci.org/zquestz/starcraft2.png)](https://travis-ci.org/zquestz/starcraft2)
